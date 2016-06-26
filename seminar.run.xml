@@ -44,10 +44,10 @@
   <internal package="biblatex" priority="9" active="0">
     <generic>latex</generic>
     <provides type="dynamic">
-      <file>SOP.bcf</file>
+      <file>seminar.bcf</file>
     </provides>
     <requires type="dynamic">
-      <file>SOP.bbl</file>
+      <file>seminar.bbl</file>
     </requires>
     <requires type="static">
       <file>blx-dm.def</file>
@@ -64,19 +64,19 @@
     <generic>biber</generic>
     <cmdline>
       <binary>biber</binary>
-      <infile>SOP</infile>
+      <infile>seminar</infile>
     </cmdline>
     <input>
-      <file>SOP.bcf</file>
+      <file>seminar.bcf</file>
     </input>
     <output>
-      <file>SOP.bbl</file>
+      <file>seminar.bbl</file>
     </output>
     <provides type="dynamic">
-      <file>SOP.bbl</file>
+      <file>seminar.bbl</file>
     </provides>
     <requires type="dynamic">
-      <file>SOP.bcf</file>
+      <file>seminar.bcf</file>
     </requires>
     <requires type="editable">
       <file>sop.bib</file>
