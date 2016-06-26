@@ -1,0 +1,125 @@
+setwd("D:/Academics/IIMB/Courses/Term 3/RA/Tele Education Project/R Folder/SSLC")
+library(openintro)
+library(stargazer)
+library(lmtest)
+library(sandwich)
+library(plyr) #count function
+library(zoo)
+library(MatchIt)  #Propensity Matching
+library(optmatch)  #To use optimal matching in propensity matching function
+
+Data.2010 <- data.frame(read.csv("D:/Academics/IIMB/Courses/Term 3/RA/Tele Education Project/R Folder/SSLC/Gubbi 2010.csv", header = TRUE))
+Data.2011 <- data.frame(read.csv("D:/Academics/IIMB/Courses/Term 3/RA/Tele Education Project/R Folder/SSLC/Gubbi 2011.csv", header = TRUE))
+
+#**************************************************************************************#
+      
+#2011 Data
+#School codes
+Taluk.code2011 <- c("DD0463", "DD0462", "DD0418", "DD0419", "DD0420", "DD0193", "DD0445", "DD0403", "DD0404", "DD0358", "DD0457", "DD0074", "DD0380", "DD0371", "DD0376", "DD0248", "DD0390", "DD0391", "DD0396", "DD0173", "DD0325", "DD0109", "DD0120", "DD0028", "DD0029", "DD0030", "DD0031", "DD0007", "DD0032", "DD0010", "DD0326", "DD0473", "DD0329", "DD0330", "DD0332", "DD0336", "DD0340", "DD0341", "DD0234", "DD0251", "DD0252", "DD0258", "DD0262", "DD0051", "DD0054", "DD0265", "DD0272", "DD0273", "DD0276", "DD0288", "DD0289", "DD0062", "DD0066", "DD0067", "DD0200", "DD0204", "DD0213", "DD0310", "DD0311", "DD0221", "DD0223", "DD0225", "DD0232", "DD0135", "DD0139", "DD0140", "DD0163", "DD0171", "DD0172", "DD0077", "DD0083", "DD0090", "DD0100", "DD0484", "DD0485")
+Treat.code2011 <- c("DD0234", "DD0054", "DD0100", "DD0028", "DD0272", "DD0074" ,"DD0067", "DD0090", "DD0172", "DD0252", "DD0332", "DD0032", "DD0109", "DD0193")
+Control.code2011 <- setdiff(Taluk.code2011, Treat.code2011)
+
+#Schools in the GUBBI Taluk #75
+Dataset <- droplevels(subset(Data.2011, is.element(Data.2011[,4], Taluk.code2011), drop = TRUE))
+
+#Treatment Schools #14
+Treatment <- droplevels(subset(Data.2011, is.element(Data.2011[,4], Treat.code2011), drop = TRUE))
+Stat <- rep(1, 1106)
+Post.Treatment <- cbind(Stat, Treatment)
+
+#Control Schools #All Others #61
+Control <- droplevels(subset(Data.2011, is.element(Data.2011[,4], Control.code2011), drop = TRUE))
+Stat <- rep(0, 3199)
+Post.Control <- cbind(Stat, Control)
+
+#Full Dataset including Treatment status
+Post.Dataset <- rbind(Post.Treatment, Post.Control)
+Post.Dataset$Year <- rep(1, 4305)
+
+#Testing for differences between Treatment and Control Schools in 2011
+
+Post.fit <- lm(total ~ Stat, Post.Dataset)
+
+#**************************************************************************************#
+
+#2010 Data
+#School codes
+Taluk.code2010 <- c("DD0463", "DD0462", "DD0418", "DD0419", "DD0420", "DD0193", "DD0445", "DD0403", "DD0404", "DD0358", "DD0457", "DD0074", "DD0380", "DD0371", "DD0376", "DD0248", "DD0390", "DD0391", "DD0396", "DD0173", "DD0325", "DD0109", "DD0120", "DD0028", "DD0029", "DD0030", "DD0031", "DD0007", "DD0032", "DD0010", "DD0326", "DD0473", "DD0329", "DD0330", "DD0332", "DD0336", "DD0340", "DD0341", "DD0234", "DD0251", "DD0252", "DD0258", "DD0262", "DD0051", "DD0054", "DD0265", "DD0272", "DD0273", "DD0276", "DD0288", "DD0289", "DD0062", "DD0066", "DD0067", "DD0200", "DD0204", "DD0213", "DD0310", "DD0311", "DD0221", "DD0223", "DD0225", "DD0232", "DD0135", "DD0139", "DD0140", "DD0163", "DD0171", "DD0172", "DD0077", "DD0083", "DD0090", "DD0100", "DD0484", "DD0485")
+Treat.code2010 <- c("DD0234", "DD0054", "DD0100", "DD0028", "DD0272", "DD0074" ,"DD0067", "DD0090", "DD0172", "DD0252", "DD0332", "DD0032", "DD0109", "DD0193")
+Control.code2010 <- setdiff(Taluk.code2010, Treat.code2010)
+
+#Schools in the GUBBI Taluk #75
+Dataset <- droplevels(subset(Data.2010, is.element(Data.2010[,4], Taluk.code2010), drop = TRUE))
+
+#Treatment Schools #14
+Treatment <- droplevels(subset(Data.2010, is.element(Data.2010[,4], Treat.code2010), drop = TRUE))
+Stat <- rep(1, 1072)
+Pre.Treatment <- cbind(Stat, Treatment)
+
+#Control Schools #All Others #61
+Control <- droplevels(subset(Data.2010, is.element(Data.2010[,4], Control.code2010), drop = TRUE))
+Stat <- rep(0, 2934)
+Pre.Control <- cbind(Stat, Control)
+
+#Full Dataset including Treatment status
+Pre.Dataset <- rbind(Pre.Treatment, Pre.Control)
+Pre.Dataset$Year <- rep(0, 4006)
+
+#Testing for differences between Treatment and Control Schools in 2010
+
+Pre.fit <- lm(total ~ Stat, Pre.Dataset)
+
+#Combined Dataset
+Data <- rbind(Pre.Dataset, Post.Dataset)
+
+#Pooled Cross-sectional Model
+
+Pooled.fit <- lm(total ~ Stat + Year + Stat*Year, Data)
+
+avg <- aggregate(total ~ Schoolcode + Stat + Year, Data, mean)
+
+#Loop to find pass percentages for all schools
+
+List <- split(Data, Data$Schoolcode)
+final <- matrix(, nrow = 64, ncol = 5)
+for(i in 1:64){
+  final[i,1] <- i #School No
+  final[i,2] <- List[[i]][1,1] #Treatment Status
+  
+  Y0 <- subset(List[[i]], List[[i]][,4] == 0)[,42] #Year 1 results
+  Y1 <- subset(List[[i]], List[[i]][,4] == 1)[,42] #Year 2 results
+
+  final[i,3] <- sum(Y0 == "P")*100/length(Y0)
+  final[i,4] <- sum(Y1 == "P")*100/length(Y0)
+  
+  final[i,5] <- mean(List[[i]][,41], na.rm = TRUE)
+}
+
+f <- (final[,4] - final[,3])
+final <- data.frame(cbind(final,f))[-64,]
+group <- ifelse(final[,3] < 65, 1, 0)
+final <- cbind(final, group)
+
+colnames(final) <- c("No", "Stat", "Year0result", "Year1result", "Average", "Change", "Group" )
+
+pass.fit <- lm(Change ~ Stat + Group, final)
+
+#Propensity score matching
+
+m.out <- matchit(final$Stat ~ final$Year0result, data = final, method = "nearest")
+summary(m.out)
+
+match <- match.data(m.out)
+
+#Dividing schools into high performance and low performance groups
+
+Group <- ifelse(match[,3] < 65, 1, 0)
+match <- cbind(match, Group)
+  
+match.fit <- lm(Change ~ Stat + Group, match)
+
+stargazer(Pre.fit, Post.fit, Pooled.fit, pass.fit, match.fit, type = "text", 
+          column.labels = c("Pre-Test", "Post-Test", "Pooled", "Panel.Avg", "Pass.Rate", "Matched.Controls"), 
+          dep.var.labels = "Total Marks in SSLC", out = "simreg.txt")
+
+

@@ -1,0 +1,583 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.7 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist[entry]{nty/global/}
+    \entry{aristotle_politics_1984}{book}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=798a01f212a8e620a6940400717a56d9}{%
+           family={Aristotle},
+           family_i={A\bibinitperiod}}}%
+      }
+      \name{translator}{1}{}{%
+        {{hash=1b7935fa9e331a027bb3be4a4d5de25d}{%
+           family={Jowett},
+           family_i={J\bibinitperiod},
+           given={Benjamin},
+           given_i={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{798a01f212a8e620a6940400717a56d9}
+      \strng{fullhash}{798a01f212a8e620a6940400717a56d9}
+      \field{sortinit}{A}
+      \field{sortinithash}{b685c7856330eaee22789815b49de9bb}
+      \field{labelyear}{1984}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Politics}
+      \field{urlday}{02}
+      \field{urlmonth}{06}
+      \field{urlyear}{2016}
+      \field{year}{1984}
+      \verb{url}
+      \verb https://socserv2.socsci.mcmaster.ca/econ/ugcm/3ll3/aristotle/Politics.pdf
+      \endverb
+    \endentry
+    \entry{Telengana}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=4c224447cb5985e2b4063e87380a986a}{%
+           family={Balakrishna},
+           family_i={B\bibinitperiod},
+           given={V\bibnamedelima V},
+           given_i={V\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+      }
+      \strng{namehash}{4c224447cb5985e2b4063e87380a986a}
+      \strng{fullhash}{4c224447cb5985e2b4063e87380a986a}
+      \field{sortinit}{B}
+      \field{sortinithash}{4ecbea03efd0532989d3836d1a048c32}
+      \field{labelyear}{2016}
+      \field{labelmonth}{05}
+      \field{labelday}{07}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{07}
+      \field{journaltitle}{The New Indian Express}
+      \field{month}{05}
+      \field{title}{New Districts to Precede New Constituencies}
+      \field{urlday}{31}
+      \field{urlmonth}{05}
+      \field{urlyear}{2016}
+      \field{year}{2016}
+      \verb{url}
+      \verb http://www.newindianexpress.com/states/telangana/New-Districts-to-Precede-New-Constituencies/2016/05/07/article3419967.ece
+      \endverb
+    \endentry
+    \entry{bikker_scale_2016}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=ea36322c86be6fb373750558f971bf91}{%
+           family={Bikker},
+           family_i={B\bibinitperiod},
+           given={Jacob},
+           given_i={J\bibinitperiod}}}%
+        {{uniquename=0,hash=b95035423443e7d48a459bdca432b01a}{%
+           family={Linde},
+           family_i={L\bibinitperiod},
+           given={Daan\bibnamedelimb van\bibnamedelima der},
+           given_i={D\bibinitperiod\bibinitdelim v\bibinitperiod\bibinitdelim d\bibinitperiod}}}%
+      }
+      \strng{namehash}{eb7a80e6e7a39802f9b792c06a66bd27}
+      \strng{fullhash}{eb7a80e6e7a39802f9b792c06a66bd27}
+      \field{sortinit}{B}
+      \field{sortinithash}{4ecbea03efd0532989d3836d1a048c32}
+      \field{labelyear}{2016}
+      \field{labelmonth}{05}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0300-3930}
+      \field{journaltitle}{Local Government Studies}
+      \field{month}{05}
+      \field{number}{3}
+      \field{title}{Scale economies in local public administration}
+      \field{urlday}{02}
+      \field{urlmonth}{06}
+      \field{urlyear}{2016}
+      \field{volume}{42}
+      \field{year}{2016}
+      \field{pages}{441\bibrangedash 463}
+      \range{pages}{23}
+      \verb{doi}
+      \verb 10.1080/03003930.2016.1146139
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1080/03003930.2016.1146139
+      \endverb
+    \endentry
+    \entry{hansen_size_2014}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=461fd8523d78210c5e005eb848ee60cd}{%
+           family={Blom-Hansen},
+           family_i={B\bibinithyphendelim H\bibinitperiod},
+           given={Jens},
+           given_i={J\bibinitperiod}}}%
+        {{uniquename=0,hash=a1ddf5f7fd2cf224121fc380c47eaa05}{%
+           family={Houlberg},
+           family_i={H\bibinitperiod},
+           given={Kurt},
+           given_i={K\bibinitperiod}}}%
+        {{uniquename=0,hash=8951ac895be3f4e19c91d91e3e497714}{%
+           family={Serritzlew},
+           family_i={S\bibinitperiod},
+           given={S\o{}ren},
+           given_i={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{a69ef7b40621f6967b281e35bbfc2b9f}
+      \strng{fullhash}{a69ef7b40621f6967b281e35bbfc2b9f}
+      \field{sortinit}{B}
+      \field{sortinithash}{4ecbea03efd0532989d3836d1a048c32}
+      \field{labelyear}{2014}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0092-5853}
+      \field{journaltitle}{American Journal of Political Science}
+      \field{number}{4}
+      \field{title}{Size, {Democracy}, and the {Economic} {Costs} of {Running} the {Political} {System}}
+      \field{urlday}{01}
+      \field{urlmonth}{06}
+      \field{urlyear}{2016}
+      \field{volume}{58}
+      \field{year}{2014}
+      \field{pages}{790\bibrangedash 803}
+      \range{pages}{14}
+      \verb{url}
+      \verb http://www.jstor.org/stable/24363526
+      \endverb
+    \endentry
+    \entry{dahl_size_1973}{book}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=3f999ff182b1e91089f9002597417e95}{%
+           family={Dahl},
+           family_i={D\bibinitperiod},
+           given={Robert\bibnamedelima Alan},
+           given_i={R\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{uniquename=0,hash=07bb67356ea4ccd6bf5f968d4bd5c0b7}{%
+           family={Tufte},
+           family_i={T\bibinitperiod},
+           given={Edward\bibnamedelima R.},
+           given_i={E\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Stanford University Press}%
+      }
+      \strng{namehash}{114d4fd504bb82185afbccd2762ca38a}
+      \strng{fullhash}{114d4fd504bb82185afbccd2762ca38a}
+      \field{sortinit}{D}
+      \field{sortinithash}{78f7c4753a2004675f316a80bdb31742}
+      \field{labelyear}{1973}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Size and democracy}
+      \field{urlday}{01}
+      \field{urlmonth}{06}
+      \field{urlyear}{2016}
+      \field{volume}{2}
+      \field{year}{1973}
+    \endentry
+    \entry{driscoll2003school}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=687c274ae5b76f1027cfdff61254d14c}{%
+           family={Driscoll},
+           family_i={D\bibinitperiod},
+           given={Donna},
+           given_i={D\bibinitperiod}}}%
+        {{uniquename=0,hash=068849eb5d180580994b04b7ac407c99}{%
+           family={Halcoussis},
+           family_i={H\bibinitperiod},
+           given={Dennis},
+           given_i={D\bibinitperiod}}}%
+        {{uniquename=0,hash=dc1fb8fd93c1acc2dbef9d3022d641a8}{%
+           family={Svorny},
+           family_i={S\bibinitperiod},
+           given={Shirley},
+           given_i={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{9965e6f0345f1254609c39a46d95b8b2}
+      \strng{fullhash}{9965e6f0345f1254609c39a46d95b8b2}
+      \field{sortinit}{D}
+      \field{sortinithash}{78f7c4753a2004675f316a80bdb31742}
+      \field{labelyear}{2003}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{economics of education review}
+      \field{number}{2}
+      \field{title}{School district size and student performance}
+      \field{volume}{22}
+      \field{year}{2003}
+      \field{pages}{193\bibrangedash 201}
+      \range{pages}{9}
+    \endentry
+    \entry{faguet2008decentralization}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=4f55540b362b6d37aabb4776d7c9b643}{%
+           family={Faguet},
+           family_i={F\bibinitperiod},
+           given={Jean-Paul},
+           given_i={J\bibinithyphendelim P\bibinitperiod}}}%
+        {{uniquename=0,hash=244df37c0c54ed73b7816df3bbb52ece}{%
+           family={Sanchez},
+           family_i={S\bibinitperiod},
+           given={Fabio},
+           given_i={F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{69cb727abdf8f51a5bed2ea966246bd4}
+      \strng{fullhash}{69cb727abdf8f51a5bed2ea966246bd4}
+      \field{sortinit}{F}
+      \field{sortinithash}{c6a7d9913bbd7b20ea954441c0460b78}
+      \field{labelyear}{2008}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{World Development}
+      \field{number}{7}
+      \field{title}{Decentralization's effects on educational outcomes in Bolivia and Colombia}
+      \field{volume}{36}
+      \field{year}{2008}
+      \field{pages}{1294\bibrangedash 1316}
+      \range{pages}{23}
+    \endentry
+    \entry{Mamata}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=ecedbea8756d088b7d460123bb73c800}{%
+           family={Konar},
+           family_i={K\bibinitperiod},
+           given={Debashis},
+           given_i={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{ecedbea8756d088b7d460123bb73c800}
+      \strng{fullhash}{ecedbea8756d088b7d460123bb73c800}
+      \field{sortinit}{K}
+      \field{sortinithash}{a7d5b3aec5a0890aae7baf85a209abfc}
+      \field{labelyear}{2015}
+      \field{labelmonth}{12}
+      \field{labelday}{18}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{18}
+      \field{journaltitle}{Times of India}
+      \field{month}{12}
+      \field{title}{West Bengal CM Mamata Banerjee creates five new districts}
+      \field{urlday}{31}
+      \field{urlmonth}{05}
+      \field{urlyear}{2016}
+      \field{year}{2015}
+      \verb{url}
+      \verb http://timesofindia.indiatimes.com/city/kolkata/West-Bengal-CM-Mamata-Banerjee-creates-five-new-districts/articleshow/50234830.cms
+      \endverb
+    \endentry
+    \entry{mccabe2000special}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=b08affb927b1cfd18bcb246bdaa7cf33}{%
+           family={McCabe},
+           family_i={M\bibinitperiod},
+           given={Barbara\bibnamedelima Coyle},
+           given_i={B\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {JSTOR}%
+      }
+      \strng{namehash}{b08affb927b1cfd18bcb246bdaa7cf33}
+      \strng{fullhash}{b08affb927b1cfd18bcb246bdaa7cf33}
+      \field{sortinit}{M}
+      \field{sortinithash}{2684bec41e9697b92699b46491061da2}
+      \field{labelyear}{2000}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{State \& Local Government Review}
+      \field{title}{Special-district formation among the states}
+      \field{year}{2000}
+      \field{pages}{121\bibrangedash 131}
+      \range{pages}{11}
+    \endentry
+    \entry{mouritzen_danish_2010}{incollection}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=498b83839f76c4895970370da3247e3c}{%
+           family={Mouritzen},
+           family_i={M\bibinitperiod},
+           given={Poul\bibnamedelima Erik},
+           given_i={P\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=29166976a2992373bfc539d3ccae538e}{%
+           family={Baldersheim},
+           family_i={B\bibinitperiod},
+           given={Harald},
+           given_i={H\bibinitperiod}}}%
+        {{hash=8f31ca4c1d0bf6b06f0b15dfe1a4b8fc}{%
+           family={Rose},
+           family_i={R\bibinitperiod},
+           given={Lawrence\bibnamedelima E.},
+           given_i={L\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{1}{%
+        {Palgrave Macmillan UK}%
+      }
+      \strng{namehash}{498b83839f76c4895970370da3247e3c}
+      \strng{fullhash}{498b83839f76c4895970370da3247e3c}
+      \field{sortinit}{M}
+      \field{sortinithash}{2684bec41e9697b92699b46491061da2}
+      \field{labelyear}{2010}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{booktitle}{Territorial {Choice}}
+      \field{isbn}{978-1-349-31340-2 978-0-230-28982-6}
+      \field{note}{DOI: 10.1057/9780230289826\_2}
+      \field{shorttitle}{The {Danish} {Revolution} in {Local} {Government}}
+      \field{title}{The {Danish} {Revolution} in {Local} {Government}: {How} and {Why}?}
+      \field{urlday}{01}
+      \field{urlmonth}{06}
+      \field{urlyear}{2016}
+      \field{year}{2010}
+      \field{pages}{21\bibrangedash 41}
+      \range{pages}{21}
+      \verb{url}
+      \verb http://link.springer.com/chapter/10.1057/9780230289826_2
+      \endverb
+      \keyw{Comparative Politics,European Politics,European Union Politics,Political Science,Public Policy}
+    \endentry
+    \entry{oates_fiscal_1972}{book}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=114365394da6e01c0f48a7dcce6b1f82}{%
+           family={Oates},
+           family_i={O\bibinitperiod},
+           given={Wallace\bibnamedelima E.},
+           given_i={W\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Edward Elgar Publishing}%
+      }
+      \strng{namehash}{114365394da6e01c0f48a7dcce6b1f82}
+      \strng{fullhash}{114365394da6e01c0f48a7dcce6b1f82}
+      \field{sortinit}{O}
+      \field{sortinithash}{7803d2715d5e795e70382b084ab8d00e}
+      \field{labelyear}{1972}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Fiscal federalism}
+      \field{urlday}{02}
+      \field{urlmonth}{06}
+      \field{urlyear}{2016}
+      \field{year}{1972}
+    \endentry
+    \entry{prud1995dangers}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=b5f65c3be792b9b1cad366acac1dd541}{%
+           family={Prud'Homme},
+           family_i={P\bibinitperiod},
+           given={Remy},
+           given_i={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {World Bank}%
+      }
+      \strng{namehash}{b5f65c3be792b9b1cad366acac1dd541}
+      \strng{fullhash}{b5f65c3be792b9b1cad366acac1dd541}
+      \field{sortinit}{P}
+      \field{sortinithash}{c0a4896d0e424f9ca4d7f14f2b3428e7}
+      \field{labelyear}{1995}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The world bank research observer}
+      \field{number}{2}
+      \field{title}{The dangers of decentralization}
+      \field{volume}{10}
+      \field{year}{1995}
+      \field{pages}{201\bibrangedash 220}
+      \range{pages}{20}
+    \endentry
+    \entry{Haryana}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=732fb432ac72880ffca54bb6302c9203}{%
+           family={PTI},
+           family_i={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{732fb432ac72880ffca54bb6302c9203}
+      \strng{fullhash}{732fb432ac72880ffca54bb6302c9203}
+      \field{sortinit}{P}
+      \field{sortinithash}{c0a4896d0e424f9ca4d7f14f2b3428e7}
+      \field{labelyear}{2016}
+      \field{labelmonth}{04}
+      \field{labelday}{20}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{20}
+      \field{journaltitle}{The Times of India}
+      \field{month}{04}
+      \field{title}{Haryana mulls creation of three new districts}
+      \field{urlday}{31}
+      \field{urlmonth}{05}
+      \field{urlyear}{2016}
+      \field{year}{2016}
+      \verb{url}
+      \verb http://timesofindia.indiatimes.com/city/chandigarh/Haryana-mulls-creation-of-three-new-districts/articleshow/51915065.cms
+      \endverb
+    \endentry
+    \entry{scharpf_governing_1999}{book}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=9b954bfd2041fb34f10d6898bf2530fe}{%
+           family={Scharpf},
+           family_i={S\bibinitperiod},
+           given={Fritz\bibnamedelima W.},
+           given_i={F\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{9b954bfd2041fb34f10d6898bf2530fe}
+      \strng{fullhash}{9b954bfd2041fb34f10d6898bf2530fe}
+      \field{sortinit}{S}
+      \field{sortinithash}{fd1e7c5ab79596b13dbbb67f8d70fb5a}
+      \field{labelyear}{1999}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{shorttitle}{Governing in {Europe}}
+      \field{title}{Governing in {Europe}: effective and democratic?}
+      \field{year}{1999}
+    \endentry
+    \entry{smoke2015rethinking}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=f8df6347026e6c4a40e8a37e2aa88c7d}{%
+           family={Smoke},
+           family_i={S\bibinitperiod},
+           given={Paul},
+           given_i={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{f8df6347026e6c4a40e8a37e2aa88c7d}
+      \strng{fullhash}{f8df6347026e6c4a40e8a37e2aa88c7d}
+      \field{sortinit}{S}
+      \field{sortinithash}{fd1e7c5ab79596b13dbbb67f8d70fb5a}
+      \field{labelyear}{2015}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Public Administration and Development}
+      \field{number}{2}
+      \field{title}{Rethinking decentralization: assessing challenges to a popular public sector reform}
+      \field{volume}{35}
+      \field{year}{2015}
+      \field{pages}{97\bibrangedash 112}
+      \range{pages}{16}
+    \endentry
+    \entry{strang1987administrative}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=0ab68f6c66a2d2ff685229e4ec972119}{%
+           family={Strang},
+           family_i={S\bibinitperiod},
+           given={David},
+           given_i={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {JSTOR}%
+      }
+      \strng{namehash}{0ab68f6c66a2d2ff685229e4ec972119}
+      \strng{fullhash}{0ab68f6c66a2d2ff685229e4ec972119}
+      \field{sortinit}{S}
+      \field{sortinithash}{fd1e7c5ab79596b13dbbb67f8d70fb5a}
+      \field{labelyear}{1987}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Administrative Science Quarterly}
+      \field{title}{The administrative transformation of American education: School district consolidation, 1938-1980}
+      \field{year}{1987}
+      \field{pages}{352\bibrangedash 366}
+      \range{pages}{15}
+    \endentry
+    \entry{tanzi1996macroeconomic}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=28671b66f608f008531fa9f0256c69af}{%
+           family={Tanzi},
+           family_i={T\bibinitperiod},
+           given={Vito},
+           given_i={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{28671b66f608f008531fa9f0256c69af}
+      \strng{fullhash}{28671b66f608f008531fa9f0256c69af}
+      \field{sortinit}{T}
+      \field{sortinithash}{423d138a005a533b47e6475e39378bf2}
+      \field{labelyear}{1996}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Annual World Bank conference on development economics}
+      \field{title}{Macroeconomic Aspects}
+      \field{year}{1996}
+      \field{pages}{295\bibrangedash 317}
+      \range{pages}{23}
+    \endentry
+    \entry{tiebout_economies_1960}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=0e82b0466433dc3c421937cc98056161}{%
+           family={Tiebout},
+           family_i={T\bibinitperiod},
+           given={Charles\bibnamedelima M.},
+           given_i={C\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{0e82b0466433dc3c421937cc98056161}
+      \strng{fullhash}{0e82b0466433dc3c421937cc98056161}
+      \field{sortinit}{T}
+      \field{sortinithash}{423d138a005a533b47e6475e39378bf2}
+      \field{labelyear}{1960}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0034-6535}
+      \field{journaltitle}{The Review of Economics and Statistics}
+      \field{number}{4}
+      \field{title}{Economies of {Scale} and {Metropolitan} {Governments}}
+      \field{urlday}{01}
+      \field{urlmonth}{06}
+      \field{urlyear}{2016}
+      \field{volume}{42}
+      \field{year}{1960}
+      \field{pages}{442\bibrangedash 444}
+      \range{pages}{3}
+      \verb{doi}
+      \verb 10.2307/1925694
+      \endverb
+      \verb{url}
+      \verb http://www.jstor.org/stable/1925694
+      \endverb
+    \endentry
+  \endsortlist
+\endrefsection
+\endinput
+

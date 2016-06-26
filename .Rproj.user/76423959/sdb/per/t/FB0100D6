@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "#Everything that exists is an object.\n#Everything that happens is a function call.\n\nlibrary(foreign)\nlibrary(stargazer)\nlibrary(plyr)\nlibrary(reshape)\n\nFiles <- list.files(pattern = \"*.csv\")\n#ssamaster <- ldply(lapply(Files[1], read.csv))\n#ssamaster <- ssamaster[, -c(10, 13, 15)]\n#colnames(ssamaster) <- c(\"year\", \"distcode\", \"dist\", \"talukcode\", \"taluk\", \"clucode\", \"cluster\", \"ssacode\", \"schoolname\", \"schooltype\", \"schoolcat\", \"management\")\n\nmaster <- ldply(lapply(Files[4], read.csv))\nmaster <- master[, -c(1, 5, 6, 7, 8, 9)]\ntaluk <- as.character(unique(master$taluk))\n\nmasterlist <- split(master, master$taluk, drop = TRUE)\n\nsslc.07 <- ldply(lapply(Files[2], read.csv))\n",
+    "created" : 1466937206254.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3503038817",
+    "id" : "FB0100D6",
+    "lastKnownWriteTime" : 1466937214,
+    "last_content_update" : 1466937214737,
+    "path" : "D:/Share Point/OneDrive/GitHub/greek-salad/DataPrep.R",
+    "project_path" : "DataPrep.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
