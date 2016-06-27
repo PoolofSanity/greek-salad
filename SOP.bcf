@@ -2104,19 +2104,20 @@
     <bcf:citekey order="6">smoke2015rethinking</bcf:citekey>
     <bcf:citekey order="7">tiebout_economies_1960</bcf:citekey>
     <bcf:citekey order="8">oates_fiscal_1972</bcf:citekey>
-    <bcf:citekey order="9">Mamata</bcf:citekey>
-    <bcf:citekey order="10">Telengana</bcf:citekey>
-    <bcf:citekey order="11">Haryana</bcf:citekey>
-    <bcf:citekey order="12">tomio2005creation</bcf:citekey>
-    <bcf:citekey order="13">turgel2008new</bcf:citekey>
-    <bcf:citekey order="14">mouritzen_danish_2010</bcf:citekey>
-    <bcf:citekey order="15">bikker_scale_2016</bcf:citekey>
-    <bcf:citekey order="16">strang1987administrative</bcf:citekey>
-    <bcf:citekey order="17">mccabe2000special</bcf:citekey>
-    <bcf:citekey order="18">tanzi1996macroeconomic</bcf:citekey>
-    <bcf:citekey order="19">prud1995dangers</bcf:citekey>
-    <bcf:citekey order="20">faguet2008decentralization</bcf:citekey>
-    <bcf:citekey order="21">driscoll2003school</bcf:citekey>
+    <bcf:citekey order="9">holzer2009literature</bcf:citekey>
+    <bcf:citekey order="10">Mamata</bcf:citekey>
+    <bcf:citekey order="11">Telengana</bcf:citekey>
+    <bcf:citekey order="12">Haryana</bcf:citekey>
+    <bcf:citekey order="13">tomio2005creation</bcf:citekey>
+    <bcf:citekey order="14">turgel2008new</bcf:citekey>
+    <bcf:citekey order="15">mouritzen_danish_2010</bcf:citekey>
+    <bcf:citekey order="16">bikker_scale_2016</bcf:citekey>
+    <bcf:citekey order="17">strang1987administrative</bcf:citekey>
+    <bcf:citekey order="18">mccabe2000special</bcf:citekey>
+    <bcf:citekey order="19">tanzi1996macroeconomic</bcf:citekey>
+    <bcf:citekey order="20">prud1995dangers</bcf:citekey>
+    <bcf:citekey order="21">faguet2008decentralization</bcf:citekey>
+    <bcf:citekey order="22">driscoll2003school</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="nty/global/" type="entry" sortscheme="nty" sortnamekeyscheme="global" labelprefix="">
   <bcf:sorting>

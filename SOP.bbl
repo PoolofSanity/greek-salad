@@ -261,6 +261,29 @@
       \field{pages}{1294\bibrangedash 1316}
       \range{pages}{23}
     \endentry
+    \entry{holzer2009literature}{book}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=ebeb1846f5071365af40d7e5b39bc5d6}{%
+           family={Holzer},
+           family_i={H\bibinitperiod},
+           given={Marc},
+           given_i={M\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Rutgers--Newark, School of Public Affairs}%
+        {Administration}%
+      }
+      \strng{namehash}{ebeb1846f5071365af40d7e5b39bc5d6}
+      \strng{fullhash}{ebeb1846f5071365af40d7e5b39bc5d6}
+      \field{sortinit}{H}
+      \field{sortinithash}{82012198d5dfa657b8c4a168793268a6}
+      \field{labelyear}{2009}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Literature review and analysis related to optimal municipal size and efficiency}
+      \field{year}{2009}
+    \endentry
     \entry{Mamata}{article}{}
       \name{author}{1}{}{%
         {{uniquename=0,hash=ecedbea8756d088b7d460123bb73c800}{%

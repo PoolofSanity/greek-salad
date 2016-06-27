@@ -1,20 +1,20 @@
 [0] Config.pm:343> INFO - This is Biber 2.5
-[1] Config.pm:346> INFO - Logfile is 'SOP.blg'
-[80] biber-MSWIN64:290> INFO - === 
-[118] Biber.pm:351> INFO - Reading 'SOP.bcf'
-[258] Biber.pm:776> INFO - Found 20 citekeys in bib section 0
-[278] Biber.pm:3493> INFO - Processing section 0
-[311] Biber.pm:3657> INFO - Looking for bibtex format file 'sop.bib' for section 0
-[321] bibtex.pm:1187> INFO - Decoding LaTeX character macros into UTF-8
-[330] bibtex.pm:1048> INFO - Found BibTeX data source 'sop.bib'
-[364] Utils.pm:149> WARN - Range field 'pages' in entry 'tomio2005creation' is malformed, skipping
-[394] Utils.pm:149> WARN - ISBN '978-1-349-31340-2 978-0-230-28982-6' in entry 'mouritzen_danish_2010' is invalid - run biber with '--validate_datamodel' for details.
-[477] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[477] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[477] Biber.pm:3306> INFO - Sorting list 'nty/global/' of type 'entry' with scheme 'nty' and locale 'en-US'
-[477] Biber.pm:3310> INFO - No sort tailoring available for locale 'en-US'
-[516] bbl.pm:526> INFO - Writing 'SOP.bbl' with encoding 'ascii'
-[520] Utils.pm:149> WARN - The entry 'hansen_size_2014' has characters which cannot be encoded in 'ascii'. Recoding problematic characters into macros.
-[525] Utils.pm:149> WARN - The entry 'tomio2005creation' has characters which cannot be encoded in 'ascii'. Recoding problematic characters into macros.
-[525] bbl.pm:619> INFO - Output to SOP.bbl
-[529] Biber.pm:108> INFO - WARNINGS: 4
+[0] Config.pm:346> INFO - Logfile is 'SOP.blg'
+[68] biber-MSWIN64:290> INFO - === 
+[107] Biber.pm:351> INFO - Reading 'SOP.bcf'
+[238] Biber.pm:776> INFO - Found 21 citekeys in bib section 0
+[257] Biber.pm:3493> INFO - Processing section 0
+[287] Biber.pm:3657> INFO - Looking for bibtex format file 'sop.bib' for section 0
+[297] bibtex.pm:1187> INFO - Decoding LaTeX character macros into UTF-8
+[306] bibtex.pm:1048> INFO - Found BibTeX data source 'sop.bib'
+[334] Utils.pm:149> WARN - Range field 'pages' in entry 'tomio2005creation' is malformed, skipping
+[364] Utils.pm:149> WARN - ISBN '978-1-349-31340-2 978-0-230-28982-6' in entry 'mouritzen_danish_2010' is invalid - run biber with '--validate_datamodel' for details.
+[437] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[438] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[438] Biber.pm:3306> INFO - Sorting list 'nty/global/' of type 'entry' with scheme 'nty' and locale 'en-US'
+[438] Biber.pm:3310> INFO - No sort tailoring available for locale 'en-US'
+[474] bbl.pm:526> INFO - Writing 'SOP.bbl' with encoding 'ascii'
+[477] Utils.pm:149> WARN - The entry 'hansen_size_2014' has characters which cannot be encoded in 'ascii'. Recoding problematic characters into macros.
+[482] Utils.pm:149> WARN - The entry 'tomio2005creation' has characters which cannot be encoded in 'ascii'. Recoding problematic characters into macros.
+[482] bbl.pm:619> INFO - Output to SOP.bbl
+[486] Biber.pm:108> INFO - WARNINGS: 4
