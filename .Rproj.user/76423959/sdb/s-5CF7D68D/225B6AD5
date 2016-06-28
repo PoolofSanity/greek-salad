@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "#Everything that exists is an object.\n#Everything that happens is a function call.\n\nsetwd(\"D:/Share Point/OneDrive/Comprehensive Exam - Data files\")\n\nlibrary(foreign)\nlibrary(stargazer)\nlibrary(plyr)\nlibrary(reshape)\n\noptions(scipen = 999, digits=2)\nFiles <- list.files(pattern = \"*.csv\")\n\n#Initializing Functions\nna.zero <- function (x) {\n  x[is.na(x)] <- 999\n  return(x)\n}\n\nData <- lapply(Files[1:8], read.csv)\ntaluk.all <- list()\nfor (i in 1:8){\n  taluk.all[[i]] <- Data[[i]][,4]\n}\ntaluk.all <- Reduce(intersect, taluk.all)\n\ncategory <- c(3, 5, 6, 7, 8, 10)\nmanage <- c(1, 2, 3, 4)\ntaluk <- c(\"AFZALPUR\", \"ALAND\", \"BAGEPALLY\", \"BANGARAPETE\", \"CHANNAPATNA\", \"CHIKKABALLAPUR\", \"CHINCHOLI\", \"CHINTAMANI\", \"CHITTAPUR\", \"DEVANAHALLI\", \"DODDABALLAPURA\", \"GOWRIBIDANUR\", \"GUDIBANDA\", \"GULBARGA NORTH\", \"GULBARGA SOUTH\", \"HOSAKOTE\", \"JEWARGI\", \"K G F\", \"KANAKAPURA\", \"KOLAR\", \"MAGADI\", \"MALUR\", \"MULBAGAL\", \"NELAMANGALA\", \"RAMANAGARA\", \"SEDAM\", \"SHAHAPUR\", \"SHORAPUR\", \"SIDLAGHATTA\", \"SRINIVASAPUR\", \"YADGIR\")\nexclude <- c(\"SOUTH1\", \"ANEKAL\", \"SOUTH2\", \"SOUTH3\", \"SOUTH4\", \"NORTH4\", \"NORTH1\", \"NORTH2\", \"NORTH3\")\n\nk <- data.frame(matrix(0, nrow = 29, ncol = 9))\nk[,1:4] <- c(1, 4, 8, 9, 15, 18, 20, 22, 23, 28:31, 36, 44:49, 51, 55:62)\nk[,5] <- c(2, 4, 9, 10, 16, 19, 21, 23, 24, 29:32, 37, 46, 51:55, 57, 62:69)\nk[,6] <- c(2, 4, 9, 10, 16, 19, 21, 23, 24, 29:32, 37, 46, 51:55, 57, 61:68)\nk[,7] <- c(1, 4, 9, 10, 16, 19, 21, 23, 24, 29:32, 36, 45, 50:54, 56, 60:67)\nk[,8] <- c(2, 4, 9, 10, 16, 19, 21, 23, 24, 29:32, 37, 46, 51:55, 57, 61:68)\n\nfor(i in 1:8){\n  Data[[i]] <- Data[[i]][,k[,i]]\n  colnames(Data[[i]]) <- c(\"School_Code\", \"Block_Name\", \"Rural_Urban\", \"Medium\", \"Sch_Management\", \"Sch_Category\", \"School_Type\", \"No_of_Working_Days\", \"No_of_Acad_Inspection\", \"School_Dev_Grant_Recd\", \"School_Dev_Grant_Expnd\", \"TLM_Grant_Recd\", \"TLM_Grant_Expnd\", \"Tot_Clrooms\", \"Toilet_Girls\", \"Electricity\", \"Boundary_Wall\", \"Library\", \"PlayGround\", \"Blackboard\", \"Drinking_Water\", \"Male_Tch\", \"Female_Tch\", \"NoResp_Tch\", \"Head_Teacher\", \"Graduate_Teachers\", \"Tch_with_Prof_Qual\", \"Days_involved_in_non_tch_assgn\", \"Teachers_involved_in_non_tch_assgn\")\n  Data[[i]] <- na.zero(Data[[i]])\n  Data[[i]]$acyear <- i\n}\n\nData <- ldply(Data)\nData <- droplevels(subset(Data, eval(is.element(Data$Sch_Category, category))))\nData <- droplevels(subset(Data, eval(is.element(Data$Block_Name, taluk.all))))\nData <- droplevels(subset(Data, eval(is.element(Data$Block_Name, exclude) == 0)))\nData[Data$Toilet_Girls >= 1, 15] = 1\nData[eval(Data$Electricity == 2 | Data$Electricity == 3), 16] = 0\nData[Data$Library == 2, 18] = 0\nData[Data$PlayGround == 2, 19] = 0\nData[Data$Rural_Urban == 2, 3] = 0\nData$Public <- rep(0, nrow(Data))\nData[is.element(Data[,5], manage), 31] = 1\nData$Split <- rep(0, nrow(Data))\nData[is.element(Data[,2], taluk), 32] = 1\n\n\n#Set up to Aggregate\nData <- Data[,-c(1, 4:7, 17, 20, 21, 24, 25)]\nDataset <- aggregate(Data, by = list(Data$Block_Name, Data$acyear), mean)[,-c(2, 3)]\ncolnames(Dataset)[1] <- \"taluk\"\n\nsetwd(\"D:/Share Point/OneDrive/GitHub/greek-salad\")\nwrite.csv(Dataset, \"ssa.csv\")\n",
+    "created" : 1467107640778.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4148957137",
+    "id" : "225B6AD5",
+    "lastKnownWriteTime" : 1467109249,
+    "last_content_update" : 1467109249795,
+    "path" : "D:/Share Point/OneDrive/GitHub/greek-salad/DataPrep.R",
+    "project_path" : "DataPrep.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

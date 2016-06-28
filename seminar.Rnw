@@ -17,6 +17,24 @@
 \paragraph{}In this paper, I propose to study the reorganisation of local government and relate it to the quality of public service delivery - specifically, the quality of public education. Public education is not seen as imposing strong externalities on neighbouring regions, nor does it have large scale effects. Therefore, under the classic explanation, a smaller district should be able to provide better service. At the same time, we might need to build administrative capacity when a larger district is split into two or more before any benefits can be reaped. Also, if the districts are too small in the first place, there might be some benefit in consolidating two or more districts and managing them together. There is evidence from the decentralisation reforms in Bolivia and Columbia to suggest that decentralisation has enhanced the local allocative efficiency of public funds. Notably, it has resulted in shifting resources towards education in regions where education performance has historically been worse. But data limitations prevent the authors from testing whether the improvement extends to education outcomes, such as literacy and test scores \parencite{faguet2008decentralization}. Also, there is evidence from California state, to suggest that students in smaller districts perform better than those in larger districts in standardised tests after controlling for a variety of other factors \parencite{driscoll2003school}.
 The effect of each of these policies - bifurcation or consolidation or a combination of both - depends on the particular context and capabilities of the local administrative body. 
 \paragraph{Identification} In the last decade Karnataka state in the south of India carved out three new districts from three existing ones. A new district is created by reallocating some of the taluks (sub-districts) within a district to a new one. Two new districts were created from two existing ones in 2007, and a third new district was created from an existing one in 2010 taking the total in the state up to 30. Creation of a new district entail additional administrative costs as the n In this paper I estimate the effect of the bifurcation of the administrative district on the public spending and quality of educational service delivered in the district. The identification is complicated by the fact the districts that were not split may be different from those that were. The demand for creation a new district usually arises from within the district, and the political traction gained by the idea has a role to play in the eventual decision made by the state. The basic idea of the identification strategy is thus to determine whether the relative disadvantage in budget allocation and spending in the taluks of bifurcated districts and non bifurcated districts is declining over time.
-	
+
+<<clip0, echo=FALSE, eval=TRUE, results=tex>>=
+#Everything that exists is an object.
+#Everything that happens is a function call.
+
+library(foreign)
+library(stargazer)
+library(plyr)
+library(reshape)
+
+options(scipen = 999, digits=2)
+Files <- list.files(pattern = "*.csv")
+Data <- ldply(lapply(Files, read.csv))[,-1]
+@
+
+<<clip1, echo=FALSE, eval=TRUE, results=tex>>=
+#Basic Regressions
+fit <- lm()
+@
 	\printbibliography
 \end{document}
