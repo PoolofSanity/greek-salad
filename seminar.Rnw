@@ -34,7 +34,8 @@ Data <- ldply(lapply(Files, read.csv))[,-1]
 
 <<clip1, echo=FALSE, eval=TRUE, results=tex>>=
 #Basic Regressions
-fit <- lm()
+fit <- lm(No_of_Acad_Inspection ~ Public + Split + acyear, Data)
+stargazer(fit)
 @
 	\printbibliography
 \end{document}
