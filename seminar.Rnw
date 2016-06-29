@@ -1,5 +1,6 @@
 \documentclass[12pt, a4paper]{article}
 \usepackage{geometry}
+\usepackage{pdflscape}
 \usepackage[backend = biber, citestyle = authoryear, url = false]{biblatex}
 \usepackage{hyperref}
 \addbibresource{sop.bib}
@@ -29,13 +30,26 @@ library(reshape)
 
 options(scipen = 999, digits=2)
 Files <- list.files(pattern = "*.csv")
-Data <- ldply(lapply(Files, read.csv))[,-1]
 @
 
 <<clip1, echo=FALSE, eval=TRUE, results=tex>>=
+
 #Basic Regressions
-fit <- lm(No_of_Acad_Inspection ~ Public + Split + acyear, Data)
+Data <- ldply(lapply(Files[2], read.csv))[,-1]
+Data$Post <- rep(0, nrow(Data))
+Bifur <- c(2008:2013)
+Data[is.element(Data[,21], Bifur), 24] = 1
+fit <- lm(School_Dev_Grant_Recd ~ Split*Post, data = subset(Data, Dist_Name != "GULBARGA"))
 stargazer(fit)
 @
+\clearpage
+\section{Appendix}
+\begin{landscape}
+<<Appendix, echo=FALSE, eval=TRUE, results=tex>>=
+#Summary Table
+Appendix <- ldply(lapply(Files[1], read.csv))[,-1]
+stargazer(Appendix, summary = FALSE, digits = 1, font.size = "footnotesize")
+@
+\end{landscape}
 	\printbibliography
 \end{document}
