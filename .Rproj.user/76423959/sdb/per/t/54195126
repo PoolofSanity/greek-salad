@@ -1,14 +1,14 @@
 {
     "collab_server" : "",
-    "contents" : "#From this point on:\n#\n#Everything that exists is an object.\n#Everything that happens is a function call.\n\nsetwd(\"D:/Share Point/OneDrive/Comprehensive Exam - Data files/SSLC Data\")\n\nlibrary(foreign)\nlibrary(stargazer)\nlibrary(plyr)\nlibrary(reshape)\n\noptions(scipen = 999, digits=2)\nFiles <- list.files(pattern = \"*.csv\")\n\n#Initializing Functions\nna.zero <- function (x) {\n  x[is.na(x)] <- 999\n  return(x)\n}\n\nData <- list()\nk <- data.frame(matrix(0, nrow = 9, ncol = 9))\nk[,1:8] <- c(4, 23, 31, 39, 47, 58, 66, 81, 82)\nk[,9] <- c(6, 28, 32, 34, 37, 40, 43, 19, 20)\n\nYear <- c(2005:2013)\n\nfor(i in 1){\n  Data <- lapply(Files[i], read.csv)\n  Data[[i]] <- Data[[i]][,k[,i]]\n  colnames(Data[[i]]) <- c(\"School_Code\", \"Marks1\", \"Marks2\", \"Marks3\", \"Marks4\", \"Marks5\", \"Marks6\", \"Total\", \"Result\")\n  Data[[i]] <- aggregate(Data[[i]], by = list(Data[[i]]$School_Code), mean, na.action = na.omit)\n  #Data[[i]]$acyear <- Year[i]\n  }\n\n#setting up a table to match schoolcodes with taluks\n#lookup <- unique(Data[[9]][,c(1, 3)])\n\nData <- ldply(Data)\n#Data <- aggregate(Data, by = list(Data$School_Code), mean)[,-2]\n#colnames(Data)[1] <- \"School_Code\"\n\n#colnames(ldply(lapply(Files[3], read.csv)))\n",
+    "contents" : "#From this point on:\n#\n#Everything that exists is an object.\n#Everything that happens is a function call.\n\nsetwd(\"D:/Share Point/OneDrive/Comprehensive Exam - Data files/SSLC Data\")\n\nlibrary(foreign)\nlibrary(stargazer)\nlibrary(plyr)\nlibrary(reshape)\n\noptions(scipen = 999, digits=2)\nFiles <- list.files(pattern = \"*.csv\")\n\n#Initializing Functions\nna.zero <- function (x) {\n  x[is.na(x)] <- 999\n  return(x)\n}\n\nk <- data.frame(matrix(0, nrow = 9, ncol = 9))\nk[,1:8] <- c(4, 23, 31, 39, 47, 58, 66, 81, 82)\nk[,9] <- c(6, 28, 32, 34, 37, 40, 43, 19, 20)\n\nYear <- c(2005:2013)\nexclude <- c(0:150)\n\nData <- ldply(lapply(Files[1], read.csv))\nData <- Data[,k[,1]]\ncolnames(Data) <- c(\"School.Code\", \"Marks1\", \"Marks2\", \"Marks3\", \"Marks4\", \"Marks5\", \"Marks6\", \"Total\", \"Result\")\nData <- na.zero(Data)\ntest <- Data\nfor(i in 2:7){\n  test <- droplevels(subset(test, eval(is.element(test[,i], exclude))))  \n}\n\nAggData <- aggregate(test, by = list(test$School.Code), mean)[,-2]\ncolnames(AggData)[1] <- \"School.Code\"\n\n",
     "created" : 1467217262896.000,
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "3538334323",
+    "hash" : "2030940874",
     "id" : "54195126",
-    "lastKnownWriteTime" : 1467224197,
-    "last_content_update" : 1467224197646,
+    "lastKnownWriteTime" : 1467307226,
+    "last_content_update" : 1467307226608,
     "path" : "D:/Share Point/OneDrive/GitHub/greek-salad/SSLCPrep.R",
     "project_path" : "SSLCPrep.R",
     "properties" : {

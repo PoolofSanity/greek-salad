@@ -1,0 +1,28 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1467274996551.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "77806B8D",
+    "lastKnownWriteTime" : 0,
+    "last_content_update" : 1467274996551,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "zb46dpolm2",
+        "caption" : "AggData",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=AggData&cache_key=zb46dpolm2",
+        "displayedObservations" : "9349",
+        "environment" : "",
+        "object" : "AggData",
+        "totalObservations" : "9349",
+        "variables" : "9"
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}
