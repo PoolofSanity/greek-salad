@@ -38,3 +38,125 @@ for(i in 2:7){
 AggData <- aggregate(test, by = list(test$School.Code), mean)[,-2]
 colnames(AggData)[1] <- "School.Code"
 
+Dataset <- list()
+Dataset[[1]] <- AggData
+
+Data <- ldply(lapply(Files[2], read.csv))
+Data <- Data[,k[,2]]
+colnames(Data) <- c("School.Code", "Marks1", "Marks2", "Marks3", "Marks4", "Marks5", "Marks6", "Total", "Result")
+Data <- na.zero(Data)
+test <- Data
+for(i in 2:7){
+  test <- droplevels(subset(test, eval(is.element(test[,i], exclude))))  
+}
+
+AggData <- aggregate(test, by = list(test$School.Code), mean)[,-2]
+colnames(AggData)[1] <- "School.Code"
+
+Dataset[[2]] <- AggData
+
+Data <- ldply(lapply(Files[3], read.csv))
+Data <- Data[,k[,3]]
+colnames(Data) <- c("School.Code", "Marks1", "Marks2", "Marks3", "Marks4", "Marks5", "Marks6", "Total", "Result")
+Data <- na.zero(Data)
+test <- Data
+for(i in 2:7){
+  test <- droplevels(subset(test, eval(is.element(test[,i], exclude))))  
+}
+
+AggData <- aggregate(test, by = list(test$School.Code), mean)[,-2]
+colnames(AggData)[1] <- "School.Code"
+
+Dataset[[3]] <- AggData
+
+Data <- ldply(lapply(Files[4], read.csv))
+Data <- Data[,k[,4]]
+colnames(Data) <- c("School.Code", "Marks1", "Marks2", "Marks3", "Marks4", "Marks5", "Marks6", "Total", "Result")
+Data <- na.zero(Data)
+test <- Data
+for(i in 2:7){
+  test <- droplevels(subset(test, eval(is.element(test[,i], exclude))))  
+}
+
+AggData <- aggregate(test, by = list(test$School.Code), mean)[,-2]
+colnames(AggData)[1] <- "School.Code"
+
+Dataset[[4]] <- AggData
+
+Data <- ldply(lapply(Files[5], read.csv))
+Data <- Data[,k[,5]]
+colnames(Data) <- c("School.Code", "Marks1", "Marks2", "Marks3", "Marks4", "Marks5", "Marks6", "Total", "Result")
+Data <- na.zero(Data)
+test <- Data
+for(i in 2:7){
+  test <- droplevels(subset(test, eval(is.element(test[,i], exclude))))  
+}
+
+AggData <- aggregate(test, by = list(test$School.Code), mean)[,-2]
+colnames(AggData)[1] <- "School.Code"
+
+Dataset[[5]] <- AggData
+
+Data <- ldply(lapply(Files[6], read.csv))
+Data <- Data[,k[,6]]
+colnames(Data) <- c("School.Code", "Marks1", "Marks2", "Marks3", "Marks4", "Marks5", "Marks6", "Total", "Result")
+Data <- na.zero(Data)
+test <- Data
+for(i in 2:7){
+  test <- droplevels(subset(test, eval(is.element(test[,i], exclude))))  
+}
+
+AggData <- aggregate(test, by = list(test$School.Code), mean)[,-2]
+colnames(AggData)[1] <- "School.Code"
+
+Dataset[[6]] <- AggData
+
+Data <- ldply(lapply(Files[7], read.csv))
+Data <- Data[,k[,7]]
+colnames(Data) <- c("School.Code", "Marks1", "Marks2", "Marks3", "Marks4", "Marks5", "Marks6", "Total", "Result")
+Data <- na.zero(Data)
+test <- Data
+for(i in 2:7){
+  test <- droplevels(subset(test, eval(is.element(test[,i], exclude))))  
+}
+
+AggData <- aggregate(test, by = list(test$School.Code), mean)[,-2]
+colnames(AggData)[1] <- "School.Code"
+
+Dataset[[7]] <- AggData
+
+Data <- ldply(lapply(Files[8], read.csv))
+Data <- Data[,k[,8]]
+colnames(Data) <- c("School.Code", "Marks1", "Marks2", "Marks3", "Marks4", "Marks5", "Marks6", "Total", "Result")
+Data <- na.zero(Data)
+test <- Data
+for(i in 2:7){
+  test <- droplevels(subset(test, eval(is.element(test[,i], exclude))))  
+}
+
+AggData <- aggregate(test, by = list(test$School.Code), mean)[,-2]
+colnames(AggData)[1] <- "School.Code"
+
+Dataset[[8]] <- AggData
+
+Data <- ldply(lapply(Files[9], read.csv))
+Data <- Data[,k[,9]]
+colnames(Data) <- c("School.Code", "Marks1", "Marks2", "Marks3", "Marks4", "Marks5", "Marks6", "Total", "Result")
+Data <- na.zero(Data)
+test <- Data
+for(i in 2:7){
+  test <- droplevels(subset(test, eval(is.element(test[,i], exclude))))  
+}
+
+AggData <- aggregate(test, by = list(test$School.Code), mean)[,-2]
+colnames(AggData)[1] <- "School.Code"
+
+Dataset[[9]] <- AggData
+
+for(i in 1:9){
+  Dataset[[i]]$Year <- Year[i]
+}
+
+Data <- ldply(Dataset)
+setwd("D:/Share Point/OneDrive/GitHub/greek-salad")
+write.csv(Data, "sslc_school.csv")
