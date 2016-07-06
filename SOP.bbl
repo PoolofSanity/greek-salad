@@ -49,6 +49,51 @@
       \verb https://socserv2.socsci.mcmaster.ca/econ/ugcm/3ll3/aristotle/Politics.pdf
       \endverb
     \endentry
+    \entry{avellaneda_is_2015}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=96ce30faad6a419e4cdf7a0ae6fec37a}{%
+           family={Avellaneda},
+           family_i={A\bibinitperiod},
+           given={Claudia\bibnamedelima N.},
+           given_i={C\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{uniquename=0,hash=6bda167abba7aa4e039f034ddc61c3c2}{%
+           family={Gomes},
+           family_i={G\bibinitperiod},
+           given={Ricardo\bibnamedelima Corr\^{e}a},
+           given_i={R\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{961851947db77aa6be02c448598fb838}
+      \strng{fullhash}{961851947db77aa6be02c448598fb838}
+      \field{sortinit}{A}
+      \field{sortinithash}{b685c7856330eaee22789815b49de9bb}
+      \field{labelyear}{2015}
+      \field{labelmonth}{01}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{issn}{1540-6210}
+      \field{journaltitle}{Public Administration Review}
+      \field{month}{01}
+      \field{number}{1}
+      \field{shorttitle}{Is {Small} {Beautiful}?}
+      \field{title}{Is {Small} {Beautiful}? {Testing} the {Direct} and {Nonlinear} {Effects} of {Size} on {Municipal} {Performance}}
+      \field{urlday}{01}
+      \field{urlmonth}{06}
+      \field{urlyear}{2016}
+      \field{volume}{75}
+      \field{year}{2015}
+      \field{pages}{137\bibrangedash 149}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1111/puar.12307
+      \endverb
+      \verb{url}
+      \verb http://onlinelibrary.wiley.com/doi/10.1111/puar.12307/abstract
+      \endverb
+    \endentry
     \entry{Telengana}{article}{}
       \name{author}{1}{}{%
         {{uniquename=0,hash=4c224447cb5985e2b4063e87380a986a}{%

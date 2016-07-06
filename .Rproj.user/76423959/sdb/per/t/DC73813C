@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "#From this point on:\n#\n#Everything that exists is an object.\n#Everything that happens is a function call.\n\nsetwd(\"D:/Share Point/OneDrive/GitHub/greek-salad\")\n\nlibrary(foreign)\nlibrary(stargazer)\nlibrary(plyr)\nlibrary(reshape)\n\noptions(scipen = 999, digits=2)\nFiles <- list.files(pattern = \"*.csv\")\n\n#Initializing Functions\nna.zero <- function (x) {\n  x[is.na(x)] <- 999\n  return(x)\n}\n\nsslc <- ldply(lapply(Files[4], read.csv))[,-c(1,3:5)]\ncolnames(sslc)[1] <- \"Block_Name\"\n\nssa <- ldply(lapply(Files[2], read.csv))[-1]\ntaluk.all <- unique(ssa[,1])\n\nsslc <- droplevels(subset(sslc, eval(is.element(sslc$Block_Name, taluk.all))))\n\nDataset <- data.frame(merge(sslc, ssa, by.x = c(\"Block_Name\", \"Year\"), by.y = c(\"Block_Name\", \"acyear\")))[,-10]\n\nwrite.csv(Dataset, \"timey-wimey.csv\")\n",
+    "created" : 1467623978282.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "827900755",
+    "id" : "DC73813C",
+    "lastKnownWriteTime" : 1467623946,
+    "last_content_update" : 1467623946,
+    "path" : "D:/Share Point/OneDrive/GitHub/greek-salad/DataPrep2.R",
+    "project_path" : "DataPrep2.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

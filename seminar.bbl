@@ -49,6 +49,51 @@
       \verb https://socserv2.socsci.mcmaster.ca/econ/ugcm/3ll3/aristotle/Politics.pdf
       \endverb
     \endentry
+    \entry{avellaneda_is_2015}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=96ce30faad6a419e4cdf7a0ae6fec37a}{%
+           family={Avellaneda},
+           family_i={A\bibinitperiod},
+           given={Claudia\bibnamedelima N.},
+           given_i={C\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{uniquename=0,hash=6bda167abba7aa4e039f034ddc61c3c2}{%
+           family={Gomes},
+           family_i={G\bibinitperiod},
+           given={Ricardo\bibnamedelima Corr\^{e}a},
+           given_i={R\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{961851947db77aa6be02c448598fb838}
+      \strng{fullhash}{961851947db77aa6be02c448598fb838}
+      \field{sortinit}{A}
+      \field{sortinithash}{b685c7856330eaee22789815b49de9bb}
+      \field{labelyear}{2015}
+      \field{labelmonth}{01}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{issn}{1540-6210}
+      \field{journaltitle}{Public Administration Review}
+      \field{month}{01}
+      \field{number}{1}
+      \field{shorttitle}{Is {Small} {Beautiful}?}
+      \field{title}{Is {Small} {Beautiful}? {Testing} the {Direct} and {Nonlinear} {Effects} of {Size} on {Municipal} {Performance}}
+      \field{urlday}{01}
+      \field{urlmonth}{06}
+      \field{urlyear}{2016}
+      \field{volume}{75}
+      \field{year}{2015}
+      \field{pages}{137\bibrangedash 149}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1111/puar.12307
+      \endverb
+      \verb{url}
+      \verb http://onlinelibrary.wiley.com/doi/10.1111/puar.12307/abstract
+      \endverb
+    \endentry
     \entry{Telengana}{article}{}
       \name{author}{1}{}{%
         {{uniquename=0,hash=4c224447cb5985e2b4063e87380a986a}{%
@@ -77,47 +122,6 @@
       \field{year}{2016}
       \verb{url}
       \verb http://www.newindianexpress.com/states/telangana/New-Districts-to-Precede-New-Constituencies/2016/05/07/article3419967.ece
-      \endverb
-    \endentry
-    \entry{bikker_scale_2016}{article}{}
-      \name{author}{2}{}{%
-        {{uniquename=0,hash=ea36322c86be6fb373750558f971bf91}{%
-           family={Bikker},
-           family_i={B\bibinitperiod},
-           given={Jacob},
-           given_i={J\bibinitperiod}}}%
-        {{uniquename=0,hash=b95035423443e7d48a459bdca432b01a}{%
-           family={Linde},
-           family_i={L\bibinitperiod},
-           given={Daan\bibnamedelimb van\bibnamedelima der},
-           given_i={D\bibinitperiod\bibinitdelim v\bibinitperiod\bibinitdelim d\bibinitperiod}}}%
-      }
-      \strng{namehash}{eb7a80e6e7a39802f9b792c06a66bd27}
-      \strng{fullhash}{eb7a80e6e7a39802f9b792c06a66bd27}
-      \field{sortinit}{B}
-      \field{sortinithash}{4ecbea03efd0532989d3836d1a048c32}
-      \field{labelyear}{2016}
-      \field{labelmonth}{05}
-      \field{datelabelsource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{0300-3930}
-      \field{journaltitle}{Local Government Studies}
-      \field{month}{05}
-      \field{number}{3}
-      \field{title}{Scale economies in local public administration}
-      \field{urlday}{02}
-      \field{urlmonth}{06}
-      \field{urlyear}{2016}
-      \field{volume}{42}
-      \field{year}{2016}
-      \field{pages}{441\bibrangedash 463}
-      \range{pages}{23}
-      \verb{doi}
-      \verb 10.1080/03003930.2016.1146139
-      \endverb
-      \verb{url}
-      \verb http://dx.doi.org/10.1080/03003930.2016.1146139
       \endverb
     \endentry
     \entry{hansen_size_2014}{article}{}
@@ -261,6 +265,29 @@
       \field{pages}{1294\bibrangedash 1316}
       \range{pages}{23}
     \endentry
+    \entry{holzer2009literature}{book}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=ebeb1846f5071365af40d7e5b39bc5d6}{%
+           family={Holzer},
+           family_i={H\bibinitperiod},
+           given={Marc},
+           given_i={M\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Rutgers--Newark, School of Public Affairs}%
+        {Administration}%
+      }
+      \strng{namehash}{ebeb1846f5071365af40d7e5b39bc5d6}
+      \strng{fullhash}{ebeb1846f5071365af40d7e5b39bc5d6}
+      \field{sortinit}{H}
+      \field{sortinithash}{82012198d5dfa657b8c4a168793268a6}
+      \field{labelyear}{2009}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Literature review and analysis related to optimal municipal size and efficiency}
+      \field{year}{2009}
+    \endentry
     \entry{Mamata}{article}{}
       \name{author}{1}{}{%
         {{uniquename=0,hash=ecedbea8756d088b7d460123bb73c800}{%
@@ -290,81 +317,6 @@
       \verb{url}
       \verb http://timesofindia.indiatimes.com/city/kolkata/West-Bengal-CM-Mamata-Banerjee-creates-five-new-districts/articleshow/50234830.cms
       \endverb
-    \endentry
-    \entry{mccabe2000special}{article}{}
-      \name{author}{1}{}{%
-        {{uniquename=0,hash=b08affb927b1cfd18bcb246bdaa7cf33}{%
-           family={McCabe},
-           family_i={M\bibinitperiod},
-           given={Barbara\bibnamedelima Coyle},
-           given_i={B\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {JSTOR}%
-      }
-      \strng{namehash}{b08affb927b1cfd18bcb246bdaa7cf33}
-      \strng{fullhash}{b08affb927b1cfd18bcb246bdaa7cf33}
-      \field{sortinit}{M}
-      \field{sortinithash}{2684bec41e9697b92699b46491061da2}
-      \field{labelyear}{2000}
-      \field{datelabelsource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{State \& Local Government Review}
-      \field{title}{Special-district formation among the states}
-      \field{year}{2000}
-      \field{pages}{121\bibrangedash 131}
-      \range{pages}{11}
-    \endentry
-    \entry{mouritzen_danish_2010}{incollection}{}
-      \name{author}{1}{}{%
-        {{uniquename=0,hash=498b83839f76c4895970370da3247e3c}{%
-           family={Mouritzen},
-           family_i={M\bibinitperiod},
-           given={Poul\bibnamedelima Erik},
-           given_i={P\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
-      }
-      \name{editor}{2}{}{%
-        {{hash=29166976a2992373bfc539d3ccae538e}{%
-           family={Baldersheim},
-           family_i={B\bibinitperiod},
-           given={Harald},
-           given_i={H\bibinitperiod}}}%
-        {{hash=8f31ca4c1d0bf6b06f0b15dfe1a4b8fc}{%
-           family={Rose},
-           family_i={R\bibinitperiod},
-           given={Lawrence\bibnamedelima E.},
-           given_i={L\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
-      }
-      \list{language}{1}{%
-        {en}%
-      }
-      \list{publisher}{1}{%
-        {Palgrave Macmillan UK}%
-      }
-      \strng{namehash}{498b83839f76c4895970370da3247e3c}
-      \strng{fullhash}{498b83839f76c4895970370da3247e3c}
-      \field{sortinit}{M}
-      \field{sortinithash}{2684bec41e9697b92699b46491061da2}
-      \field{labelyear}{2010}
-      \field{datelabelsource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{shorttitle}
-      \field{booktitle}{Territorial {Choice}}
-      \field{isbn}{978-1-349-31340-2 978-0-230-28982-6}
-      \field{note}{DOI: 10.1057/9780230289826\_2}
-      \field{shorttitle}{The {Danish} {Revolution} in {Local} {Government}}
-      \field{title}{The {Danish} {Revolution} in {Local} {Government}: {How} and {Why}?}
-      \field{urlday}{01}
-      \field{urlmonth}{06}
-      \field{urlyear}{2016}
-      \field{year}{2010}
-      \field{pages}{21\bibrangedash 41}
-      \range{pages}{21}
-      \verb{url}
-      \verb http://link.springer.com/chapter/10.1057/9780230289826_2
-      \endverb
-      \keyw{Comparative Politics,European Politics,European Union Politics,Political Science,Public Policy}
     \endentry
     \entry{oates_fiscal_1972}{book}{}
       \name{author}{1}{}{%
@@ -495,31 +447,6 @@
       \field{year}{2015}
       \field{pages}{97\bibrangedash 112}
       \range{pages}{16}
-    \endentry
-    \entry{strang1987administrative}{article}{}
-      \name{author}{1}{}{%
-        {{uniquename=0,hash=0ab68f6c66a2d2ff685229e4ec972119}{%
-           family={Strang},
-           family_i={S\bibinitperiod},
-           given={David},
-           given_i={D\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {JSTOR}%
-      }
-      \strng{namehash}{0ab68f6c66a2d2ff685229e4ec972119}
-      \strng{fullhash}{0ab68f6c66a2d2ff685229e4ec972119}
-      \field{sortinit}{S}
-      \field{sortinithash}{fd1e7c5ab79596b13dbbb67f8d70fb5a}
-      \field{labelyear}{1987}
-      \field{datelabelsource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Administrative Science Quarterly}
-      \field{title}{The administrative transformation of American education: School district consolidation, 1938-1980}
-      \field{year}{1987}
-      \field{pages}{352\bibrangedash 366}
-      \range{pages}{15}
     \endentry
     \entry{tanzi1996macroeconomic}{inproceedings}{}
       \name{author}{1}{}{%

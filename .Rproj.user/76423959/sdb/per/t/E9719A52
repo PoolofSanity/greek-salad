@@ -1,0 +1,28 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1467624075939.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "E9719A52",
+    "lastKnownWriteTime" : 876855781507465216,
+    "last_content_update" : 1467624075939,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "gc734nq3u0",
+        "caption" : "sslc",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=sslc&cache_key=gc734nq3u0",
+        "displayedObservations" : 1330,
+        "environment" : "",
+        "object" : "sslc",
+        "totalObservations" : 1330,
+        "variables" : 30
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

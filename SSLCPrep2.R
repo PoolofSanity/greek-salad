@@ -31,3 +31,5 @@ NewData <- FindReplace(data = Data, Var = "sslccode", replaceData = newsslccodes
 Dataset <- data.frame(merge(lookup, NewData, by = "sslccode"))
 
 taluk.data <- aggregate(Dataset, by = list(Dataset$taluk, Dataset$Year), mean)[,-2]
+
+write.csv(taluk.data, "sslc_taluk.csv")
