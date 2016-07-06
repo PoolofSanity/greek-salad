@@ -20,8 +20,11 @@ na.zero <- function (x) {
 }
 
 Data <- ldply(lapply(Files[5], read.csv))[,-c(1, 29)]
-
+#The variable all.taluks is from the environment of CensusPrep.R - Run that first! (or read it in from Z2.csv)
+all.taluks <- ldply(lapply(Files[6], read.csv))[,2]
+Data <- droplevels(subset(Data, eval(is.element(Block_Name, all.taluks))))
 #Summary Statistics
+
 Summ <- aggregate(Data, by = list(Data$Year, Data$Split), mean)
 Summ <- t(droplevels(subset(Summ, eval(Year == 2005))))
 Summ <- Summ[-c(1:10, 12),]

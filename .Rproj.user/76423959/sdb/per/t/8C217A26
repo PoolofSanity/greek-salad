@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "#From this point on:\n#\n#Everything that exists is an object.\n#Everything that happens is a function call.\n\nlibrary(foreign)\nlibrary(stargazer)\nlibrary(plyr)\nlibrary(reshape)\nlibrary(DataCombine)\noptions(scipen = 999, digits=2)\n\nsetwd(\"D:/Share Point/OneDrive/Comprehensive Exam - Data files/SSLC Data\")\nFiles <- list.files(pattern = \"*.csv\")\nnewsslccodes <- ldply(lapply(Files[11], read.csv))\nlookup <- ldply(lapply(Files[12], read.csv))[,c(2, 12, 13)]\n\nsetwd(\"D:/Share Point/OneDrive/GitHub/greek-salad\")\n\ntaluk <- c(\"AFZALPUR\", \"ALAND\", \"BAGEPALLY\", \"BANGARAPETE\", \"CHANNAPATNA\", \"CHIKKABALLAPUR\", \"CHINCHOLI\", \"CHINTAMANI\", \"CHITTAPUR\", \"DEVANAHALLI\", \"DODDABALLAPURA\", \"GOWRIBIDANUR\", \"GUDIBANDA\", \"GULBARGA NORTH\", \"GULBARGA SOUTH\", \"HOSAKOTE\", \"JEWARGI\", \"K G F\", \"KANAKAPURA\", \"KOLAR\", \"MAGADI\", \"MALUR\", \"MULBAGAL\", \"NELAMANGALA\", \"RAMANAGARA\", \"SEDAM\", \"SHAHAPUR\", \"SHORAPUR\", \"SIDLAGHATTA\", \"SRINIVASAPUR\", \"YADGIR\")\nexclude <- c(\"SOUTH1\", \"ANEKAL\", \"SOUTH2\", \"SOUTH3\", \"SOUTH4\", \"NORTH4\", \"NORTH1\", \"NORTH2\", \"NORTH3\")\n\nFiles <- list.files(pattern = \"*.csv\")\nData <- ldply(lapply(Files[3], read.csv))[,-1]\ncolnames(Data)[1] <- \"sslccode\"\n\n#Find and Replace old sslc codes with new sslc codes\nNewData <- FindReplace(data = Data, Var = \"sslccode\", replaceData = newsslccodes,\n                       from = \"Old\", to = \"New\", exact = TRUE)\n\nDataset <- data.frame(merge(lookup, NewData, by = \"sslccode\"))\n\ntaluk.data <- aggregate(Dataset, by = list(Dataset$taluk, Dataset$Year), mean)[,-2]\n\nwrite.csv(taluk.data, \"sslc_taluk.csv\")\n",
+    "created" : 1467814856768.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3046913607",
+    "id" : "8C217A26",
+    "lastKnownWriteTime" : 1467623956,
+    "last_content_update" : 1467623956,
+    "path" : "D:/Share Point/OneDrive/GitHub/greek-salad/SSLCPrep2.R",
+    "project_path" : "SSLCPrep2.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

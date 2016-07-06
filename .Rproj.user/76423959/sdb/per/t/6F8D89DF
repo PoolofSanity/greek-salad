@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "#From this point on:\n#\n#Everything that exists is an object.\n#Everything that happens is a function call.\n\nsetwd(\"D:/Share Point/OneDrive/Comprehensive Exam - Data files/Census\")\n\nlibrary(foreign)\nlibrary(stargazer)\nlibrary(plyr)\nlibrary(reshape)\nlibrary(MatchIt)\nlibrary(DataCombine)\n\noptions(scipen = 999, digits=2)\nFiles <- list.files(pattern = \"*.csv\")\n\nBlock <- ldply(lapply(Files[31], read.csv, strip.white = TRUE))\nData <- ldply(lapply(Files[1:30], read.csv, strip.white = TRUE))\nData <- droplevels(subset(Data, eval(Level == \"CD BLOCK\")))[,-c(0:9)]\nData <- droplevels(subset(Data, eval(is.element(Name, Block[,1]))))\n\nData <- FindReplace(data = Data, Var = \"Name\", replaceData = Block, from = \"Old\", to = \"New\", exact = TRUE)\nTotal <- droplevels(subset(Data, eval(Data$Total.Rural.Urban == \"Total\")))\nTotal$SCST <- Total$Scheduled.Castes.population.Person + Total$Scheduled.Tribes.population.Person\nTotal <- Total[, c(1, 3, 4, 7, 16, 22, 88)]\ncolnames(Total) <- c(\"Block_Name\", \"Households\", \"TotPop\", \"Pop0-6\", \"Literates\", \"TotWPop\", \"SCST\")\n\n#write.csv(Total, \"Z1.csv\")\nDataset <- read.csv(\"D:/Share Point/OneDrive/GitHub/greek-salad/timey-wimey.csv\")\nDataset <- droplevels(subset(Dataset, eval(Year == 2011)))\n#Dataset <- FindReplace(data = Dataset, Var = \"Block_Name\", replaceData = Block, from = \"Old\", to = \"New\", exact = TRUE)\nDataset <- data.frame(merge(Dataset, Total, by = \"Block_Name\"))\n",
+    "created" : 1467794098736.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1908341140",
+    "id" : "6F8D89DF",
+    "lastKnownWriteTime" : 1467819331,
+    "last_content_update" : 1467819331348,
+    "path" : "D:/Share Point/OneDrive/GitHub/greek-salad/CensusPrep.R",
+    "project_path" : "CensusPrep.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
