@@ -19,7 +19,16 @@ na.zero <- function (x) {
   return(x)
 }
 
-Data <- ldply(lapply(Files[5], read.csv))[,-1]
+Data <- ldply(lapply(Files[5], read.csv))[,-c(1, 29)]
+
+#Summary Statistics
+Summ <- aggregate(Data, by = list(Data$Year, Data$Split), mean)
+Summ <- t(droplevels(subset(Summ, eval(Year == 2005))))
+Summ <- Summ[-c(1:10, 12),]
+colnames(Summ) <- c("Undivided", "Divided")
+
+#Print the Summary Stats
+stargazer(Summ, title = "Summary Statistics in 2005", summary = NULL)
 
 fit.total <- lm(Total ~ Split*Year, Data)
 stargazer(fit.total)
