@@ -4,11 +4,13 @@
 \usepackage[backend = biber, citestyle = authoryear, url = false]{biblatex}
 \usepackage{hyperref}
 \usepackage{pdflscape}
+\usepackage{graphicx}
 \addbibresource{sop.bib}
 \title{Is small beautiful? Do small districts lead to better outcomes?}
 \author{Jothsna Rajan \\
 	\small{Indian Institute of Management, Bangalore, India}}
 \geometry{a4paper, top=25mm}
+\graphicspath{ {Images/} }
 \begin{document}
 \SweaveOpts{concordance=TRUE}
 	\maketitle
@@ -135,6 +137,8 @@ library(foreign)
 library(stargazer)
 library(plyr)
 library(reshape)
+library(MatchIt)
+library(optmatch)
 
 options(scipen = 999, digits=2)
 Files <- list.files(pattern = "*.csv")
@@ -150,12 +154,14 @@ stargazer(Appendix, title = "No of Schools District-wise, across the years", sum
 \end{landscape}
 
 <<App1, echo=FALSE, eval=TRUE, results=tex>>=
+#With Unmatched Data
 Data <- ldply(lapply(Files[5], read.csv))[,-c(1, 29)]
 #The variable all.taluks is from the environment of CensusPrep.R - Run that first! (or read it in from Z2.csv)
-all.taluks <- ldply(lapply(Files[6], read.csv))[,2]
-Data <- droplevels(subset(Data, eval(is.element(Block_Name, all.taluks))))
+#all.taluks <- ldply(lapply(Files[7], read.csv))[,2]
+#Data <- droplevels(subset(Data, eval(is.element(Block_Name, all.taluks))))
+colnames(Data) <- c("Block_Name", "Year", "Marks1", "Marks2", "Marks3", "Marks4", "Marks5", "Marks6", "TotalMarks", "Dist_Name", "Rural", "WorkDays",  "AcadInsp", "DevGrantR", "DevGrantE", "TLMGrantR", "TLMGrantE", "Classrooms", "ToiletG", "Electricity", "Library", "PlayGround", "Male_Tch", "Female_Tch", "Grad_Tch", "ProfQ_Tch", "Days_nonTch", "Public", "Split")
 #Summary Statistics
-
+#Baseline
 Summ <- aggregate(Data, by = list(Data$Year, Data$Split), mean)
 Summ <- t(droplevels(subset(Summ, eval(Year == 2005))))
 Summ <- Summ[-c(1:10, 12),]
@@ -164,7 +170,107 @@ rownames(Summ)[1] <- c("Average test scores in SSLC Exam")
 
 #Print the Summary Stats
 stargazer(Summ, title = "Summary Statistics in 2005", summary = NULL, digits = 1)
+
+#Endline
+Summ <- aggregate(Data, by = list(Data$Year, Data$Split), mean)
+Summ <- t(droplevels(subset(Summ, eval(Year == 2013))))
+Summ <- Summ[-c(1:10, 12),]
+colnames(Summ) <- c("Undivided", "Divided")
+#Print the Summary Stats
+stargazer(Summ, title = "Summary Statistics in 2013", summary = NULL, digits = 1)
+
+fit.total <- lm(TotalMarks ~ Split*Year, Data)
+fit.WDays <- lm(WorkDays ~ Split*Year, Data)
+fit.AcdInsp <- lm(AcadInsp ~ Split*Year, Data)
+fit.DevGrant <- lm(DevGrantR ~ Split*Year, Data)
+stargazer(fit.total, fit.WDays, fit.DevGrant, fit.AcdInsp, digits = 1, df = FALSE)
+
+fit.TLM <- lm(TLMGrantR ~ Split*Year, Data)
+fit.Class <- lm(Classrooms ~ Split*Year, Data)
+fit.Toilet <- lm(ToiletG ~ Split*Year, Data)
+fit.Elect <- lm(Electricity ~ Split*Year, Data)
+stargazer(fit.TLM, fit.Class, fit.Toilet, fit.Elect, digits = 1, df = FALSE)
+
+fit.male <- lm(Male_Tch ~ Split*Year, Data)
+fit.fem <- lm(Female_Tch ~ Split*Year, Data)
+fit.grad <- lm(Grad_Tch ~ Split*Year, Data)
+fit.prof <- lm(ProfQ_Tch ~ Split*Year, Data)
+stargazer(fit.male, fit.fem, fit.grad, fit.prof, digits = 1, df = FALSE)
+
+fit.public <- lm(Public ~ Split*Year, Data)
+fit.nonTch <- lm(Days_nonTch ~ Split*Year, Data)
+fit.libr <- lm(Library ~ Split*Year, Data)
+stargazer(fit.public, fit.nonTch, fit.libr, digits = 1, df = FALSE)
 @
+\clearpage
+<<App2, echo=FALSE, eval=TRUE, fig=TRUE>>=
+##With Matched Data
+Data <- ldply(lapply(Files[6], read.csv))[,-c(1, 3)]
+m.out <- matchit(Split ~ Total + Female_Tch + Electricity + Public + Graduate_Teachers + Households + Pop0.6 + Literates + SCST, data = Data, method = "nearest", ratio = 1, discard = "both")
+#summary(m.out)
+plot(m.out, type = "jitter")
+
+match <- match.data(m.out)
+write.csv(match, "Z1-Matched.csv")
+plot(m.out, type = "hist")
+@
+
+<<App3, eval=TRUE, echo=FALSE, results=tex>>=
+Data <- ldply(lapply(Files[5], read.csv))[,-c(1, 29)]
+#The variable all.taluks is from the environment of CensusPrep.R - Run that first! (or read it in from Z2.csv)
+all.taluks <- ldply(lapply(Files[7], read.csv))[,2]
+Data <- droplevels(subset(Data, eval(is.element(Block_Name, all.taluks))))
+colnames(Data) <- c("Block_Name", "Year", "Marks1", "Marks2", "Marks3", "Marks4", "Marks5", "Marks6", "TotalMarks", "Dist_Name", "Rural", "WorkDays",  "AcadInsp", "DevGrantR", "DevGrantE", "TLMGrantR", "TLMGrantE", "Classrooms", "ToiletG", "Electricity", "Library", "PlayGround", "Male_Tch", "Female_Tch", "Grad_Tch", "ProfQ_Tch", "Days_nonTch", "Public", "Split")
+#Summary Statistics
+#Baseline
+Summ <- aggregate(Data, by = list(Data$Year, Data$Split), mean)
+Summ <- t(droplevels(subset(Summ, eval(Year == 2005))))
+Summ <- Summ[-c(1:10, 12),]
+colnames(Summ) <- c("Undivided", "Divided")
+rownames(Summ)[1] <- c("Average test scores in SSLC Exam")
+
+#Print the Summary Stats
+stargazer(Summ, title = "Summary Statistics in 2005", summary = NULL, digits = 1)
+
+#Endline
+Summ <- aggregate(Data, by = list(Data$Year, Data$Split), mean)
+Summ <- t(droplevels(subset(Summ, eval(Year == 2013))))
+Summ <- Summ[-c(1:10, 12),]
+colnames(Summ) <- c("Undivided", "Divided")
+#Print the Summary Stats
+stargazer(Summ, title = "Summary Statistics in 2013", summary = NULL, digits = 1)
+
+fit.total <- lm(TotalMarks ~ Split*Year, Data)
+fit.WDays <- lm(WorkDays ~ Split*Year, Data)
+fit.AcdInsp <- lm(AcadInsp ~ Split*Year, Data)
+fit.DevGrant <- lm(DevGrantR ~ Split*Year, Data)
+stargazer(fit.total, fit.WDays, fit.DevGrant, fit.AcdInsp, digits = 1, df = FALSE)
+
+fit.TLM <- lm(TLMGrantR ~ Split*Year, Data)
+fit.Class <- lm(Classrooms ~ Split*Year, Data)
+fit.Toilet <- lm(ToiletG ~ Split*Year, Data)
+fit.Elect <- lm(Electricity ~ Split*Year, Data)
+stargazer(fit.TLM, fit.Class, fit.Toilet, fit.Elect, digits = 1, df = FALSE)
+
+fit.male <- lm(Male_Tch ~ Split*Year, Data)
+fit.fem <- lm(Female_Tch ~ Split*Year, Data)
+fit.grad <- lm(Grad_Tch ~ Split*Year, Data)
+fit.prof <- lm(ProfQ_Tch ~ Split*Year, Data)
+stargazer(fit.male, fit.fem, fit.grad, fit.prof, digits = 1, df = FALSE)
+
+fit.public <- lm(Public ~ Split*Year, Data)
+fit.nonTch <- lm(Days_nonTch ~ Split*Year, Data)
+fit.libr <- lm(Library ~ Split*Year, Data)
+stargazer(fit.public, fit.nonTch, fit.libr, digits = 1, df = FALSE)
+@
+
+\begin{figure}[h]
+    \centering
+    \includegraphics{PSMatch}
+    \caption{Propensity Score Matching: Histogram}
+    \label{Fig1}
+\end{figure}
+
 
 
 \end{document}
