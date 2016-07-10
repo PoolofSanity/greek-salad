@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "setwd(\"D:/Share Point/OneDrive/Comprehensive Exam - Data files/Census 1991, Karnataka\")\n\n#Everything that exists is an object.\n#Everything that happens is a function call.\n\nlibrary(foreign)\nlibrary(stargazer)\nlibrary(plyr)\nlibrary(reshape)\nlibrary(MatchIt)\n\noptions(scipen = 999, digits=2)\nFiles <- list.files(pattern = \"*.csv\")",
+    "created" : 1468130112779.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3446722138",
+    "id" : "9439FF17",
+    "lastKnownWriteTime" : 1468130168,
+    "last_content_update" : 1468130168220,
+    "path" : "D:/Share Point/OneDrive/GitHub/greek-salad/IV.R",
+    "project_path" : "IV.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

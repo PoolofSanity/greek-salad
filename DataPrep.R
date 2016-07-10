@@ -77,6 +77,7 @@ Dataset <- Data[,-c(1, 2, 5:8, 18, 21, 22, 25, 26)]
 Dataset <- aggregate(Dataset, by = list(Data$Block_Name, Data$acyear), mean)[,-c(2, 3)]
 colnames(Dataset)[1] <- "Block_Name"
 Dataset <- data.frame(merge(lookup, Dataset, by = "Block_Name"))
+#write.csv(Schoolcode, "Z3-TalukSchoolNo.csv")
 
 Schoolcode <- Schoolcode[,-1]
 DistSchool <- aggregate(Schoolcode, by = list(Schoolcode$District), mean)[,-2]
@@ -90,3 +91,4 @@ Data <- data.frame(merge(lookup, Data, by = "Block_Name"))
 setwd("D:/Share Point/OneDrive/GitHub/greek-salad")
 write.csv(Dataset, "ssa_taluk.csv")
 write.csv(DistSchool, "SchoolNo.csv")
+
