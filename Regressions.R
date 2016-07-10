@@ -42,7 +42,7 @@ Summ <- t(aggregate(Within, by = list(Within$Year, Within$New), mean))
 Summ <- Summ[-c(1:10, 12, 38, 40:47, 49:56),]
 colnames(Summ) <- c("Old", "New")
 #Print the Summary Stats
-stargazer(Summ, title = "Summary Statistics in 2005", summary = NULL)
+stargazer(Summ, title = "Summary Statistics in 2005", summary = NULL, digits = 1)
 
 #Endline
 Data <- ldply(lapply(Files[8], read.csv))[,-c(1,3, 30)]
@@ -69,7 +69,7 @@ Summ <- t(aggregate(Within, by = list(Within$Year, Within$New), mean))
 Summ <- Summ[-c(1:10, 12, 38:46, 48:55),]
 colnames(Summ) <- c("Old", "New")
 #Print the Summary Stats
-stargazer(Summ, title = "Summary Statistics in 2013", summary = NULL)
+stargazer(Summ, title = "Summary Statistics in 2013", summary = NULL, digits = 1)
 
 fit.total <- lm(TotalMarks ~ Split*Year, Data)
 fit.WDays <- lm(WorkDays ~ Split*Year, Data)
