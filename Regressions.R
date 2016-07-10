@@ -151,6 +151,7 @@ Summ <- Summ[-c(1:10, 12),]
 colnames(Summ) <- c("Old", "New")
 #Print the Summary Stats
 stargazer(Summ, title = "Summary Statistics in 2013", summary = NULL)
+
 fit.total <- lm(TotalMarks ~ Split*Year, Data)
 fit.WDays <- lm(WorkDays ~ Split*Year, Data)
 fit.AcdInsp <- lm(AcadInsp ~ Split*Year, Data)
