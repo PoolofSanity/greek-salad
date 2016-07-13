@@ -152,6 +152,34 @@
       \verb http://www.newindianexpress.com/states/telangana/New-Districts-to-Precede-New-Constituencies/2016/05/07/article3419967.ece
       \endverb
     \endentry
+    \entry{blesse2013municipal}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=140fd74fc3698a1560a5e2097dde8daf}{%
+           family={Blesse},
+           family_i={B\bibinitperiod},
+           given={Sebastian},
+           given_i={S\bibinitperiod}}}%
+        {{uniquename=0,hash=e510048103cca5eff62ecdf90a554a5a}{%
+           family={Baskaran},
+           family_i={B\bibinitperiod},
+           given={Thushyanthan},
+           given_i={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{85a473d55ba97ea15c58a9bd1a2511e7}
+      \strng{fullhash}{0879dd97f77969d0cb4753b04e52deca}
+      \field{sortinit}{B}
+      \field{sortinithash}{4ecbea03efd0532989d3836d1a048c32}
+      \field{labelyear}{2013}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Center for European, Governance and Economic Development Research, Discussion Papers}
+      \field{title}{Do municipal mergers result in scale economies? Evidence from a German federal state}
+      \field{volume}{176}
+      \field{year}{2013}
+    \endentry
     \entry{hansen_size_2014}{article}{}
       \name{author}{3}{}{%
         {{uniquename=0,hash=461fd8523d78210c5e005eb848ee60cd}{%
@@ -293,6 +321,33 @@
       \field{pages}{1294\bibrangedash 1316}
       \range{pages}{23}
     \endentry
+    \entry{hinnerich2009merging}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=81d794e486ae5681efc55fb6fa3ecb37}{%
+           family={Hinnerich},
+           family_i={H\bibinitperiod},
+           given={Bj\"{o}rn\bibnamedelima Tyrefors},
+           given_i={B\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{81d794e486ae5681efc55fb6fa3ecb37}
+      \strng{fullhash}{81d794e486ae5681efc55fb6fa3ecb37}
+      \field{sortinit}{H}
+      \field{sortinithash}{82012198d5dfa657b8c4a168793268a6}
+      \field{labelyear}{2009}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Public Economics}
+      \field{number}{5}
+      \field{title}{Do merging local governments free ride on their counterparts when facing boundary reform?}
+      \field{volume}{93}
+      \field{year}{2009}
+      \field{pages}{721\bibrangedash 728}
+      \range{pages}{8}
+    \endentry
     \entry{hirsch_expenditure_1959}{article}{}
       \name{author}{1}{}{%
         {{uniquename=0,hash=100513932ed62d0caab7e96e921b4e1b}{%
@@ -349,6 +404,38 @@
       \field{labeltitlesource}{title}
       \field{title}{Literature review and analysis related to optimal municipal size and efficiency}
       \field{year}{2009}
+    \endentry
+    \entry{jordahl2010merged}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=40041cb059584f969bde2dd15b8751b4}{%
+           family={Jordahl},
+           family_i={J\bibinitperiod},
+           given={Henrik},
+           given_i={H\bibinitperiod}}}%
+        {{uniquename=0,hash=72bbfd8f766886aabd37e88b903e32d8}{%
+           family={Liang},
+           family_i={L\bibinitperiod},
+           given={Che-Yuan},
+           given_i={C\bibinithyphendelim Y\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{4c1a05318e17f1ab797f67b4545eb6e1}
+      \strng{fullhash}{4c1a05318e17f1ab797f67b4545eb6e1}
+      \field{sortinit}{J}
+      \field{sortinithash}{ec3950a647c092421b9fcca6d819504a}
+      \field{labelyear}{2010}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Public Choice}
+      \field{number}{1-2}
+      \field{title}{Merged municipalities, higher debt: on free-riding and the common pool problem in politics}
+      \field{volume}{143}
+      \field{year}{2010}
+      \field{pages}{157\bibrangedash 172}
+      \range{pages}{16}
     \endentry
     \entry{Mamata}{article}{}
       \name{author}{1}{}{%
@@ -523,6 +610,33 @@
       \verb{url}
       \verb http://timesofindia.indiatimes.com/city/chandigarh/Haryana-mulls-creation-of-three-new-districts/articleshow/51915065.cms
       \endverb
+    \endentry
+    \entry{reingewertz2012municipal}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=5318926236e59c9fdc446b81afc82055}{%
+           family={Reingewertz},
+           family_i={R\bibinitperiod},
+           given={Yaniv},
+           given_i={Y\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{5318926236e59c9fdc446b81afc82055}
+      \strng{fullhash}{5318926236e59c9fdc446b81afc82055}
+      \field{sortinit}{R}
+      \field{sortinithash}{c7387613477035a752d935acfc3e3ea2}
+      \field{labelyear}{2012}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Urban Economics}
+      \field{number}{2}
+      \field{title}{Do municipal amalgamations work? Evidence from municipalities in Israel}
+      \field{volume}{72}
+      \field{year}{2012}
+      \field{pages}{240\bibrangedash 251}
+      \range{pages}{12}
     \endentry
     \entry{scharpf_governing_1999}{book}{}
       \name{author}{1}{}{%

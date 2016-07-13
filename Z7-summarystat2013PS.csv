@@ -3,26 +3,27 @@ Total Marks,344.28,332.94,0.33
 Rural/Urban (rural = 1),0.89,0.87,0.56
 Working Days,0.71,1.12,0.57
 Academic Inspection,1.33,1.62,0.67
-School Dev Grant - R,7259.80,7573.89,0.60
+School Dev Grant - R,7259.8,7573.89,0.6
 School Dev Grant - E,6542.09,6441.69,0.76
 TLM Grant - R,1098.24,1456.05,0.19
 TLM Grant - E,1017.21,1352.41,0.18
-Classrooms,4.93,4.45,0.20
+Classrooms,4.93,4.45,0.2
 Electricity (Yes = 1),0.97,0.98,0.62
 Library  (Yes = 1),0.98,1.24,0.36
 PlayGround  (Yes = 1),0.56,0.54,0.57
 Male teachers,2.09,2.08,0.94
-Female teachers,2.40,1.77,0.00
+Female teachers,2.4,1.77,0
 Grad teachers,1.02,0.74,0.21
 ProfQ teachers,4.36,3.69,0.03
-Days_non teaching activity,0.46,0.11,0.20
-Public Schools (\%),0.83,0.87,0.18
+Days_non teaching activity,0.46,0.11,0.2
+Public Schools (%),0.83,0.87,0.18
 Households,45378.64,48263.78,0.66
-Total Population,222491.14,236013.78,0.70
+Total Population,222491.14,236013.78,0.7
 Population 0 - 6,27862.57,30597.33,0.69
 Literates,129369.43,119382.33,0.53
-Total W Population,108226.00,121141.00,0.44
-SC/ST Population,73460.79,84702.00,0.45
+Total W Population,108226,121141,0.44
+SC/ST Population,73460.79,84702,0.45
 No of Schools in Taluk,332.86,336.78,0.93
 Schools per 1000 people,1.54,1.61,0.77
-New/Old Dist (New = 1),0.00,1.00,-
+New/Old Dist (New = 1),0,1,-
+# of Observations,14,9,-

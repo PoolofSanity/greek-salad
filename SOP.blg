@@ -1,20 +1,21 @@
 [0] Config.pm:343> INFO - This is Biber 2.5
 [0] Config.pm:346> INFO - Logfile is 'SOP.blg'
-[51] biber-MSWIN64:290> INFO - === 
-[212] Biber.pm:351> INFO - Reading 'SOP.bcf'
-[339] Biber.pm:776> INFO - Found 22 citekeys in bib section 0
-[359] Biber.pm:3493> INFO - Processing section 0
-[523] Biber.pm:3657> INFO - Looking for bibtex format file 'sop.bib' for section 0
-[535] bibtex.pm:1187> INFO - Decoding LaTeX character macros into UTF-8
-[563] bibtex.pm:1048> INFO - Found BibTeX data source 'sop.bib'
-[604] Utils.pm:149> WARN - Range field 'pages' in entry 'tomio2005creation' is malformed, skipping
-[695] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[696] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[696] Biber.pm:3306> INFO - Sorting list 'nty/global/' of type 'entry' with scheme 'nty' and locale 'en-US'
-[696] Biber.pm:3310> INFO - No sort tailoring available for locale 'en-US'
-[734] bbl.pm:526> INFO - Writing 'SOP.bbl' with encoding 'ascii'
-[738] Utils.pm:149> WARN - The entry 'avellaneda_is_2015' has characters which cannot be encoded in 'ascii'. Recoding problematic characters into macros.
-[739] Utils.pm:149> WARN - The entry 'hansen_size_2014' has characters which cannot be encoded in 'ascii'. Recoding problematic characters into macros.
-[744] Utils.pm:149> WARN - The entry 'tomio2005creation' has characters which cannot be encoded in 'ascii'. Recoding problematic characters into macros.
-[744] bbl.pm:619> INFO - Output to SOP.bbl
-[748] Biber.pm:108> INFO - WARNINGS: 4
+[45] biber-MSWIN64:290> INFO - === 
+[72] Biber.pm:351> INFO - Reading 'SOP.bcf'
+[190] Biber.pm:776> INFO - Found 26 citekeys in bib section 0
+[209] Biber.pm:3493> INFO - Processing section 0
+[245] Biber.pm:3657> INFO - Looking for bibtex format file 'sop.bib' for section 0
+[255] bibtex.pm:1187> INFO - Decoding LaTeX character macros into UTF-8
+[264] bibtex.pm:1048> INFO - Found BibTeX data source 'sop.bib'
+[301] Utils.pm:149> WARN - Range field 'pages' in entry 'tomio2005creation' is malformed, skipping
+[390] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[390] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[390] Biber.pm:3306> INFO - Sorting list 'nty/global/' of type 'entry' with scheme 'nty' and locale 'en-US'
+[390] Biber.pm:3310> INFO - No sort tailoring available for locale 'en-US'
+[432] bbl.pm:526> INFO - Writing 'SOP.bbl' with encoding 'ascii'
+[436] Utils.pm:149> WARN - The entry 'avellaneda_is_2015' has characters which cannot be encoded in 'ascii'. Recoding problematic characters into macros.
+[438] Utils.pm:149> WARN - The entry 'hansen_size_2014' has characters which cannot be encoded in 'ascii'. Recoding problematic characters into macros.
+[440] Utils.pm:149> WARN - The entry 'hinnerich2009merging' has characters which cannot be encoded in 'ascii'. Recoding problematic characters into macros.
+[443] Utils.pm:149> WARN - The entry 'tomio2005creation' has characters which cannot be encoded in 'ascii'. Recoding problematic characters into macros.
+[444] bbl.pm:619> INFO - Output to SOP.bbl
+[447] Biber.pm:108> INFO - WARNINGS: 5

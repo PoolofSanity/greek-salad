@@ -14,15 +14,16 @@ PlayGround  (Yes = 1),0.48,0.51,0.73
 Male teachers,2.01,2.03,0.93
 Female teachers,1.85,1.42,0.03
 Grad teachers,26.33,26.05,0.97
-ProfQ teachers,3.49,3.10,0.08
-Days_non teaching activity,1.50,2.30,0.46
-Public Schools (\%),0.90,0.91,0.80
-Households,47435.07,47533.80,0.99
-Total Population,252924.21,247512.30,0.88
-Population 0 - 6,36703.36,36719.40,1.00
-Literates,131615.64,110726.40,0.26
-Total W Population,115871.07,122404.10,0.68
-SC/ST Population,75410.36,76238.40,0.95
-No of Schools in Taluk,332.86,331.80,0.98
-Schools per 1000 people,1.36,1.45,0.60
-New/Old Dist (New = 1),0.00,1.00,-
+ProfQ teachers,3.49,3.1,0.08
+Days_non teaching activity,1.5,2.3,0.46
+Public Schools (\%),0.9,0.91,0.8
+Households,47435.07,47533.8,0.99
+Total Population,252924.21,247512.3,0.88
+Population 0 - 6,36703.36,36719.4,1
+Literates,131615.64,110726.4,0.26
+Total W Population,115871.07,122404.1,0.68
+SC/ST Population,75410.36,76238.4,0.95
+No of Schools in Taluk,332.86,331.8,0.98
+Schools per 1000 people,1.36,1.45,0.6
+New/Old Dist (New = 1),0,1,-
+\# of Observations,14,10,-

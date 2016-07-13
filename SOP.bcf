@@ -2121,6 +2121,10 @@
     <bcf:citekey order="23">driscoll2003school</bcf:citekey>
     <bcf:citekey order="24">holzer2009literature</bcf:citekey>
     <bcf:citekey order="25">prud1995dangers</bcf:citekey>
+    <bcf:citekey order="26">hinnerich2009merging</bcf:citekey>
+    <bcf:citekey order="27">jordahl2010merged</bcf:citekey>
+    <bcf:citekey order="28">reingewertz2012municipal</bcf:citekey>
+    <bcf:citekey order="29">blesse2013municipal</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="nty/global/" type="entry" sortscheme="nty" sortnamekeyscheme="global" labelprefix="">
   <bcf:sorting>

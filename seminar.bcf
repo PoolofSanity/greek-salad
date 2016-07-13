@@ -2114,12 +2114,13 @@
     <bcf:citekey order="16">tiebout_economies_1960</bcf:citekey>
     <bcf:citekey order="17">oates_fiscal_1972</bcf:citekey>
     <bcf:citekey order="18">oates1999essay</bcf:citekey>
-    <bcf:citekey order="19">allers2016effects</bcf:citekey>
-    <bcf:citekey order="20">faguet2008decentralization</bcf:citekey>
-    <bcf:citekey order="21">driscoll2003school</bcf:citekey>
-    <bcf:citekey order="22">holzer2009literature</bcf:citekey>
-    <bcf:citekey order="23">tanzi1996macroeconomic</bcf:citekey>
-    <bcf:citekey order="24">prud1995dangers</bcf:citekey>
+    <bcf:citekey order="19">tanzi1996macroeconomic</bcf:citekey>
+    <bcf:citekey order="20">allers2016effects</bcf:citekey>
+    <bcf:citekey order="21">lassen_jurisdiction_2011</bcf:citekey>
+    <bcf:citekey order="22">faguet2008decentralization</bcf:citekey>
+    <bcf:citekey order="23">driscoll2003school</bcf:citekey>
+    <bcf:citekey order="24">holzer2009literature</bcf:citekey>
+    <bcf:citekey order="25">prud1995dangers</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="nty/global/" type="entry" sortscheme="nty" sortnamekeyscheme="global" labelprefix="">
   <bcf:sorting>
