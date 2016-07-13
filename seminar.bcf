@@ -2099,23 +2099,27 @@
     <bcf:citekey order="1">aristotle_politics_1984</bcf:citekey>
     <bcf:citekey order="2">dahl_size_1973</bcf:citekey>
     <bcf:citekey order="3">scharpf_governing_1999</bcf:citekey>
-    <bcf:citekey order="4">holzer2009literature</bcf:citekey>
-    <bcf:citekey order="5">hansen_size_2014</bcf:citekey>
-    <bcf:citekey order="6">oates_fiscal_1972</bcf:citekey>
-    <bcf:citekey order="7">smoke2015rethinking</bcf:citekey>
-    <bcf:citekey order="8">tiebout_economies_1960</bcf:citekey>
-    <bcf:citekey order="9">oates_fiscal_1972</bcf:citekey>
+    <bcf:citekey order="4">hansen_size_2014</bcf:citekey>
+    <bcf:citekey order="5">oates_fiscal_1972</bcf:citekey>
+    <bcf:citekey order="6">smoke2015rethinking</bcf:citekey>
+    <bcf:citekey order="7">tiebout_economies_1960</bcf:citekey>
+    <bcf:citekey order="8">oates_fiscal_1972</bcf:citekey>
+    <bcf:citekey order="9">hirsch_expenditure_1959</bcf:citekey>
     <bcf:citekey order="10">Mamata</bcf:citekey>
     <bcf:citekey order="11">Telengana</bcf:citekey>
     <bcf:citekey order="12">Haryana</bcf:citekey>
     <bcf:citekey order="13">tomio2005creation</bcf:citekey>
     <bcf:citekey order="14">turgel2008new</bcf:citekey>
     <bcf:citekey order="15">avellaneda_is_2015</bcf:citekey>
-    <bcf:citekey order="16">holzer2009literature</bcf:citekey>
-    <bcf:citekey order="17">tanzi1996macroeconomic</bcf:citekey>
-    <bcf:citekey order="18">prud1995dangers</bcf:citekey>
-    <bcf:citekey order="19">faguet2008decentralization</bcf:citekey>
-    <bcf:citekey order="20">driscoll2003school</bcf:citekey>
+    <bcf:citekey order="16">tiebout_economies_1960</bcf:citekey>
+    <bcf:citekey order="17">oates_fiscal_1972</bcf:citekey>
+    <bcf:citekey order="18">oates1999essay</bcf:citekey>
+    <bcf:citekey order="19">allers2016effects</bcf:citekey>
+    <bcf:citekey order="20">faguet2008decentralization</bcf:citekey>
+    <bcf:citekey order="21">driscoll2003school</bcf:citekey>
+    <bcf:citekey order="22">holzer2009literature</bcf:citekey>
+    <bcf:citekey order="23">tanzi1996macroeconomic</bcf:citekey>
+    <bcf:citekey order="24">prud1995dangers</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="nty/global/" type="entry" sortscheme="nty" sortnamekeyscheme="global" labelprefix="">
   <bcf:sorting>

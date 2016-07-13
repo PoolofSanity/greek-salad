@@ -1,6 +1,6 @@
 \documentclass[12pt, a4paper]{article}
 \usepackage{geometry}
-\renewcommand{\baselinestretch}{1.3}
+\renewcommand{\baselinestretch}{1.0}
 \usepackage[backend = biber, citestyle = authoryear, url = false]{biblatex}
 \usepackage{hyperref}
 \usepackage{pdflscape}
@@ -16,23 +16,37 @@
 \input{seminar-concordance}
 	\maketitle
 	\begin{abstract}
-		What is the optimal population level at for local public service delivery? In the question over the optimal size of local government systems, small jurisdictions have been attributed a lot of merits. But does bifurcating larger districts into smaller ones pay off? I examine this question in the context of public education using data from a district bifurcation process in Karnataka, India.
+		What is the optimal population level for local public service delivery? In the question over the optimal size of local government systems, small jurisdictions have been attributed a lot of merits. But does bifurcating larger districts into smaller ones pay off? I examine this question in the context of public education using data from a district bifurcation process in Karnataka, India. Performance of sub-districts which were allocated to newly created smaller districts is compared with sub-districts that remained in larger districts using a difference in difference estimation model. Education performance is measured in test scores, as well as inputs to schooling such as number of schools, funding to schools, academic inspections etc. The results seem to suggest that there is no significant improvement in education outcomes as a result of the bifurcation. 
 	\end{abstract}
-\paragraph{} Is there an optimal size for local government systems? Aristotle in his treatise `Politics' argued that political entities needed to balance the twin considerations of economic viability and effective citizenship \parencite{aristotle_politics_1984}. In modern democracies, debates on the topic are framed in a similar language with two sets of normative criteria. The first one is \textit{output legitimacy}. The function of local governments is to provide a set of public goods and services to its citizens and promote public welfare. A government that fulfils this duty better has higher output legitimacy. The other normative concern is `citizen effectiveness' or the capability and willingness of citizens to control the decisions made on their behalf \parencite{dahl_size_1973}. Enhancing citizen effectiveness raises the \textit{input legitimacy} of the system. Both output and input legitimacy are prerequisites to democratic legitimacy \parencite{scharpf_governing_1999}. The fundamental assumption in these debates is that changing the size of political units is likely to affect the democratic quality (input legitimacy) and functional effectiveness (output legitimacy) of governments. There has been attempts to explain the performance of public organizations in terms of the population size that it serves. Recent debates on the topic attribute considerable virtues to small jurisdictions. Holzer et al in 2009 provide a review of the empirical literature on this question. Their review suggests that there is very little correlation between size and efficiency for population sizes between 25,000 and 250,000 - anything above that or below is less efficient \parencite{holzer2009literature}. 
+\paragraph{} Is there an optimal size for local government systems? Aristotle in his treatise `Politics' argued that political entities needed to balance the twin considerations of economic viability and effective citizenship \parencite{aristotle_politics_1984}. In modern democracies, debates on the topic are framed in a similar language with two sets of normative criteria. The first one is \textit{output legitimacy}. The function of local governments is to provide a set of public goods and services to its citizens and promote public welfare. A government that fulfils this duty better has higher output legitimacy. The other normative concern is `citizen effectiveness' or the capability and willingness of citizens to control the decisions made on their behalf \parencite{dahl_size_1973}. Enhancing citizen effectiveness raises the \textit{input legitimacy} of the system. Both output and input legitimacy are prerequisites to democratic legitimacy \parencite{scharpf_governing_1999}. The fundamental assumption in these debates is that changing the size of political units is likely to affect the democratic quality (input legitimacy) and functional effectiveness (output legitimacy) of governments. 
 
-\paragraph{}  In democratic societies, the economic and political arguments tend to converge. Small jurisdictions are believed to enhance political participation, make politics less abstract, politicians more responsive, and facilitate exit-based empowerment of citizens \parencite{hansen_size_2014}. Decentralisation will also increase economic efficiency as the local governments have an information advantage and can respond better to variance in preferences at the local level \parencite{oates_fiscal_1972}, and population mobility will lead to competition between local authorities and better provision of public goods. Decentralised service delivery especially when citizens directly elect the local governments is expected to provide better coverage, quality and efficiency \parencite{smoke2015rethinking}. Competing local governments may experiment with various ways to provide public goods and lead to innovations that can be applied elsewhere. These considerations suggest that public goods that are (1) sensitive to local preferences and (2) do not have large spillover (3) nor scale effects: infrastructure, public education, etc. are better provided under decentralisation (\cite{tiebout_economies_1960}, \cite{oates_fiscal_1972}).
+\paragraph{}  Recent debates on the topic attribute considerable virtues to small jurisdictions. In democratic societies, the economic and political arguments tend to converge. Small jurisdictions are believed to enhance political participation, make politics less abstract, politicians more responsive, and facilitate exit-based empowerment of citizens \parencite{hansen_size_2014}. Decentralisation will also increase economic efficiency as the local governments have an information advantage and can respond better to variance in preferences at the local level \parencite{oates_fiscal_1972}, and population mobility will lead to competition between local authorities and better provision of public goods. Decentralised service delivery especially when citizens directly elect the local governments is expected to provide better coverage, quality and efficiency \parencite{smoke2015rethinking}. Competing local governments may experiment with various ways to provide public goods and lead to innovations that can be applied elsewhere. These considerations suggest that public goods that are (1) sensitive to local preferences and (2) do not have large spillover (3) nor scale effects: infrastructure, public education, etc. are better provided under decentralisation (\cite{tiebout_economies_1960}, \cite{oates_fiscal_1972}). At the same time there is a counter argument in favour of larger jurisdiction sizes because it allows for economies of scale in the providing public goods \parencite{hirsch_expenditure_1959}. 
 
-\paragraph{} In a bid to arrive at the optimal population size in a local government unit, many national governments have opted to create smaller sized local governments. India has seen frequent administrative bifurcations at the local government level (district level). The number of districts in the country has increased from 356 in the 1971 census period to 640 in the 2011 census (Table. \ref{Fig2}) This is a trend that is continuing in the present day. West Bengal has created five new districts since 2015. The rationale for creating of new districts was stated to be - ``...for \textit{better administrative control} and so that \textit{public service can be delivered at the door steps} of the people staying at remote areas'' (emphasis added) \parencite{Mamata}. Similarly, Telangana state is contemplating the creation of 14 - 15 new districts \parencite{Telengana} and Haryana state is considering 3 more districts \parencite{Haryana}. In all these cases, the stated rationale for district bifurcation is decentralisation of administration and better public service. And India is not alone in the implementation of administrative bifurcations at the local government level. Brazil, in the period from 1990 to 2000, increased the number of municipalities from 4,491 to 5,560 \parencite{tomio2005creation}. Russia adopted Local Government Reform in 2003 and since then has doubled the number of municipalities \parencite{turgel2008new}\nocite{avellaneda_is_2015}. Evidence on the effect of size on local government performance is inconclusive  \parencite{holzer2009literature}. Yet, decentralization at the local government level is a step that is frequently taken - despite the lack of empirical examination of its effectiveness. But does creation of new districts enhance public service outcomes?
+\paragraph{} In a bid to arrive at the optimal population size in a local government unit, many national governments have reorganized their sub-national boundaries. Europe has seen local government consolidation via municipal amalgamations while transitional economies have seen increasing decentralization at the local government level. Since the 1950s, India has seen frequent administrative bifurcations at the local government level (district level). The number of districts in the country has increased from 356 in the 1971 census period to 640 in the 2011 census (Table. \ref{Fig2}) This is a trend that is continuing in the present day. West Bengal has created five new districts since 2015. The rationale for creating of new districts was stated to be - ``...for \textit{better administrative control} and so that \textit{public service can be delivered at the door steps} of the people staying at remote areas'' (emphasis added) \parencite{Mamata}. Similarly, Telangana state is contemplating the creation of 14 - 15 new districts \parencite{Telengana} and Haryana state is considering 3 more districts \parencite{Haryana}. In all these cases, the stated rationale for district bifurcation is decentralisation of administration and better public service. And India is not alone in the implementation of administrative bifurcations at the local government level. Brazil, in the period from 1990 to 2000, increased the number of municipalities from 4,491 to 5,560 \parencite{tomio2005creation}. Russia adopted Local Government Reform in 2003 and since then has doubled the number of municipalities \parencite{turgel2008new}\nocite{avellaneda_is_2015}. But does creation of new districts enhance public service outcomes?
 
-\paragraph{}There are those who argue that it does not. The critics of decentralisation argue that the its effectiveness is often greatly hampered by the particular context of its implementation. Vito Tanzi offers an argument for corruption to be higher at local levels than at central government levels, because of closer interaction at the local level between the bureaucrats and citizens that can enable nepotism and personal favours \parencite{tanzi1996macroeconomic}. Also, local bureaucracies may be poorly staffed and ill-equipped to handle the responsibilities associated with the decentralised provision of public goods \parencite{prud1995dangers}. The precise nature of decentralisation, such as the financial autonomy of the local government may also pay a role in determining whether the benefits can be reaped. These factors caution against the implementation of decentralisation as a panacea for administrative ills. It also means that any instance of decentralisation can be explored further to understand the context of success or failure.
+\paragraph{}This paper explores the impact of bifurcation of districts on the quality of public service delivery - specifically, the quality of public education. I present the theory behind reorganization and the available evidence on its effectiveness, and discuss the methodological challenges in the empirical examination of size effects. I test my propositions using data collected on public education in the districts of Karnataka in India over a 9 year period from 2005 to 2013. Karnataka created three new districts by bifurcating three existing ones during the period. Remaining districts were left untouched. A new district is created by reallocating some of the taluks (sub-districts) within an existing district to a new one. This allows use of a difference in difference model to test for the effect of the policy on education outcomes. The reform was driven by the state government, following public demand for creation of new districts and had taken place at different times. But the rationale for the public demand was based on cultural factors rather than public education concerns. 
 
-\paragraph{} There is evidence from the decentralisation reforms in Bolivia and Columbia to suggest that decentralisation has enhanced the local allocative efficiency of public funds. Notably, it has resulted in shifting resources towards education in regions where education performance has historically been worse. But data limitations prevent the authors from testing whether the improvement extends to education outcomes, such as literacy and test scores \parencite{faguet2008decentralization}. Also, there is evidence from California state, to suggest that students in smaller districts perform better than those in larger districts in standardised tests after controlling for a variety of other factors \parencite{driscoll2003school}. The effect of each of these policies - bifurcation or consolidation or a combination of both - depends on the particular context and capabilities of the local administrative body. 
+%\section*{Theory}
+\paragraph{} The fundamental argument in favour of decentralized governance comes from the perspective that there is heterogeneity in demand for public services. The variance in demand can be better understood and catered to by a government that is closer to the citizens, thus raising well-being throughout society. Tiebout, in his 1956 paper, talks about citizens \textit{voting with their feet} or \textit{exiting}. He conceptualizes a fully mobile citizen that can move to a jurisdiction that matches her preferences for tax rates and public service levels, thus revealing her preferences \parencite{tiebout_economies_1960}. This information can then be used by local governments to tailor their own activities and thus raise welfare. But how much decentralization should we demand? Oates' Decentralization theorem formalizes it as \textit{``...in the absence of cost-savings from the centralized provision of a [local public] good and of interjurisdictional externalities, the level of welfare will always be at least as high (and typically higher) if Pareto-efficient levels of consumption are provided in each jurisdiction than if any single, uniform level of consumption is maintained across all jurisdictions''}(\cite{oates_fiscal_1972}, pg 54). \nocite{oates1999essay}
 
-\paragraph{}This paper explores the impact of bifurcation of districts on the quality of public service delivery - specifically, the quality of public education. Public education is not seen as imposing strong externalities on neighbouring regions, nor does it have large scale effects. Therefore, under the classic explanation, a smaller district should be able to provide better service. At the same time, we might need to build administrative capacity when a larger district is split into two or more before any benefits can be reaped. Also, if the districts are too small in the first place, there might be some benefit in consolidating two or more districts and managing them together. I test my propositions using data collected on public education settings in the districts of Karnataka in India over a 9 year period from 2005 to 2013. At the 2001 census, Karnataka state had 27 districts - each with an average population of over 660,000 (If we exclude the urban district of Bangalore, the average drops to around 470,000). In the last decade Karnataka state in the south of India carved out three new districts from three existing ones. A new district is created by reallocating some of the taluks (sub-districts) within a district to a new one. Two new districts (Chikballapura and Ramanagara) were created from two existing ones (Kolar and Bangalore rural respectively) in 2007, and a third new district (Yadgir) was created from an existing one (Gulbarga) in 2010 taking the total in the state up to 30. 
+\paragraph{} In other words, a public good that does not have large economies of scale or inter-jurisdictional externalities may be better provided under decentralization. Public education is not seen as imposing strong externalities on neighbouring regions, nor does it have large scale effects. Therefore, under the classic explanation, a smaller district should be able to provide better service. At the same time, practical considerations remain. We might need to build administrative capacity when a larger district is split into two or more before any benefits can be reaped. Also, if the districts are too small in the first place, there might be some benefit in consolidating two or more districts and managing them together. Larger jurisdiction size will allow you to spread fixed costs of a greater population. Some of these effects are likely to materialize over a longer period of time and would require a long research period. \nocite{allers2016effects}
 
-\paragraph{} Creation of a new district entails additional administrative costs as the new districts often need to create the administrative infrastructure. Spatial and temporal variation in public policy affords the conditions suitable for identifying the impact of the policy on outcomes. But often the policy is endogenous and can be included in the left \textit{or} right side of the estimation equation. In this paper I estimate the effect of the bifurcation of the administrative district on the public spending and quality of educational service delivered in the district. The identification is complicated by the fact the districts that were not split may be different from those that were. The demand for creation a new district usually arises from within the district, and the political traction gained by the idea has a role to play in the eventual decision made by the state. 
+\paragraph{Jurisdiction Size}
+
+\paragraph{} There is evidence from the decentralisation reforms in Bolivia and Columbia to suggest that decentralisation has enhanced the local allocative efficiency of public funds. Notably, it has resulted in shifting resources towards education in regions where education performance has historically been worse. But data limitations prevent the authors from testing whether the improvement extends to education outcomes, such as literacy and test scores \parencite{faguet2008decentralization}. Also, there is evidence from California state, to suggest that students in smaller districts perform better than those in larger districts in standardised tests after controlling for a variety of other factors \parencite{driscoll2003school}. The effect of either of these policies - bifurcation or consolidation (or a combination of both) - depends on the particular context and capabilities of the local administrative body. Holzer et al in 2009 provide a review of the empirical literature on this question. Their review suggests that the evidence on the effect of size on local government performance is inconclusive - there is very little correlation between size and efficiency for population sizes between 25,000 and 250,000 - anything above that or below is less efficient \parencite{holzer2009literature}. Decentralization at the local government level is a step that is frequently taken - despite the lack of strong evidence in its favour. 
+
+\paragraph{} The critics of decentralisation argue that the its effectiveness is often greatly hampered by the particular context of its implementation. Vito Tanzi offers an argument for corruption to be higher at local levels than at central government levels, because of closer interaction at the local level between the bureaucrats and citizens that can enable nepotism and personal favours \parencite{tanzi1996macroeconomic}. Also, local bureaucracies may be poorly staffed and ill-equipped to handle the responsibilities associated with the decentralised provision of public goods \parencite{prud1995dangers}. The precise nature of decentralisation, such as the financial autonomy of the local government may also pay a role in determining whether the benefits can be reaped. These factors caution against the implementation of decentralisation as a panacea for administrative ills. It also means that any instance of decentralisation can be explored further to understand the context of success or failure.
+
+%\section*{Endogeneity Problem}
+\paragraph{} Spatial and temporal variation in public policy affords the conditions suitable for identifying the impact of the policy on outcomes. But the size and boundary of the administrative unit is an active response to a problem and is endogenous - it can be included in the left \textit{or} right side of the estimation equation. In this paper I estimate the effect of the bifurcation of the administrative district on the public spending and quality of educational service delivered in the district. The identification is complicated by the fact the districts that were not split may be different from those that were. The demand for creation a new district usually arises from within the district, and the political traction gained by the idea has a role to play in the eventual decision made by the state. If the source of variation in policy action arises from within the characteristics of the intended beneficiaries of policy, then we have a policy endogeneity. Policy variation itself may be an outcome of some other characteristics. 
 %\section*{Methodology}
-\paragraph{} 
+\paragraph{} At the 2001 census, Karnataka state had 27 districts - each with an average population of over 660,000 (If we exclude the urban district of Bangalore, the average drops to around 470,000). In the last decade Karnataka state in the south of India carved out three new districts from three existing ones. Two new districts (Chikballapura and Ramanagara) were created from two existing ones (Kolar and Bangalore rural respectively) in 2007, and a third new district (Yadgir) was created from an existing one (Gulbarga) in 2010 taking the total in the state up to 30. Creation of a new district entails additional administrative costs as the new districts often need to create the administrative infrastructure.
+
+
+%\section*{Results}
+%\section*{Discussion}
+%\section*{Conclusion}
+%\section*{Future Plans}
 \printbibliography
 \section*{Appendix}
 \begin{table}[h!]
@@ -133,7 +147,7 @@
 
 \begin{landscape}
 % Table created by stargazer v.5.2 by Marek Hlavac, Harvard University. E-mail: hlavac at fas.harvard.edu
-% Date and time: Tue, Jul 12, 2016 - 1:08:42 AM
+% Date and time: Tue, Jul 12, 2016 - 10:35:52 PM
 \begin{table}[!htbp] \centering 
   \caption{No of Schools District-wise, across the years} 
   \label{} 
@@ -179,7 +193,7 @@
 \end{tabular} 
 \end{table} \end{landscape}
 % Table created by stargazer v.5.2 by Marek Hlavac, Harvard University. E-mail: hlavac at fas.harvard.edu
-% Date and time: Tue, Jul 12, 2016 - 1:08:43 AM
+% Date and time: Tue, Jul 12, 2016 - 10:35:52 PM
 \begin{table}[!htbp] \centering 
   \caption{Summary Statistics in 2005} 
   \label{} 
@@ -220,50 +234,48 @@ SchoolperPop2005 & $1.2$ & $1.4$ \\
 \multicolumn{3}{l}{Population figures used to calculate SchoolperPop2005 is from 2001} \\ 
 \end{tabular} 
 \end{table} % Table created by stargazer v.5.2 by Marek Hlavac, Harvard University. E-mail: hlavac at fas.harvard.edu
-% Date and time: Tue, Jul 12, 2016 - 1:08:43 AM
+% Date and time: Tue, Jul 12, 2016 - 10:35:52 PM
 \begin{table}[!htbp] \centering 
   \caption{Summary Statistics in 2005} 
   \label{} 
-\begin{tabular}{@{\extracolsep{5pt}} ccc} 
+\begin{tabular}{@{\extracolsep{5pt}} ccccc} 
 \\[-1.8ex]\hline 
 \hline \\[-1.8ex] 
- & Old & New \\ 
+ & Variables & Old & New & p.value \\ 
 \hline \\[-1.8ex] 
-TotalMarks & $295.0$ & $310.0$ \\ 
-Rural & $0.9$ & $0.9$ \\ 
-WorkDays & $102.0$ & $102.0$ \\ 
-AcadInsp & $0.5$ & $0.3$ \\ 
-DevGrantR & $2,554.0$ & $2,640.0$ \\ 
-DevGrantE & $1,290.0$ & $1,309.0$ \\ 
-TLMGrantR & $4,093.0$ & $3,857.0$ \\ 
-TLMGrantE & $1,872.0$ & $1,691.0$ \\ 
-Classrooms & $3.6$ & $3.3$ \\ 
-ToiletG & $1$ & $1$ \\ 
-Electricity & $0.5$ & $0.5$ \\ 
-Library & $0.8$ & $0.7$ \\ 
-PlayGround & $0.5$ & $0.5$ \\ 
-Male\_Tch & $2.0$ & $2.0$ \\ 
-Female\_Tch & $1.8$ & $1.4$ \\ 
-Grad\_Tch & $26.0$ & $26.0$ \\ 
-ProfQ\_Tch & $3.5$ & $3.0$ \\ 
-Days\_nonTch & $1.5$ & $2.5$ \\ 
-Public & $0.9$ & $0.9$ \\ 
-Split & $1$ & $1$ \\ 
-Households & $47,435.0$ & $46,546$ \\ 
-TotPop & $252,924.0$ & $240,438.0$ \\ 
-Pop0.6 & $36,703.0$ & $35,362.0$ \\ 
-Literates & $131,616.0$ & $107,461.0$ \\ 
-TotWPop & $115,871.0$ & $119,639$ \\ 
-SCST & $75,410.0$ & $75,798.0$ \\ 
-Yr2005 & $333.0$ & $333.0$ \\ 
-SchoolperPop2005 & $1.4$ & $1.5$ \\ 
-New & $0$ & $1$ \\ 
+1 & Total Marks & $295.00$ & $310.00$ & 0.17 \\ 
+2 & Rural/Urban (rural = 1) & $0.91$ & $0.93$ & 0.42 \\ 
+3 & Working Days & $103.00$ & $102.00$ & 0.93 \\ 
+4 & Academic Inspection & $0.49$ & $0.31$ & 0.09 \\ 
+5 & School Dev Grant - R & $2,554.00$ & $2,639.00$ & 0.8 \\ 
+6 & School Dev Grant - E & $1,290.00$ & $1,309.00$ & 0.93 \\ 
+7 & TLM Grant - R & $4,093.00$ & $3,857.00$ & 0.63 \\ 
+8 & TLM Grant - E & $1,872.00$ & $1,691.00$ & 0.56 \\ 
+9 & Classrooms & $3.60$ & $3.20$ & 0.16 \\ 
+10 & Electricity (Yes = 1) & $0.53$ & $0.50$ & 0.65 \\ 
+11 & Library  (Yes = 1) & $0.77$ & $0.75$ & 0.63 \\ 
+12 & PlayGround  (Yes = 1) & $0.48$ & $0.49$ & 0.85 \\ 
+13 & Male teachers & $2.00$ & $2$ & 0.96 \\ 
+14 & Female teachers & $1.80$ & $1.40$ & 0.02 \\ 
+15 & Grad teachers & $26.00$ & $26.00$ & 0.95 \\ 
+16 & ProfQ teachers & $3.50$ & $3.00$ & 0.05 \\ 
+17 & Days\_non teaching activity & $1.50$ & $2.50$ & 0.35 \\ 
+18 & Public Schools (\textbackslash \%) & $0.90$ & $0.90$ & 0.99 \\ 
+19 & Households & $47,435.00$ & $46,546$ & 0.89 \\ 
+20 & Total Population & $252,924.00$ & $240,437.00$ & 0.71 \\ 
+21 & Population 0 - 6 & $36,703.00$ & $35,362.00$ & 0.83 \\ 
+22 & Literates & $131,616.00$ & $107,461.00$ & 0.19 \\ 
+23 & Total W Population & $115,871.00$ & $119,639$ & 0.8 \\ 
+24 & SC/ST Population & $75,410.00$ & $75,798.00$ & 0.97 \\ 
+25 & No of Schools in Taluk & $333.00$ & $333.00$ & 1 \\ 
+26 & Schools per 1000 people & $1.40$ & $1.50$ & 0.41 \\ 
+27 & New/Old Dist (New = 1) & $0$ & $1$ & - \\ 
 \hline \\[-1.8ex] 
-\multicolumn{3}{l}{Population figures used to calculate SchoolperPop2005 is from 2001} \\ 
+\multicolumn{5}{l}{Population figures used to calculate SchoolperPop2005 is from 2001} \\ 
 \end{tabular} 
 \end{table} 
 % Table created by stargazer v.5.2 by Marek Hlavac, Harvard University. E-mail: hlavac at fas.harvard.edu
-% Date and time: Tue, Jul 12, 2016 - 1:08:43 AM
+% Date and time: Tue, Jul 12, 2016 - 10:35:52 PM
 \begin{table}[!htbp] \centering 
   \caption{Summary Statistics in 2013} 
   \label{} 
@@ -298,52 +310,50 @@ Pop0.6 & $25,976.0$ & $27,859.0$ \\
 Literates & $129,884.0$ & $121,608.0$ \\ 
 TotWPop & $104,540.0$ & $110,617.0$ \\ 
 SCST & $61,425.0$ & $75,293.0$ \\ 
-Yr2013 & $291.0$ & $361.0$ \\ 
-SchoolperPop2013 & $1.5$ & $1.7$ \\ 
+Yr2005 & $272.0$ & $329.0$ \\ 
+SchoolperPop2005 & $1.4$ & $1.6$ \\ 
 \hline \\[-1.8ex] 
-\multicolumn{3}{l}{Population figures used to calculate SchoolperPop2013 is from 2001} \\ 
+\multicolumn{3}{l}{Population figures used to calculate SchoolperPop2005 is from 2001} \\ 
 \end{tabular} 
 \end{table} % Table created by stargazer v.5.2 by Marek Hlavac, Harvard University. E-mail: hlavac at fas.harvard.edu
-% Date and time: Tue, Jul 12, 2016 - 1:08:43 AM
+% Date and time: Tue, Jul 12, 2016 - 10:35:53 PM
 \begin{table}[!htbp] \centering 
   \caption{Summary Statistics in 2013} 
   \label{} 
-\begin{tabular}{@{\extracolsep{5pt}} ccc} 
+\begin{tabular}{@{\extracolsep{5pt}} ccccc} 
 \\[-1.8ex]\hline 
 \hline \\[-1.8ex] 
- & Old & New \\ 
+ & Variables & Old & New & p.value \\ 
 \hline \\[-1.8ex] 
-TotalMarks & $342.0$ & $332.0$ \\ 
-Rural & $0.9$ & $0.9$ \\ 
-WorkDays & $0.7$ & $1.0$ \\ 
-AcadInsp & $1.3$ & $1.4$ \\ 
-DevGrantR & $7,354.0$ & $7,291.0$ \\ 
-DevGrantE & $6,527.0$ & $6,295.0$ \\ 
-TLMGrantR & $1,159.0$ & $1,386.0$ \\ 
-TLMGrantE & $1,057.0$ & $1,293.0$ \\ 
-Classrooms & $4.9$ & $4.4$ \\ 
-ToiletG & $1.0$ & $1.0$ \\ 
-Electricity & $1.0$ & $1.0$ \\ 
-Library & $1.0$ & $1.2$ \\ 
-PlayGround & $0.5$ & $0.5$ \\ 
-Male\_Tch & $2.1$ & $2.0$ \\ 
-Female\_Tch & $2.4$ & $1.8$ \\ 
-Grad\_Tch & $1.0$ & $0.8$ \\ 
-ProfQ\_Tch & $4.3$ & $3.6$ \\ 
-Days\_nonTch & $0.4$ & $0.1$ \\ 
-Public & $0.8$ & $0.9$ \\ 
-Split & $1$ & $1$ \\ 
-Households & $44,657.0$ & $47,163.0$ \\ 
-TotPop & $219,607.0$ & $224,543$ \\ 
-Pop0.6 & $27,680.0$ & $28,102.0$ \\ 
-Literates & $126,225.0$ & $115,311.0$ \\ 
-TotWPop & $106,832.0$ & $115,779.0$ \\ 
-SCST & $72,394.0$ & $79,247.0$ \\ 
-Yr2013 & $357.0$ & $367.0$ \\ 
-SchoolperPop2013 & $1.7$ & $1.8$ \\ 
-New & $0$ & $1$ \\ 
+1 & Total Marks & $341.00$ & $332.00$ & 0.35 \\ 
+2 & Rural/Urban (rural = 1) & $0.89$ & $0.87$ & 0.62 \\ 
+3 & Working Days & $0.66$ & $1.00$ & 0.55 \\ 
+4 & Academic Inspection & $1.30$ & $1.40$ & 0.88 \\ 
+5 & School Dev Grant - R & $7,354.00$ & $7,291.00$ & 0.91 \\ 
+6 & School Dev Grant - E & $6,527.00$ & $6,295.00$ & 0.46 \\ 
+7 & TLM Grant - R & $1,159.00$ & $1,385.00$ & 0.38 \\ 
+8 & TLM Grant - E & $1,057.00$ & $1,293.00$ & 0.31 \\ 
+9 & Classrooms & $4.90$ & $4.40$ & 0.12 \\ 
+10 & Electricity (Yes = 1) & $0.96$ & $0.98$ & 0.37 \\ 
+11 & Library  (Yes = 1) & $0.97$ & $1.20$ & 0.34 \\ 
+12 & PlayGround  (Yes = 1) & $0.55$ & $0.52$ & 0.56 \\ 
+13 & Male teachers & $2.10$ & $2.00$ & 0.57 \\ 
+14 & Female teachers & $2.40$ & $1.80$ & 0.01 \\ 
+15 & Grad teachers & $1.00$ & $0.76$ & 0.20 \\ 
+16 & ProfQ teachers & $4.30$ & $3.60$ & 0.02 \\ 
+17 & Days\_non teaching activity & $0.43$ & $0.11$ & 0.21 \\ 
+18 & Public Schools (\textbackslash \%) & $0.84$ & $0.87$ & 0.12 \\ 
+19 & Households & $44,657.00$ & $47,163.00$ & 0.65 \\ 
+20 & Total Population & $219,607.00$ & $224,543$ & 0.87 \\ 
+21 & Population 0 - 6 & $27,680.00$ & $28,102.00$ & 0.94 \\ 
+22 & Literates & $126,225.00$ & $115,311.00$ & 0.43 \\ 
+23 & Total W Population & $106,832.00$ & $115,778.00$ & 0.53 \\ 
+24 & SC/ST Population & $72,393.00$ & $79,247.00$ & 0.60 \\ 
+25 & No of Schools in Taluk & $326.00$ & $333.00$ & 0.87 \\ 
+26 & Schools per 1000 people & $1.50$ & $1.70$ & 0.54 \\ 
+27 & New/Old Dist (New = 1) & $0$ & $1$ & - \\ 
 \hline \\[-1.8ex] 
-\multicolumn{3}{l}{Population figures used to calculate SchoolperPop2013 is from 2001} \\ 
+\multicolumn{5}{l}{Population figures used to calculate SchoolperPop2013 is from 2001} \\ 
 \end{tabular} 
 \end{table} 
 \clearpage
@@ -363,7 +373,7 @@ New & $0$ & $1$ \\
 \end{figure}
 
 % Table created by stargazer v.5.2 by Marek Hlavac, Harvard University. E-mail: hlavac at fas.harvard.edu
-% Date and time: Tue, Jul 12, 2016 - 1:08:43 AM
+% Date and time: Tue, Jul 12, 2016 - 10:35:53 PM
 \begin{table}[!htbp] \centering 
   \caption{Summary Statistics in 2005 - With PS Matched Control Group} 
   \label{} 
@@ -404,50 +414,48 @@ SchoolperPop2005 & $1.5$ & $1.4$ \\
 \multicolumn{3}{l}{Population figures used to calculate SchoolperPop2005 is from 2001} \\ 
 \end{tabular} 
 \end{table} % Table created by stargazer v.5.2 by Marek Hlavac, Harvard University. E-mail: hlavac at fas.harvard.edu
-% Date and time: Tue, Jul 12, 2016 - 1:08:43 AM
+% Date and time: Tue, Jul 12, 2016 - 10:35:53 PM
 \begin{table}[!htbp] \centering 
   \caption{Summary Statistics in 2005 - With PS Matched Control Group} 
   \label{} 
-\begin{tabular}{@{\extracolsep{5pt}} ccc} 
+\begin{tabular}{@{\extracolsep{5pt}} ccccc} 
 \\[-1.8ex]\hline 
 \hline \\[-1.8ex] 
- & Old & New \\ 
+ & Variables & Old & New & p.value \\ 
 \hline \\[-1.8ex] 
-TotalMarks & $295.0$ & $311.0$ \\ 
-Rural & $0.9$ & $0.9$ \\ 
-WorkDays & $102.0$ & $101.0$ \\ 
-AcadInsp & $0.5$ & $0.3$ \\ 
-DevGrantR & $2,554.0$ & $2,684.0$ \\ 
-DevGrantE & $1,290.0$ & $1,263.0$ \\ 
-TLMGrantR & $4,093.0$ & $3,888.0$ \\ 
-TLMGrantE & $1,872.0$ & $1,644.0$ \\ 
-Classrooms & $3.6$ & $3.3$ \\ 
-ToiletG & $1$ & $1$ \\ 
-Electricity & $0.5$ & $0.5$ \\ 
-Library & $0.8$ & $0.7$ \\ 
-PlayGround & $0.5$ & $0.5$ \\ 
-Male\_Tch & $2.0$ & $2.0$ \\ 
-Female\_Tch & $1.8$ & $1.4$ \\ 
-Grad\_Tch & $26.0$ & $26.0$ \\ 
-ProfQ\_Tch & $3.5$ & $3.1$ \\ 
-Days\_nonTch & $1.5$ & $2.3$ \\ 
-Public & $0.9$ & $0.9$ \\ 
-Split & $1$ & $1$ \\ 
-Households & $47,435.0$ & $47,534.0$ \\ 
-TotPop & $252,924.0$ & $247,512.0$ \\ 
-Pop0.6 & $36,703.0$ & $36,719.0$ \\ 
-Literates & $131,616.0$ & $110,726.0$ \\ 
-TotWPop & $115,871.0$ & $122,404.0$ \\ 
-SCST & $75,410.0$ & $76,238.0$ \\ 
-Yr2005 & $333.0$ & $332.0$ \\ 
-SchoolperPop2005 & $1.4$ & $1.5$ \\ 
-New & $0$ & $1$ \\ 
+1 & Total Marks & $295.0$ & $311.0$ & 0.17 \\ 
+2 & Rural/Urban (rural = 1) & $0.9$ & $0.9$ & 0.58 \\ 
+3 & Working Days & $102.0$ & $101.0$ & 0.88 \\ 
+4 & Academic Inspection & $0.5$ & $0.3$ & 0.14 \\ 
+5 & School Dev Grant - R & $2,554.0$ & $2,684.0$ & 0.73 \\ 
+6 & School Dev Grant - E & $1,290.0$ & $1,263.0$ & 0.91 \\ 
+7 & TLM Grant - R & $4,093.0$ & $3,888.0$ & 0.69 \\ 
+8 & TLM Grant - E & $1,872.0$ & $1,644.0$ & 0.48 \\ 
+9 & Classrooms & $3.6$ & $3.3$ & 0.22 \\ 
+10 & Electricity (Yes = 1) & $0.5$ & $0.5$ & 0.81 \\ 
+11 & Library  (Yes = 1) & $0.8$ & $0.7$ & 0.56 \\ 
+12 & PlayGround  (Yes = 1) & $0.5$ & $0.5$ & 0.73 \\ 
+13 & Male teachers & $2.0$ & $2.0$ & 0.93 \\ 
+14 & Female teachers & $1.8$ & $1.4$ & 0.03 \\ 
+15 & Grad teachers & $26.0$ & $26.0$ & 0.97 \\ 
+16 & ProfQ teachers & $3.5$ & $3.1$ & 0.08 \\ 
+17 & Days\_non teaching activity & $1.5$ & $2.3$ & 0.46 \\ 
+18 & Public Schools (\textbackslash \%) & $0.9$ & $0.9$ & 0.80 \\ 
+19 & Households & $47,435.0$ & $47,534.0$ & 0.99 \\ 
+20 & Total Population & $252,924.0$ & $247,512.0$ & 0.88 \\ 
+21 & Population 0 - 6 & $36,703.0$ & $36,719.0$ & 1.00 \\ 
+22 & Literates & $131,616.0$ & $110,726.0$ & 0.26 \\ 
+23 & Total W Population & $115,871.0$ & $122,404.0$ & 0.68 \\ 
+24 & SC/ST Population & $75,410.0$ & $76,238.0$ & 0.95 \\ 
+25 & No of Schools in Taluk & $333.0$ & $332.0$ & 0.98 \\ 
+26 & Schools per 1000 people & $1.4$ & $1.4$ & 0.60 \\ 
+27 & New/Old Dist (New = 1) & $0$ & $1$ & - \\ 
 \hline \\[-1.8ex] 
-\multicolumn{3}{l}{Population figures used to calculate SchoolperPop2005 is from 2001} \\ 
+\multicolumn{5}{l}{Population figures used to calculate SchoolperPop2005 is from 2001} \\ 
 \end{tabular} 
 \end{table} 
 % Table created by stargazer v.5.2 by Marek Hlavac, Harvard University. E-mail: hlavac at fas.harvard.edu
-% Date and time: Tue, Jul 12, 2016 - 1:08:43 AM
+% Date and time: Tue, Jul 12, 2016 - 10:35:53 PM
 \begin{table}[!htbp] \centering 
   \caption{Summary Statistics in 2013 - With PS Matched Control Group} 
   \label{} 
@@ -488,50 +496,48 @@ SchoolperPop2013 & $1.7$ & $1.7$ \\
 \multicolumn{3}{l}{Population figures used to calculate SchoolperPop2013 is from 2001} \\ 
 \end{tabular} 
 \end{table} % Table created by stargazer v.5.2 by Marek Hlavac, Harvard University. E-mail: hlavac at fas.harvard.edu
-% Date and time: Tue, Jul 12, 2016 - 1:08:44 AM
+% Date and time: Tue, Jul 12, 2016 - 10:35:53 PM
 \begin{table}[!htbp] \centering 
   \caption{Summary Statistics in 2013 - With PS Matched Control Group} 
   \label{} 
-\begin{tabular}{@{\extracolsep{5pt}} ccc} 
+\begin{tabular}{@{\extracolsep{5pt}} ccccc} 
 \\[-1.8ex]\hline 
 \hline \\[-1.8ex] 
- & Old & New \\ 
+ & Variables & Old & New & p.value \\ 
 \hline \\[-1.8ex] 
-TotalMarks & $344.0$ & $333.0$ \\ 
-Rural & $0.9$ & $0.9$ \\ 
-WorkDays & $0.7$ & $1.1$ \\ 
-AcadInsp & $1.3$ & $1.6$ \\ 
-DevGrantR & $7,260.0$ & $7,574.0$ \\ 
-DevGrantE & $6,542.0$ & $6,442.0$ \\ 
-TLMGrantR & $1,098.0$ & $1,456.0$ \\ 
-TLMGrantE & $1,017.0$ & $1,352.0$ \\ 
-Classrooms & $4.9$ & $4.5$ \\ 
-ToiletG & $1.0$ & $1.0$ \\ 
-Electricity & $1.0$ & $1.0$ \\ 
-Library & $1.0$ & $1.2$ \\ 
-PlayGround & $0.6$ & $0.5$ \\ 
-Male\_Tch & $2.1$ & $2.1$ \\ 
-Female\_Tch & $2.4$ & $1.8$ \\ 
-Grad\_Tch & $1.0$ & $0.7$ \\ 
-ProfQ\_Tch & $4.4$ & $3.7$ \\ 
-Days\_nonTch & $0.5$ & $0.1$ \\ 
-Public & $0.8$ & $0.9$ \\ 
-Split & $1$ & $1$ \\ 
-Households & $45,379.0$ & $48,264.0$ \\ 
-TotPop & $222,491.0$ & $236,014.0$ \\ 
-Pop0.6 & $27,863.0$ & $30,597.0$ \\ 
-Literates & $129,369.0$ & $119,382.0$ \\ 
-TotWPop & $108,226$ & $121,141$ \\ 
-SCST & $73,461.0$ & $84,702$ \\ 
-Yr2013 & $362.0$ & $375.0$ \\ 
-SchoolperPop2013 & $1.7$ & $1.8$ \\ 
-New & $0$ & $1$ \\ 
+1 & Total Marks & $344.0$ & $333.0$ & 0.33 \\ 
+2 & Rural/Urban (rural = 1) & $0.9$ & $0.9$ & 0.56 \\ 
+3 & Working Days & $0.7$ & $1.1$ & 0.57 \\ 
+4 & Academic Inspection & $1.3$ & $1.6$ & 0.67 \\ 
+5 & School Dev Grant - R & $7,260.0$ & $7,574.0$ & 0.60 \\ 
+6 & School Dev Grant - E & $6,542.0$ & $6,442.0$ & 0.76 \\ 
+7 & TLM Grant - R & $1,098.0$ & $1,456.0$ & 0.19 \\ 
+8 & TLM Grant - E & $1,017.0$ & $1,352.0$ & 0.18 \\ 
+9 & Classrooms & $4.9$ & $4.5$ & 0.20 \\ 
+10 & Electricity (Yes = 1) & $1.0$ & $1.0$ & 0.62 \\ 
+11 & Library  (Yes = 1) & $1.0$ & $1.2$ & 0.36 \\ 
+12 & PlayGround  (Yes = 1) & $0.6$ & $0.5$ & 0.57 \\ 
+13 & Male teachers & $2.1$ & $2.1$ & 0.94 \\ 
+14 & Female teachers & $2.4$ & $1.8$ & 0.00 \\ 
+15 & Grad teachers & $1.0$ & $0.7$ & 0.21 \\ 
+16 & ProfQ teachers & $4.4$ & $3.7$ & 0.03 \\ 
+17 & Days\_non teaching activity & $0.5$ & $0.1$ & 0.20 \\ 
+18 & Public Schools (\textbackslash \%) & $0.8$ & $0.9$ & 0.18 \\ 
+19 & Households & $45,379.0$ & $48,264.0$ & 0.66 \\ 
+20 & Total Population & $222,491.0$ & $236,014.0$ & 0.70 \\ 
+21 & Population 0 - 6 & $27,863.0$ & $30,597.0$ & 0.69 \\ 
+22 & Literates & $129,369.0$ & $119,382.0$ & 0.53 \\ 
+23 & Total W Population & $108,226$ & $121,141$ & 0.44 \\ 
+24 & SC/ST Population & $73,461.0$ & $84,702$ & 0.45 \\ 
+25 & No of Schools in Taluk & $333.0$ & $337.0$ & 0.93 \\ 
+26 & Schools per 1000 people & $1.5$ & $1.6$ & 0.77 \\ 
+27 & New/Old Dist (New = 1) & $0$ & $1$ & - \\ 
 \hline \\[-1.8ex] 
-\multicolumn{3}{l}{Population figures used to calculate SchoolperPop2013 is from 2001} \\ 
+\multicolumn{5}{l}{Population figures used to calculate SchoolperPop2013 is from 2001} \\ 
 \end{tabular} 
 \end{table} \clearpage
 % Table created by stargazer v.5.2 by Marek Hlavac, Harvard University. E-mail: hlavac at fas.harvard.edu
-% Date and time: Tue, Jul 12, 2016 - 1:08:44 AM
+% Date and time: Tue, Jul 12, 2016 - 10:35:53 PM
 \begin{table}[!htbp] \centering 
   \caption{} 
   \label{} 
@@ -566,7 +572,7 @@ F Statistic & 0.8 & 11.0$^{***}$ & 365.0$^{***}$ & 51.0$^{***}$ \\
 \textit{Note:}  & \multicolumn{4}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
 \end{tabular} 
 \end{table} % Table created by stargazer v.5.2 by Marek Hlavac, Harvard University. E-mail: hlavac at fas.harvard.edu
-% Date and time: Tue, Jul 12, 2016 - 1:08:44 AM
+% Date and time: Tue, Jul 12, 2016 - 10:35:54 PM
 \begin{table}[!htbp] \centering 
   \caption{} 
   \label{} 
@@ -613,7 +619,7 @@ F Statistic & 78.0$^{***}$ & 5.0$^{***}$ & 74.0$^{***}$ & 11.0$^{***}$ \\
 \textit{Note:}  & \multicolumn{4}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
 \end{tabular} 
 \end{table} % Table created by stargazer v.5.2 by Marek Hlavac, Harvard University. E-mail: hlavac at fas.harvard.edu
-% Date and time: Tue, Jul 12, 2016 - 1:08:44 AM
+% Date and time: Tue, Jul 12, 2016 - 10:35:54 PM
 \begin{table}[!htbp] \centering 
   \caption{} 
   \label{} 
@@ -660,7 +666,7 @@ F Statistic & 17.0$^{***}$ & 31.0$^{***}$ & 15.0$^{***}$ & 43.0$^{***}$ \\
 \textit{Note:}  & \multicolumn{4}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
 \end{tabular} 
 \end{table} % Table created by stargazer v.5.2 by Marek Hlavac, Harvard University. E-mail: hlavac at fas.harvard.edu
-% Date and time: Tue, Jul 12, 2016 - 1:08:45 AM
+% Date and time: Tue, Jul 12, 2016 - 10:35:54 PM
 \begin{table}[!htbp] \centering 
   \caption{} 
   \label{} 

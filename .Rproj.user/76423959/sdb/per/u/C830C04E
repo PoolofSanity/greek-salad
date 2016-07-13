@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "Summ <- data.frame(Summ)\n\n#Print the Summary Stats\nstargazer(Summ, title = \"Summary Statistics in 2005\", summary = NULL, digits = 2, notes = \"Population figures used to calculate SchoolperPop2005 is from 2001\")\n",
+    "created" : 1468341043241.000,
+    "dirty" : true,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "4272307491",
+    "id" : "C830C04E",
+    "lastKnownWriteTime" : 1468340370,
+    "last_content_update" : 1468341045372,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 8,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

@@ -123,14 +123,24 @@ stargazer(Summ, title = "Summary Statistics in 2005", summary = NULL)
 Within <- droplevels(subset(Data, eval(is.element(Block_Name, union(old, new)))))
 Within$New <- rep(0, nrow(Within))
 Within[is.element(Within$Block_Name, new), 30] = 1
+z <- c(9, 11:28)
+pvalue <- numeric()
+t.list <- list()
+for(i in 1:19){
+  t.list[[i]] <- t.test(Within[Within$New == 1, z[i]], Within[Within$New == 0, z[i]])
+  pvalue[i] <- t.list[[i]]$p.value
+}
 
 #Baseline
 Summ <- aggregate(Within, by = list(Within$Year, Within$New), mean)
-Summ <- t(droplevels(subset(Summ, eval(Year == 2005))))
-Summ <- Summ[-c(1:10, 12),]
+Summ <- t(droplevels(subset(Summ, eval(Year == 2013))))
+Summ <- data.frame(Summ[-c(1:10, 12),])
 colnames(Summ) <- c("Old", "New")
+Summ$Difference <- Summ[,2] - Summ[,1]
+pvalue[20:21] <- "-"
+Summ <- cbind(Summ, pvalue)
 #Print the Summary Stats
-stargazer(Summ, title = "Summary Statistics in 2005", summary = NULL)
+stargazer(Summ, title = "Summary Statistics in 2005", summary = NULL, digits = 2)
 
 #Endline
 Summ <- aggregate(Data, by = list(Data$Year, Data$Split), mean)
@@ -143,14 +153,24 @@ stargazer(Summ, title = "Summary Statistics in 2013", summary = NULL)
 Within <- droplevels(subset(Data, eval(is.element(Block_Name, union(old, new)))))
 Within$New <- rep(0, nrow(Within))
 Within[is.element(Within$Block_Name, new), 30] = 1
+z <- c(9, 11:28)
+pvalue <- numeric()
+t.list <- list()
+for(i in 1:19){
+  t.list[[i]] <- t.test(Within[Within$New == 1, z[i]], Within[Within$New == 0, z[i]])
+  pvalue[i] <- t.list[[i]]$p.value
+  }
 
-#Baseline
+#Endline
 Summ <- aggregate(Within, by = list(Within$Year, Within$New), mean)
 Summ <- t(droplevels(subset(Summ, eval(Year == 2013))))
-Summ <- Summ[-c(1:10, 12),]
+Summ <- data.frame(Summ[-c(1:10, 12),])
 colnames(Summ) <- c("Old", "New")
+Summ$Difference <- Summ[,2] - Summ[,1]
+pvalue[20:21] <- "-"
+Summ <- cbind(Summ, pvalue)
 #Print the Summary Stats
-stargazer(Summ, title = "Summary Statistics in 2013", summary = NULL)
+stargazer(Summ, title = "Summary Statistics in 2013", summary = NULL, digits = 2)
 
 #Regression Models
 Files <- list.files(pattern = "*.csv")
