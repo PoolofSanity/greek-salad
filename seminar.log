@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.6.25)  13 JUL 2016 11:54
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.6.25)  14 JUL 2016 13:53
 entering extended mode
 **seminar.tex
 ("D:\Share Point\OneDrive\GitHub\greek-salad\seminar.tex"
@@ -561,22 +561,22 @@ File: english.lbx 2016/05/14 v3.4 biblatex localization (PK/JW/AB)
 \@quotereset=\count226
  ("D:\Share Point\OneDrive\GitHub\greek-salad\seminar.aux"
 
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `' multiply defined.
-
-
 LaTeX Warning: Label `Fig1' multiply defined.
 
 
 LaTeX Warning: Label `Fig2' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
 
 
 LaTeX Warning: Label `' multiply defined.
@@ -664,13 +664,19 @@ Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'ascii'.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'seminar.bbl' found.
-("D:\Share Point\OneDrive\GitHub\greek-salad\seminar.bbl")
+("D:\Share Point\OneDrive\GitHub\greek-salad\seminar.bbl"
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'tomio2005creation':
+(biblatex)                - Range field 'pages' in entry 'tomio2005creation' is
+ malformed, skipping.
+
+)
 Package biblatex Info: Reference section=0 on input line 15.
 Package biblatex Info: Reference segment=0 on input line 15.
 \AtBeginShipoutBox=\box27
 Package hyperref Info: Link coloring OFF on input line 15.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
@@ -705,191 +711,122 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 18.
 
-
-LaTeX Warning: Citation 'aristotle_politics_1984' on page 1 undefined on input 
-line 21.
-
-
-LaTeX Warning: Citation 'dahl_size_1973' on page 1 undefined on input line 21.
-
-
-LaTeX Warning: Citation 'scharpf_governing_1999' on page 1 undefined on input l
-ine 21.
-
-
-LaTeX Warning: Citation 'hansen_size_2014' on page 1 undefined on input line 23
-.
-
-
-LaTeX Warning: Citation 'oates_fiscal_1972' on page 1 undefined on input line 2
-3.
-
-
-LaTeX Warning: Citation 'smoke2015rethinking' on page 1 undefined on input line
- 23.
-
-
-LaTeX Warning: Citation 'tiebout_economies_1960' on page 1 undefined on input l
-ine 23.
-
-
-LaTeX Warning: Citation 'oates_fiscal_1972' on page 1 undefined on input line 2
-3.
-
-
-LaTeX Warning: Citation 'hirsch_expenditure_1959' on page 1 undefined on input 
-line 23.
-
 [1
 
 {C:/Users/Jothsna/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-
-LaTeX Warning: Citation 'Mamata' on page 2 undefined on input line 25.
-
-
-LaTeX Warning: Citation 'Telengana' on page 2 undefined on input line 25.
-
-
-LaTeX Warning: Citation 'Haryana' on page 2 undefined on input line 25.
-
-
-LaTeX Warning: Citation 'tomio2005creation' on page 2 undefined on input line 2
-5.
-
-
-LaTeX Warning: Citation 'turgel2008new' on page 2 undefined on input line 25.
-
-
-LaTeX Warning: Citation 'avellaneda_is_2015' undefined on input line 25.
-
-[2]
-
-LaTeX Warning: Citation 'tiebout_economies_1960' on page 3 undefined on input l
-ine 30.
-
-
-LaTeX Warning: Citation 'oates_fiscal_1972' on page 3 undefined on input line 3
-0.
-
-
-LaTeX Warning: Citation 'oates1999essay' undefined on input line 30.
-
-
-LaTeX Warning: Citation 'tanzi1996macroeconomic' on page 3 undefined on input l
-ine 34.
-
-
-LaTeX Warning: Citation 'allers2016effects' undefined on input line 34.
-
-
-LaTeX Warning: Citation 'lassen_jurisdiction_2011' undefined on input line 34.
-
-[3]
-
-LaTeX Warning: Citation 'faguet2008decentralization' on page 4 undefined on inp
-ut line 37.
-
-
-LaTeX Warning: Citation 'driscoll2003school' on page 4 undefined on input line 
-37.
-
-
-LaTeX Warning: Citation 'holzer2009literature' on page 4 undefined on input lin
-e 37.
-
-
-LaTeX Warning: Citation 'prud1995dangers' on page 4 undefined on input line 39.
-
-
-[4]
-
-LaTeX Warning: Empty bibliography on input line 51.
-
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 57.
+(Font)              <12> on input line 31.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 57.
+(Font)              <8> on input line 31.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 57.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+(Font)              <6> on input line 31.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[5] [6] [7]
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 156.
-
-
-LaTeX Warning: Float too large for page by 19.5766pt on input line 195.
-
-[8] [9
-
-
-] [10] [11] [12] <Images/Jitter.png, id=88, 457.71pt x 286.82156pt>
+[2] [3] [4] [5] [6] [7] <Images/Jitter.png, id=99, 457.71pt x 286.82156pt>
 File: Images/Jitter.png Graphic file (type png)
 
 <use Images/Jitter.png>
-Package pdftex.def Info: Images/Jitter.png used on input line 366.
-(pdftex.def)             Requested size: 334.60422pt x 209.68434pt.
- <Images/PSMatch.png, id=89, 457.71pt x 286.82156pt>
+Package pdftex.def Info: Images/Jitter.png used on input line 99.
+(pdftex.def)             Requested size: 389.05534pt x 243.79947pt.
+ <Images/PSMatch.png, id=100, 457.71pt x 286.82156pt>
 File: Images/PSMatch.png Graphic file (type png)
 
 <use Images/PSMatch.png>
-Package pdftex.def Info: Images/PSMatch.png used on input line 373.
-(pdftex.def)             Requested size: 334.60422pt x 209.68434pt.
- [13
+Package pdftex.def Info: Images/PSMatch.png used on input line 106.
+(pdftex.def)             Requested size: 389.05534pt x 243.79947pt.
+ [8 <D:/Share Point/OneDrive/GitHub/greek-salad/Images/Jitter.png> <D:/Share Po
+int/OneDrive/GitHub/greek-salad/Images/PSMatch.png>]
+<Images/SchoolGrant.png, id=112, 484.05844pt x 286.82156pt>
+File: Images/SchoolGrant.png Graphic file (type png)
 
- <D:/Share Point/OneDrive/GitHub/greek-salad/Images/Jitter.png> <D:/Share Point
-/OneDrive/GitHub/greek-salad/Images/PSMatch.png>]
-[14] [15] [16] [17]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 749.
- [18
+<use Images/SchoolGrant.png>
+Package pdftex.def Info: Images/SchoolGrant.png used on input line 120.
+(pdftex.def)             Requested size: 411.45161pt x 243.79947pt.
 
-] [19] [20] [21]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 749.
+<Images/Schools.png, id=113, 484.05844pt x 286.82156pt>
+File: Images/Schools.png Graphic file (type png)
 
-("D:\Share Point\OneDrive\GitHub\greek-salad\seminar.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 749.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 749.
+<use Images/Schools.png>
+Package pdftex.def Info: Images/Schools.png used on input line 127.
+(pdftex.def)             Requested size: 411.45161pt x 243.79947pt.
+ [9 <D:/Share Point/OneDrive/GitHub/greek-salad/Images/SchoolGrant.png> <D:/Sha
+re Point/OneDrive/GitHub/greek-salad/Images/Schools.png>] [10] [11
+
+] [12
+
+]
+LaTeX Font Info:    Try loading font information for T1+aett on input line 221.
+
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\ae\t1aett.fd"
+File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
+)
+[13] [14] [15] [16]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 322.
+
+
+LaTeX Warning: Float too large for page by 37.88664pt on input line 323.
+
+[17] [18
+
+
+
+
+] [19] [20] [21] [22] [23] [24] [25]
+Overfull \hbox (0.64413pt too wide) in paragraph at lines 665--704
+ [][] 
+ []
+
+
+LaTeX Warning: Float too large for page by 54.38379pt on input line 757.
+
+
+LaTeX Warning: Float too large for page by 54.38379pt on input line 810.
+
+
+LaTeX Warning: Float too large for page by 54.38379pt on input line 863.
+
+[26
+
+] [27] [28] [29]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 869.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 869.
+ ("D:\Share Point\OneDrive\GitHub\greek-salad\seminar.aux")
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 869.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 869.
 Package rerunfilecheck Info: File `seminar.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
 
-LaTeX Warning: There were undefined references.
-
-
 LaTeX Warning: There were multiply-defined labels.
-
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                seminar
-(biblatex)                and rerun LaTeX afterwards.
 
 Package logreq Info: Writing requests to 'seminar.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
- 12513 strings out of 493921
- 204710 string characters out of 3147276
- 657378 words of memory out of 3000000
- 15573 multiletter control sequences out of 15000+200000
- 34350 words of font info for 71 fonts, out of 3000000 for 9000
+ 12674 strings out of 493921
+ 208799 string characters out of 3147276
+ 675172 words of memory out of 3000000
+ 15672 multiletter control sequences out of 15000+200000
+ 40665 words of font info for 83 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 36i,9n,34p,1788b,755s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,10n,51p,1787b,1115s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
-les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
-1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
-amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
-cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.
-pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/P
-rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on seminar.pdf (21 pages, 205101 bytes).
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
+/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/
+Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program F
+iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on seminar.pdf (29 pages, 266116 bytes).
 PDF statistics:
- 190 PDF objects out of 1000 (max. 8388607)
- 55 named destinations out of 1000 (max. 500000)
- 15 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 309 PDF objects out of 1000 (max. 8388607)
+ 101 named destinations out of 1000 (max. 500000)
+ 25 words of extra memory for PDF output out of 10000 (max. 10000000)
 

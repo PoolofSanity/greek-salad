@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "#From this point on:\n#\n#Everything that exists is an object.\n#Everything that happens is a function call.\n\n##*****OK! This file is a mess. But it works. Well, it worked. Not so sure anymore.*****##\n\nsetwd(\"D:/Share Point/OneDrive/Comprehensive Exam - Data files/Census\")\n\nlibrary(foreign)\nlibrary(stargazer)\nlibrary(plyr)\nlibrary(reshape)\nlibrary(MatchIt)\nlibrary(DataCombine)\n\noptions(scipen = 999, digits=2)\nFiles <- list.files(pattern = \"*.csv\")\n\nBlock <- ldply(lapply(Files[28], read.csv, strip.white = TRUE))\nData <- ldply(lapply(Files[1:27], read.csv, strip.white = TRUE))\nData <- droplevels(subset(Data, eval(LEVEL == \"TALUK\")))[,-c(0:7)]\nData <- FindReplace(data = Data, Var = \"NAME\", replaceData = Block, from = \"Old\", to = \"New\", exact = TRUE)\n\nData <- droplevels(subset(Data, eval(is.element(NAME, Block[,2]))))\n\nTotal <- droplevels(subset(Data, eval(Data$TRU == \"Total\")))\nTotal$SCST <- Total$P_SC + Total$P_ST\nTotal <- Total[, c(1, 3, 4, 7, 16, 22, 58)]\ncolnames(Total) <- c(\"Block_Name\", \"Households\", \"TotPop\", \"Pop0-6\", \"Literates\", \"TotWPop\", \"SCST\")\n\n#write.csv(Total, \"Z1-Census2001.csv\")\n\nFiles <- list.files(pattern = \"*.csv\")\nData <- ldply(lapply(Files[29], read.csv, strip.white = TRUE))[,-1]\nDataset <- read.csv(\"D:/Share Point/OneDrive/GitHub/greek-salad/timey-wimey.csv\")\nDataset <- droplevels(subset(Dataset, eval(Year == 2005)))\n#Dataset <- FindReplace(data = Dataset, Var = \"Block_Name\", replaceData = Block, from = \"Old\", to = \"New\", exact = TRUE)\nDataset <- data.frame(merge(Dataset, Data, by = \"Block_Name\"))\n\nSchools <- ldply(lapply(Files[30], read.csv, strip.white = TRUE))[,-1]\ncolnames(Schools)[1] <- \"Block_Name\"\nDataset <- data.frame(merge(Dataset, Schools, by = \"Block_Name\"))\n\nDataset$SchoolperPop2005 <- rep(0, nrow(Dataset))\nDataset$SchoolperPop2006 <- rep(0, nrow(Dataset))\nDataset$SchoolperPop2007 <- rep(0, nrow(Dataset))\nDataset$SchoolperPop2008 <- rep(0, nrow(Dataset))\nDataset$SchoolperPop2009 <- rep(0, nrow(Dataset))\nDataset$SchoolperPop2010 <- rep(0, nrow(Dataset))\nDataset$SchoolperPop2011 <- rep(0, nrow(Dataset))\nDataset$SchoolperPop2012 <- rep(0, nrow(Dataset))\nDataset$SchoolperPop2013 <- rep(0, nrow(Dataset))\nfor (i in 39:47) {\n  Dataset[,9+i] <- Dataset[,i]*1000/Dataset[,33]\n}\n\nwrite.csv(Dataset, \"D:/Share Point/OneDrive/GitHub/greek-salad/Z0-Baseline.csv\")\n",
+    "created" : 1468473752381.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4266043591",
+    "id" : "F8DCA36",
+    "lastKnownWriteTime" : 1468166986,
+    "last_content_update" : 1468166986,
+    "path" : "D:/Share Point/OneDrive/GitHub/greek-salad/Census2001.R",
+    "project_path" : "Census2001.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

@@ -1,6 +1,6 @@
 \documentclass[12pt, a4paper]{article}
 \usepackage{geometry}
-\renewcommand{\baselinestretch}{1.0}
+\renewcommand{\baselinestretch}{1.15}
 \usepackage[backend = biber, citestyle = authoryear, url = false]{biblatex}
 \usepackage{hyperref}
 \usepackage{pdflscape}
@@ -14,136 +14,312 @@
 \begin{document}
 \SweaveOpts{concordance=TRUE}
 	\maketitle
-	\begin{abstract}
-		What is the optimal population level for local public service delivery? In the question over the optimal size of local government systems, small jurisdictions have been attributed a lot of merits. But does bifurcating larger districts into smaller ones pay off? I examine this question in the context of public education using data from a district bifurcation process in Karnataka, India. Performance of sub-districts which were allocated to newly created smaller districts is compared with sub-districts that remained in larger districts using a difference in difference estimation model. Education performance is measured in test scores, as well as inputs to schooling such as number of schools, funding to schools, academic inspections etc. The results seem to suggest that there is no significant improvement in education outcomes as a result of the bifurcation. 
-	\end{abstract}
+\begin{abstract}
+	What is the optimal population level for local public service delivery? Recent debates on the topic attribute considerable virtues to small jurisdictions. But does bifurcating larger districts into smaller ones pay off? I examine this question in the context of public education using data from a district bifurcation process in Karnataka, India. The performance of sub-districts which were allocated to newly created smaller districts is compared with sub-districts that remained in larger districts using a difference in difference estimation model. Education performance outcomes and service delivery are measured in test scores, as well as inputs to schooling such as the number of schools, funding for schools, number of academic inspections conducted per year, etc. The results seem to suggest that there is no significant improvement in education outcomes or service delivery as a result of the bifurcation. 
+\end{abstract}
 \paragraph{} Is there an optimal size for local government systems? Aristotle in his treatise `Politics' argued that political entities needed to balance the twin considerations of economic viability and effective citizenship \parencite{aristotle_politics_1984}. In modern democracies, debates on the topic are framed in a similar language with two sets of normative criteria. The first one is \textit{output legitimacy}. The function of local governments is to provide a set of public goods and services to its citizens and promote public welfare. A government that fulfils this duty better has higher output legitimacy. The other normative concern is `citizen effectiveness' or the capability and willingness of citizens to control the decisions made on their behalf \parencite{dahl_size_1973}. Enhancing citizen effectiveness raises the \textit{input legitimacy} of the system. Both output and input legitimacy are prerequisites to democratic legitimacy \parencite{scharpf_governing_1999}. The fundamental assumption in these debates is that changing the size of political units is likely to affect the democratic quality (input legitimacy) and functional effectiveness (output legitimacy) of governments. 
-
-\paragraph{}  Recent debates on the topic attribute considerable virtues to small jurisdictions. In democratic societies, the economic and political arguments tend to converge. Small jurisdictions are believed to enhance political participation, make politics less abstract, politicians more responsive, and facilitate exit-based empowerment of citizens \parencite{hansen_size_2014}. Decentralisation will also increase economic efficiency as the local governments have an information advantage and can respond better to variance in preferences at the local level \parencite{oates_fiscal_1972}, and population mobility will lead to competition between local authorities and better provision of public goods. Decentralised service delivery especially when citizens directly elect the local governments is expected to provide better coverage, quality and efficiency \parencite{smoke2015rethinking}. Competing local governments may experiment with various ways to provide public goods and lead to innovations that can be applied elsewhere. These considerations suggest that public goods that are (1) sensitive to local preferences and (2) do not have large spillover (3) nor scale effects: infrastructure, public education, etc. are better provided under decentralisation (\cite{tiebout_economies_1960}, \cite{oates_fiscal_1972}). At the same time there is a counter argument in favour of larger jurisdiction sizes because it allows for economies of scale in the providing public goods \parencite{hirsch_expenditure_1959}. 
-
-\paragraph{} In a bid to arrive at the optimal population size in a local government unit, many national governments have reorganized their sub-national boundaries. Europe has seen local government consolidation via municipal amalgamations while transitional economies have seen increasing decentralization at the local government level. Since the 1950s, India has seen frequent administrative bifurcations at the local government level (district level). The number of districts in the country has increased from 356 in the 1971 census period to 640 in the 2011 census (Table. \ref{Fig2}) This is a trend that is continuing in the present day. West Bengal has created five new districts since 2015. The rationale for creating of new districts was stated to be - ``...for \textit{better administrative control} and so that \textit{public service can be delivered at the door steps} of the people staying at remote areas'' (emphasis added) \parencite{Mamata}. Similarly, Telangana state is contemplating the creation of 14 - 15 new districts \parencite{Telengana} and Haryana state is considering 3 more districts \parencite{Haryana}. In all these cases, the stated rationale for district bifurcation is decentralisation of administration and better public service. And India is not alone in the implementation of administrative bifurcations at the local government level. Brazil, in the period from 1990 to 2000, increased the number of municipalities from 4,491 to 5,560 \parencite{tomio2005creation}. Russia adopted Local Government Reform in 2003 and since then has doubled the number of municipalities \parencite{turgel2008new}\nocite{avellaneda_is_2015}. But does creation of new districts enhance public service outcomes?
-
-\paragraph{}This paper explores the impact of bifurcation of districts on the quality of public service delivery - specifically, the quality of public education. I present the theory behind reorganization and the available evidence on its effectiveness, and discuss the methodological challenges in the empirical examination of size effects. I test my propositions using data collected on public education in the districts of Karnataka in India over a 9 year period from 2005 to 2013. Karnataka created three new districts by bifurcating three existing ones during the period. Remaining districts were left untouched. A new district is created by reallocating some of the taluks (sub-districts) within an existing district to a new one. This allows use of a difference in difference model to test for the effect of the policy on education outcomes. The reform was driven by the state government, following public demand for creation of new districts and had taken place at different times. But the rationale for the public demand was based on cultural factors rather than public education concerns. 
-
+	
+\paragraph{} Recent debates on the topic attribute considerable virtues to small jurisdictions. In democratic societies, the economic and political arguments tend to converge. Small jurisdictions are believed to enhance political participation, make politics less abstract, politicians more responsive, and facilitate exit-based empowerment of citizens \parencite{hansen_size_2014}. Decentralisation will also increase economic efficiency as the local governments have an information advantage and can respond better to variance in preferences at the local level \parencite{oates_fiscal_1972}, and population mobility will lead to competition between local authorities and better provision of public goods. Decentralised service delivery especially when citizens directly elect the local governments is expected to provide better coverage, quality and efficiency \parencite{smoke2015rethinking}. Competing local governments may experiment with various ways to provide public goods and lead to innovations that can be applied elsewhere. At the same time there is a counter argument in favour of larger jurisdiction sizes because it allows for economies of scale in the providing public goods \parencite{hirsch_expenditure_1959}. These considerations suggest that public goods that are (1) sensitive to local preferences and (2) do not have large spillover (3) nor scale effects: infrastructure, public education, etc. are better provided under decentralisation (\cite{tiebout_economies_1960}, \cite{oates_fiscal_1972}). 
+	
+\paragraph{} In a bid to arrive at the optimal population size in a local government unit, many national governments have reorganised their sub-national boundaries. Europe has seen local government consolidation via municipal amalgamations while transitional economies have seen increasing decentralisation at the local government level. Since the 1950s, India has seen frequent administrative bifurcations at the local government level (district level). The number of districts in the country has increased from 356 in the 1971 census period to 640 in the 2011 census (Table. \ref{Fig2}) This is a trend that is continuing to the present day. West Bengal has created five new districts since 2015. The rationale for creating new districts was stated to be - ``...for \textit{better administrative control,} and so that \textit{public service can be delivered at the door steps} of the people staying at remote areas'' (emphasis added) \parencite{Mamata}. Similarly, Telangana state is contemplating the creation of 14 - 15 new districts \parencite{Telengana} and Haryana state is considering three more districts \parencite{Haryana}. In all these cases, the stated rationale for district bifurcation is decentralisation of administration and better public service. And India is not alone in the implementation of administrative bifurcations at the local government level. Brazil, in the period from 1990 to 2000, increased the number of municipalities from 4,491 to 5,560 \parencite{tomio2005creation}. Russia adopted Local Government Reform in 2003 and since then has doubled the number of municipalities \parencite{turgel2008new}\nocite{avellaneda_is_2015}. But does creating new districts enhance public service outcomes?
+	
+	\begin{table}[h!]
+		\centering
+		\caption{New Districts created in India across Census Periods}
+		\label{Fig1}
+		\begin{tabular}{c|cccc} 
+			\hline
+			States/UTs & 1971-81 & 1981-91 & 1991-2001 & 2001-11 \\
+			\hline 
+			Andaman and Nicobar Islands & 1 & 0 & 0 & 1  \\ 
+			Andhra Pradesh & 2 & 0 & 0 & 0  \\ 
+			Arunachal Pradesh & 4 & 2 & 2 & 3  \\ 
+			Assam & 0 & 13 & 0 & 4  \\ 
+			Bihar & 14 & 11 & 8 & 1  \\ 
+			Chhattisgarh & 0 & 0 & 9 & 2  \\ 
+			Daman and Diu & 0 & 2 & 0 & 0  \\ 
+			Delhi & 0 & 0 & 8 & 0  \\ 
+			Goa & 0 & -1 & 0 & 0  \\ 
+			Gujarat & 0 & 0 & 6 & 1  \\ 
+			Haryana & 5 & 4 & 3 & 2  \\ 
+			Himachal Pradesh & 2 & 0 & 0 & 0  \\ 
+			Jammu and Kashmir & 4 & 0 & 0 & 8  \\ 
+			Jharkhand & 0 & 0 & 5 & 6  \\ 
+			Karnataka & 0 & 1 & 7 & 3  \\ 
+			Kerala & 2 & 2 & 0 & 0  \\ 
+			Madhya Pradesh & 2 & 0 & 7 & 5  \\ 
+			Maharashtra & 0 & 4 & 5 & 0  \\ 
+			Manipur & 1 & 2 & 1 & 0  \\ 
+			Meghalaya & 3 & 0 & 2 & 0  \\ 
+			Mizoram & 3 & 0 & 5 & 0  \\ 
+			Nagaland & 4 & 0 & 1 & 3  \\ 
+			Odisha & 0 & 0 & 17 & 0  \\ 
+			Punjab & 1 & 0 & 5 & 3  \\ 
+			Rajasthan & 0 & 1 & 5 & 1  \\ 
+			Tamil Nadu & 2 & 5 & 9 & 2  \\ 
+			Tripura & 0 & 0 & 1 & 0  \\ 
+			Uttar Pradesh & 2 & 7 & 16 & 1  \\ 
+			Uttarakhand & 0 & 0 & 4 & 0  \\ 
+			West Bengal & 0 & 1 & 1 & 1  \\ 
+			\hline
+			Overall & 52 & 54 & 127 & 47  \\ 
+			\hline
+		\end{tabular}
+	\end{table} 
+	
+\paragraph{}This paper explores the effect of bifurcation of districts on public service outcomes - specifically, the quality of public education. I present the theory behind reorganisation and the available evidence on its effectiveness, and discuss the methodological challenges in the empirical examination of size effects. I test my propositions using data collected on public education in the districts of Karnataka in India over a nine year period from 2005 to 2013. Karnataka created three new districts by bifurcating three existing ones during the period. Remaining districts were left untouched. A new district is created by reallocating some of the taluks (sub-districts) within an existing district to a new one. This allows use of a difference in difference model to test for the effect of the policy on education outcomes. The reform was driven by the state government, following public demand for creation of new districts and had taken place at different times. But the rationale for the public demand was based on cultural factors rather than public education concerns. My findings suggest that for the most part there is no significant impact of the district reorganisation on the public education outcomes or service delivery in the years after the split.
+	
 \section*{Theory}
-\paragraph{} The fundamental argument in favour of decentralized governance comes from the perspective that there is heterogeneity in demand for public services. The variance in demand can be better understood and catered to by a government that is closer to the citizens, thus raising well-being throughout society. Tiebout, in his 1956 paper, talks about citizens \textit{voting with their feet} or \textit{exiting}. He conceptualizes a fully mobile citizen that can move to a jurisdiction that matches her preferences for tax rates and public service levels, thus revealing her preferences \parencite{tiebout_economies_1960}. This information can then be used by local governments to tailor their own activities and thus raise welfare. But how much decentralization should we demand? Oates' Decentralization theorem formalizes it as \textit{``...in the absence of cost-savings from the centralized provision of a [local public] good and of interjurisdictional externalities, the level of welfare will always be at least as high (and typically higher) if Pareto-efficient levels of consumption are provided in each jurisdiction than if any single, uniform level of consumption is maintained across all jurisdictions''}(\cite{oates_fiscal_1972}, pg 54). \nocite{oates1999essay}
+\paragraph{} The fundamental argument for decentralised governance comes from the perspective that there is heterogeneity in demand for public services. The variance in preferences can be better understood and catered to by a government that is closer to the citizens, thus raising well-being throughout society. Tiebout, in his 1956 paper, talks about citizens \textit{voting with their feet} or \textit{exiting}. He conceptualises a fully mobile citizen that can move to a jurisdiction that matches her preferences for tax rates and public service levels, thus revealing her preferences \parencite{tiebout_economies_1960}. Thus with small jurisdictions this information can be used by local governments to tailor their activities and raise welfare. But how much decentralisation should we demand? Oates' Decentralization Theorem formalizes it as \textit{``...in the absence of cost-savings from the centralized provision of a [local public] good and of inter jurisdictional externalities, the level of welfare will always be at least as high (and typically higher) if Pareto-efficient levels of consumption are provided in each jurisdiction than if any single, uniform level of consumption is maintained across all jurisdictions''}(\cite{oates_fiscal_1972}, pg 54). \nocite{oates1999essay}
+	
+\paragraph{} In other words, a public good that does not have large economies of scale or inter-jurisdictional externalities may be better provided under decentralisation. Public education is not seen as imposing strong externalities on neighbouring regions, nor does it have large scale effects. Therefore, under the classic explanation, a smaller district should be able to provide better service. At the same time, practical considerations remain. We might need to build administrative capacity when a larger district is split into two or more before any benefits can be reaped. Also, if the districts are too small in the first place, there might be some benefit in consolidating two or more districts and managing them together.  
+	
+\paragraph{Jurisdiction Size} Administrative bifurcations lead to lowering of the jurisdiction size and are often pursued in hopes that smaller population sizes will lead to administrative convenience and better allocative efficiency. Smaller populations may reduce agency costs especially if the local administrators are directly elected and information costs because of the proximity of the decision-making-centre to the citizens. It may also lead to lower costs in planning and monitoring activities than in a larger jurisdiction. At the same time, it can lead to higher costs by administrative duplication. Creation of a new district entails additional administrative costs as the new districts often need to create the administrative infrastructure. Some of these effects are likely to materialise over a longer period and would require a long research period. On the other hand, a larger jurisdiction size will allow you to spread fixed costs of a greater population. \nocite{allers2016effects} \nocite{lassen_jurisdiction_2011} The optimal jurisdiction size at which public service delivery begins to improve or decline might also be a function of the specific public good or service. It also needs to be stated that the effects of size on public service delivery depends on the size of production units as well, not just administrative units. For example, in the case of public education, a smaller district may recognise the need for higher educational spending and raise the number of schools in the region accordingly, but the educational outcomes or test scores would depend on the size and characteristics of the schools as well. 
+	
+\paragraph{Service Levels} Decentralised governance is expected to make government more responsive to the citizens. If there is heterogeneity in preferences, it may be reflected in levels of public service delivered. Smaller administrative units allow the tailoring of public services to the preferences of smaller and more homogenous groups thus achieving greater allocative efficiency of public budgets. %Conditional on the variation in preferences a district after bifurcation may exhibit divergence in service levels. If preferences are more homogeneous, then there will be less need to deviate from previous service levels. 
+There is some evidence from the decentralisation reforms in Bolivia and Columbia to suggest that decentralisation has enhanced the local allocative efficiency of public funds. Notably, it has resulted in shifting resources towards education in regions where education performance has historically been worse. But data limitations prevent the authors from testing whether the improvement extends to education outcomes, such as literacy and test scores \parencite{faguet2008decentralization}. Also, there is evidence from California state, to suggest that students in smaller districts perform better than those in larger districts in standardised tests after controlling for a variety of other factors \parencite{driscoll2003school}.
 
-\paragraph{} In other words, a public good that does not have large economies of scale or inter-jurisdictional externalities may be better provided under decentralization. Public education is not seen as imposing strong externalities on neighbouring regions, nor does it have large scale effects. Therefore, under the classic explanation, a smaller district should be able to provide better service. At the same time, practical considerations remain. We might need to build administrative capacity when a larger district is split into two or more before any benefits can be reaped. Also, if the districts are too small in the first place, there might be some benefit in consolidating two or more districts and managing them together.  
+\paragraph{} The critics of decentralisation argue that its effectiveness is often greatly hampered by the particular context of its implementation. Vito Tanzi offers an argument for corruption to be higher at local levels than at central government levels, because of closer interaction at the local level between the bureaucrats and citizens that can enable nepotism and personal favours \parencite{tanzi1996macroeconomic}. Also, local bureaucracies may be poorly staffed and ill-equipped to handle the responsibilities associated with the decentralised provision of public goods \parencite{prud1995dangers}. The precise nature of decentralisation, such as the financial autonomy of the local government may also pay a role in determining whether the benefits can be reaped. 
+	
+\paragraph{}  The effect of any form of administrative reorganization - bifurcation or consolidation (or a combination of both) - depends on the particular context and capabilities of the local administrative body. Holzer et al in 2009 provides a review of the empirical literature on this question. Their review suggests that the evidence on the effect of size on local government performance is inconclusive - there is very little correlation between size and efficiency for population sizes between 25,000 and 250,000 - anything above that or below is less efficient \parencite{holzer2009literature}. These factors caution against the implementation of decentralisation as a panacea for administrative ills. It also means that any instance of decentralisation can be explored further to understand the context of success or failure. But administrative bifurcation at the local government level is a step that is frequently taken - despite the lack of strong evidence in its favour. 
+	
+\section*{Endogeneity and Empirical Strategy}
+\paragraph{} Spatial and temporal variation in public policy affords the conditions suitable for identifying the impact of the policy on outcomes. But the size and boundary of the administrative unit is an active response to a problem and is endogenous - it can be included in the left \textit{or} right side of the estimation equation. In this paper, I use a difference in difference estimation comparing the changes in performance of districts that were divided to a control group of districts that were not divided in order to estimate the effect of the bifurcation of the administrative district on the public spending and quality of educational service delivered. The DID estimation strategy requires that the error term be uncorrelated with the bifurcation status. This is unlikely as the districts that were split may be different from those that were not. The demand for creation a new district usually arises from within the district and the political traction gained by the idea has a role to play in the eventual decision made by the state. If the source of variation in policy action arises from within the characteristics of the intended beneficiaries of the policy, then we have a policy endogeneity. 
+	
+\paragraph{} To control for the policy endogeneity or self-selection into treatment, it is possible to use an instrumental variable approach. A good instrument would be a variable that influences the choice of a district to be bifurcated and is otherwise independent of the quality of public service delivery and outcomes in the region. As the stated rationale for creating new districts in India is administrative convenience, population at the district level at the 2001 census is likely to make a good instrument. Larger districts are more likely to be perceived as unwieldy and seen as candidates for bifurcation. At the 2001 census, Karnataka state had 27 districts - each with an average population of over 660,000 (If we exclude the urban district of Bangalore, the average drops to around 470,000). Between 2007 and 2010 three new districts were carved out from three existing ones. Two new districts (Chikballapura and Ramanagara) were created from two existing ones (Kolar and Bangalore Rural respectively) in 2007, and a third new district (Yadgir) was created from an existing one (Gulbarga) in 2010 taking the total in the state up to 30. The instrumental variable approach though plausible, is not employed in this study as the sample size is too small to support it. 
 
-\paragraph{Jurisdiction Size} Administrative bifurcations lead to lowering of the jurisdiction size and are often pursued in hopes that smaller population sizes will lead to administrative convenience and better allocative efficiency. Smaller populations may reduce agency costs especially if the local administrators are directly elected and also reduce information costs because of the proximity of the decision making centre to the citizens. It may also lead to lower costs in planning and monitoring activities than in a larger jurisdiction. Some of these effects are likely to materialize over a longer period of time and would require a long research period. On the other hand larger jurisdiction size will allow you to spread fixed costs of a greater population. Vito Tanzi offers an argument for corruption to be higher at local levels than at central government levels, because of closer interaction at the local level between the bureaucrats and citizens that can enable nepotism and personal favours \parencite{tanzi1996macroeconomic}. \nocite{allers2016effects} \nocite{lassen_jurisdiction_2011} The optimal jurisdiction size at which public service delivery begins to improve or decline might also be a function of the specific public good or service. It also needs to be stated that the effects of size on public service delivery depends on the size of production units as well, not just administrative units. For example, in the case of public education, a smaller district may recognize the need for higher educational spending and raise the number of schools in the region accordingly, but the educational outcomes or test scores would depend on the size and characteristics of the school as well. 
+\paragraph{}The approach that is considered here is to include the variables that may influence selection in the model. This is not perfect as all potential explanatory variables that may bias the choice cannot be captured. I also use two different control groups against which the bifurcated districts are compared. First group consists of all the other sub-districts in the state - except for those from Bangalore Urban district, which is a clear outlier. The second control group is chosen by using propensity scores to match sub-districts that have similar observable characteristics. 
+\subsection*{Data}
+The sub-district level data on public education is provided by District Information System for Education (DISE). Data is available at the school level on infrastructure and resources and is aggregated to the sub-district level for the analysis here. Student performance data is taken from the annual Secondary School Leaving Certificate (SSLC) examination. All students in the state at the close of their secondary education appear for the SSLC exam, which forms a gateway to any future educational or vocational plans. The exam is conducted statewide by the Karnataka Secondary Education Examination Board (KSEEB). I obtain data on exam results at the student level for control and treatment taluks for the exams conducted in April 2006 to April 2014. The unit of analysis is the subdistrict and each subdistrict is given a treatment (bifurcation) status of 0 or 1 based on whether in 2005 it belonged to a district that was subsequently bifurcated. 
+\paragraph{} I have used demographic data from the closest census (Census 2001) to identify control groups using propensity scores from the baseline (Academic Year 2005-06). The variables considered for propensity score matching are school performance, number of schools per 1000 population, average number of female teachers in the schools across the sub-district, proportion of schools in the subdistrict with electricity, proportion of government funded schools, average number of graduate teachers, number of households, population less than 6 years of age, literate population and scheduled castes and scheduled tribes population. 
 
-\paragraph{Service Levels} Local governments have a limited scope in varying service levels within their jurisdictions. If there is heterogeneity in preferences, it may be reflected in levels of public service delivered. A smaller administrative units allow for greater allocative efficiency of public budgets by allowing administrators to take preference heterogeneity into account. Conditional on the variation in preferences a district after bifurcation may exhibit divergence in service levels. If preferences are more homogeneous then there will be less need to deviate from previous service levels. 
-\paragraph{} There is evidence from the decentralisation reforms in Bolivia and Columbia to suggest that decentralisation has enhanced the local allocative efficiency of public funds. Notably, it has resulted in shifting resources towards education in regions where education performance has historically been worse. But data limitations prevent the authors from testing whether the improvement extends to education outcomes, such as literacy and test scores \parencite{faguet2008decentralization}. Also, there is evidence from California state, to suggest that students in smaller districts perform better than those in larger districts in standardised tests after controlling for a variety of other factors \parencite{driscoll2003school}. The effect of either of these policies - bifurcation or consolidation (or a combination of both) - depends on the particular context and capabilities of the local administrative body. Holzer et al in 2009 provide a review of the empirical literature on this question. Their review suggests that the evidence on the effect of size on local government performance is inconclusive - there is very little correlation between size and efficiency for population sizes between 25,000 and 250,000 - anything above that or below is less efficient \parencite{holzer2009literature}. Decentralization at the local government level is a step that is frequently taken - despite the lack of strong evidence in its favour. 
+\begin{figure}[h!]
+	\centering
+	\includegraphics[scale = 0.85]{Jitter}
+	\caption{Propensity Score Matching: Jitter Plot}
+	\label{Fig1}
+\end{figure}
 
-\paragraph{} The critics of decentralisation argue that the its effectiveness is often greatly hampered by the particular context of its implementation.  Also, local bureaucracies may be poorly staffed and ill-equipped to handle the responsibilities associated with the decentralised provision of public goods \parencite{prud1995dangers}. The precise nature of decentralisation, such as the financial autonomy of the local government may also pay a role in determining whether the benefits can be reaped. These factors caution against the implementation of decentralisation as a panacea for administrative ills. It also means that any instance of decentralisation can be explored further to understand the context of success or failure.
+\begin{figure}[h!]
+	\centering
+	\includegraphics[scale = 0.85]{PSMatch}
+	\caption{Propensity Score Matching: Histogram}
+	\label{Fig2}
+\end{figure}
 
-\section*{Endogeneity Problem}
-\paragraph{} Spatial and temporal variation in public policy affords the conditions suitable for identifying the impact of the policy on outcomes. But the size and boundary of the administrative unit is an active response to a problem and is endogenous - it can be included in the left \textit{or} right side of the estimation equation. In this paper I estimate the effect of the bifurcation of the administrative district on the public spending and quality of educational service delivered in the district. The identification is complicated by the fact the districts that were not split may be different from those that were. The demand for creation a new district usually arises from within the district, and the political traction gained by the idea has a role to play in the eventual decision made by the state. If the source of variation in policy action arises from within the characteristics of the intended beneficiaries of policy, then we have a policy endogeneity. Policy variation itself may be an outcome of some other characteristics. 
-\section*{Methodology}
-\paragraph{} At the 2001 census, Karnataka state had 27 districts - each with an average population of over 660,000 (If we exclude the urban district of Bangalore, the average drops to around 470,000). In the last decade Karnataka state in the south of India carved out three new districts from three existing ones. Two new districts (Chikballapura and Ramanagara) were created from two existing ones (Kolar and Bangalore rural respectively) in 2007, and a third new district (Yadgir) was created from an existing one (Gulbarga) in 2010 taking the total in the state up to 30. Creation of a new district entails additional administrative costs as the new districts often need to create the administrative infrastructure.
 
+The default specification is of the form,
 
-%\section*{Results}
-%\section*{Discussion}
-%\section*{Conclusion}
-%\section*{Future Plans}
+\[ Y_{it} = \beta_0 + \beta_1 Split_{i} + \beta_2 PostSplit_t + \beta_3 Split_i PostSplit_t + \beta_j X_{ijt} + \epsilon_{it} \]
+
+Academic Year 2013-14 is taken as the post treatment period (PostSplit = 1). The bifurcation itself happened in two instances - one is 2007 and the other in 2010. But in most instances, the bifurcation is notified by the government before the administrative machinery is setup. In effect, the district is bifurcated on paper, but the administrative responsibilities rest on the same shoulders as before in the immediate aftermath. Overtime the administrative machinery of the new district is set up and positions filled. This process may take two to three years. The academic year ending in 2014 is chosen as it gives sufficient time for the new districts created in 2007 and 2010 to find their feet.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[scale = 0.85]{SchoolGrant}
+	\caption{School Grant for Treatment and Control Groups}
+	\label{Fig3}
+\end{figure}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[scale = 0.85]{Schools}
+	\caption{No of Schools for Treatment and Control Groups}
+	\label{Fig4}
+\end{figure}
+
+\paragraph{} The outcome variables that are evaluated can be considered in three groups. First is the \textit{Investment variables}. As the name suggests these are variables that indicate the local governments investments in schools. This includes proportion of public schools, total number of school and grants allocated to schools to procure materials and to perform minor infrastructural improvements and repairs. These are small grants - the average figure is less than 10,000 per year, though there is significant variation across schools. Two indicators for investment in schools - number of schools and the amount of school grant are plotted for the bifurcated districts and the two control groups in Fig. \ref{Fig3} and \ref{Fig4}. The treatment and control groups follow closely matching trends in the number of schools and diverge slightly in the amount of school grants - with the treatment groups receiving less grants in total than either of the control groups. The second group is the group of \textit{Resources variables}. They include physical infrastructure indicators such as classroom, electricity and library, quality of teachers, and quality of oversight such as number of academic inspections. The third kind of variable is the student \textit{Performance Variable} and is measured as a test scores in the SSLC exam. The results presented in Table. \ref{Table2} are with the control group matched using propensity scores (Control Group 2). Remaining tables are included in the appendix.
+\nocite{hinnerich2009merging} \nocite{jordahl2010merged} \nocite{reingewertz2012municipal} \nocite{blesse2013municipal}. 
+
+\paragraph{} The results of the estimation model shows insignificant effects of the bifurcation on most service delivery and performance outcomes. The districts that underwent decentralization on the whole seem to allocate less grants to schools than the ones that were not bifurcated. On the whole the districts that underwent bifurcation do not seem different from those that did not - except for a decline in school grants. Does that remain true within the bifurcated districts as well? In each bifurcated district, there are some taluks which remain with the older district with an already established administrative machinery - and some which were spun off into the new district and had to set up administration anew. Table \ref{Table3} examines whether the `new' districts are different from the `old' district within treatment. The p values from a t test are also included in the table and we can see that except for the average number of female teachers per school, all `new' districts are indistinguishable from the `old' in all characteristics. 
+
+\begin{landscape}
+	% Table created by stargazer v.5.2 by Marek Hlavac, Harvard University. E-mail: hlavac at fas.harvard.edu
+	% Date and time: Thu, Jul 14, 2016 - 12:56:36 PM
+	\begin{table}[!htbp] \centering 
+		\caption{Basic Regression Results: With Control Group 2} 
+		\label{Table2} 
+		\scalebox{0.9}{
+		\begin{tabular}{@{\extracolsep{5pt}}lcccccccc} 
+			\\[-1.8ex]\hline 
+			\hline \\[-1.8ex] 
+			& \multicolumn{8}{c}{\textit{Dependent variable:}} \\ 
+			\cline{2-9} 
+			\\[-1.8ex] & ln(Grants) & \# of Schools & Public & Classrooms & Toilet-Girls & Electricity & Library & Test Scores \\ 
+			\\[-1.8ex] & (1) & (2) & (3) & (4) & (5) & (6) & (7) & (8)\\ 
+			\hline \\[-1.8ex] 
+			Split & 0.3 & 0.1$^{*}$ & 0.001 & $-$0.5$^{***}$ & $-$0.001 & $-$0.04 & 0.04 & 0.2 \\ 
+			& (0.2) & (0.1) & (0.02) & (0.2) & (0.001) & (0.04) & (0.1) & (7.8) \\ 
+			& & & & & & & & \\ 
+			Post & 0.9$^{***}$ & 0.2$^{***}$ & $-$0.1$^{***}$ & 0.2 & $-$0.01$^{***}$ & 0.3$^{***}$ & 0.1 & 10.0 \\ 
+			& (0.2) & (0.1) & (0.02) & (0.2) & (0.002) & (0.1) & (0.1) & (19.0) \\ 
+			& & & & & & & & \\ 
+			Split:Post & $-$0.5$^{**}$ & $-$0.03 & $-$0.02 & 0.1 & 0.003$^{*}$ & 0.1 & 0.2 & 13.0 \\ 
+			& (0.2) & (0.1) & (0.02) & (0.2) & (0.002) & (0.05) & (0.1) & (10.0) \\ 
+			& & & & & & & & \\ 
+			Demographic Variables & YES & YES & YES & YES & YES & YES & YES & YES \\
+			Investment Variables & NO & NO & NO & YES & YES & YES & YES & YES \\
+			Resource Variables  & NO & NO & NO  & NO & NO & NO & NO & YES \\
+			\hline \\[-1.8ex] 
+			Observations & 95 & 95 & 95 & 95 & 95 & 95 & 95 & 95 \\ 
+			R$^{2}$ & 0.3 & 0.4 & 0.4 & 0.8 & 0.4 & 0.8 & 0.3 & 0.4 \\ 
+			Adjusted R$^{2}$ & 0.2 & 0.4 & 0.3 & 0.8 & 0.3 & 0.8 & 0.2 & 0.4 \\ 
+			Residual Std. Error & 0.6 & 0.2 & 0.1 & 0.5 & 0.005 & 0.1 & 0.3 & 24.0 \\ 
+			F Statistic & 5.3$^{***}$ & 9.7$^{***}$ & 9.4$^{***}$ & 40.0$^{***}$ & 5.6$^{***}$ & 35.0$^{***}$ & 4.1$^{***}$ & 6.6$^{***}$ \\ 
+			\hline 
+			\hline \\[-1.8ex] 
+			\textit{Note:}  & \multicolumn{8}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
+		\end{tabular} }
+	\end{table} \end{landscape}
+
+\begin{table}[!htbp] \centering 
+	\caption{Summary Statistics in 2013 - Within Treatment Group} 
+	\label{Table3} 
+	\begin{tabular}{@{\extracolsep{5pt}} ccccc} 
+		\\[-1.8ex]\hline 
+		\hline \\[-1.8ex] 
+		& Variables & Old & New & p.value \\ 
+		\hline \\[-1.8ex] 
+		1 & Total Marks & $344.0$ & $333.0$ & 0.33 \\ 
+		2 & Rural/Urban (rural = 1) & $0.9$ & $0.9$ & 0.56 \\ 
+		3 & Working Days & $0.7$ & $1.1$ & 0.57 \\ 
+		4 & Academic Inspection & $1.3$ & $1.6$ & 0.67 \\ 
+		5 & School Dev Grant - R & $7,260.0$ & $7,574.0$ & 0.6 \\ 
+		6 & School Dev Grant - E & $6,542.0$ & $6,442.0$ & 0.76 \\ 
+		7 & TLM Grant - R & $1,098.0$ & $1,456.0$ & 0.19 \\ 
+		8 & TLM Grant - E & $1,017.0$ & $1,352.0$ & 0.18 \\ 
+		9 & Classrooms & $4.9$ & $4.5$ & 0.2 \\ 
+		10 & Electricity (Yes = 1) & $1.0$ & $1.0$ & 0.62 \\ 
+		11 & Library  (Yes = 1) & $1.0$ & $1.2$ & 0.36 \\ 
+		12 & PlayGround  (Yes = 1) & $0.6$ & $0.5$ & 0.57 \\ 
+		13 & Male teachers & $2.1$ & $2.1$ & 0.94 \\ 
+		14 & Female teachers & $2.4$ & $1.8$ & 0 \\ 
+		15 & Grad teachers & $1.0$ & $0.7$ & 0.21 \\ 
+		16 & ProfQ teachers & $4.4$ & $3.7$ & 0.03 \\ 
+		17 & Days\_non teaching activity & $0.5$ & $0.1$ & 0.2 \\ 
+		18 & Public Schools (\%) & $0.8$ & $0.9$ & 0.18 \\ 
+		19 & Households & $45,379.0$ & $48,264.0$ & 0.66 \\ 
+		20 & Total Population & $222,491.0$ & $236,014.0$ & 0.7 \\ 
+		21 & Population 0 - 6 & $27,863.0$ & $30,597.0$ & 0.69 \\ 
+		22 & Literates & $129,369.0$ & $119,382.0$ & 0.53 \\ 
+		23 & Total W Population & $108,226$ & $121,141$ & 0.44 \\ 
+		24 & SC/ST Population & $73,461.0$ & $84,702$ & 0.45 \\ 
+		25 & No of Schools in Taluk & $333.0$ & $337.0$ & 0.93 \\ 
+		26 & Schools per 1000 people & $1.5$ & $1.6$ & 0.77 \\ 
+		27 & New/Old Dist (New = 1) & $0$ & $1$ & - \\ 
+		28 & \# of Observations & $14$ & $9$ & - \\ 
+		\hline \\[-1.8ex] 
+		\multicolumn{5}{l}{Population figure used to calculate `Schools per 1000 people' is from 2001} \\ 
+	\end{tabular} 
+\end{table}
+
+\section*{Conclusion}
+\paragraph{} This paper explores the effect of district reorganization on the eventual public education delivery and outcomes. The findings suggest that there is 
+
+\paragraph{} The findings from the study suggest no significant changes in the education outcomes of the sub-districts following a bifurcation. It is acknowledged here that government functions are many and varied and the effect of population size on one of those functions might not be the same as that on others. As such, this study cannot claim to comment on local government size without due consideration to other functions and services performed by local governments. Future iterations of this study would attempt to mitigate this issue to some extent by broadening the scope of services considered into public health and sanitation at a pan India setting.
 \printbibliography
+\pagebreak
 \section*{Appendix}
 \begin{table}[h!]
-	\centering
-	\caption{New Districts created in India - Statewise}
-	\label{Fig1}
-	\begin{tabular}{c|cccc} 
-		\hline
-		States/UTs & 1971-81 & 1981-91 & 1991-2001 & 2001-11 \\
-		\hline 
-		Andaman and Nicobar Islands & 1 & 0 & 0 & 1  \\ 
-		Andhra Pradesh & 2 & 0 & 0 & 0  \\ 
-		Arunachal Pradesh & 4 & 2 & 2 & 3  \\ 
-		Assam & 0 & 13 & 0 & 4  \\ 
-		Bihar & 14 & 11 & 8 & 1  \\ 
-		Chhattisgarh & 0 & 0 & 9 & 2  \\ 
-		Daman and Diu & 0 & 2 & 0 & 0  \\ 
-		Delhi & 0 & 0 & 8 & 0  \\ 
-		Goa & 0 & -1 & 0 & 0  \\ 
-		Gujarat & 0 & 0 & 6 & 1  \\ 
-		Haryana & 5 & 4 & 3 & 2  \\ 
-		Himachal Pradesh & 2 & 0 & 0 & 0  \\ 
-		Jammu and Kashmir & 4 & 0 & 0 & 8  \\ 
-		Jharkhand & 0 & 0 & 5 & 6  \\ 
-		Karnataka & 0 & 1 & 7 & 3  \\ 
-		Kerala & 2 & 2 & 0 & 0  \\ 
-		Madhya Pradesh & 2 & 0 & 7 & 5  \\ 
-		Maharashtra & 0 & 4 & 5 & 0  \\ 
-		Manipur & 1 & 2 & 1 & 0  \\ 
-		Meghalaya & 3 & 0 & 2 & 0  \\ 
-		Mizoram & 3 & 0 & 5 & 0  \\ 
-		Nagaland & 4 & 0 & 1 & 3  \\ 
-		Odisha & 0 & 0 & 17 & 0  \\ 
-		Punjab & 1 & 0 & 5 & 3  \\ 
-		Rajasthan & 0 & 1 & 5 & 1  \\ 
-		Tamil Nadu & 2 & 5 & 9 & 2  \\ 
-		Tripura & 0 & 0 & 1 & 0  \\ 
-		Uttar Pradesh & 2 & 7 & 16 & 1  \\ 
-		Uttarakhand & 0 & 0 & 4 & 0  \\ 
-		West Bengal & 0 & 1 & 1 & 1  \\ 
-		\hline
-		Overall & 52 & 54 & 127 & 47  \\ 
-		\hline
-	\end{tabular}
-\end{table}
-
-\begin{table}[h!]
-	\centering
-	\caption{No\# of Districts in India - Statewise}
-	\label{Fig2}
-	\begin{tabular}{c|ccccc} 
-		\hline
-		States/UTs & 1971 & 1981 & 1991 & 2001 & 2011 \\
-		\hline 
-		Andaman \& Nicobar Islands & 1 & 2 & 2 & 2 & 3 \\ 
-		Andhra Pradesh & 21 & 23 & 23 & 23 & 23 \\ 
-		Arunachal Pradesh & 5 & 9 & 11 & 13 & 16 \\ 
-		Assam & 10 & 10 & 23 & 23 & 27 \\ 
-		Bihar & 17 & 31 & 42 & 37 & 38 \\ 
-		Chandigarh & 1 & 1 & 1 & 1 & 1 \\ 
-		Chhattisgarh &  &  &  & 16 & 18 \\ 
-		Dadra \& Nagar Haveli & 1 & 1 & 1 & 1 & 1 \\ 
-		Daman \& Diu &  &  & 2 & 2 & 2 \\ 
-		Delhi & 1 & 1 & 1 & 9 & 9 \\ 
-		Goa & 3 & 3 & 2 & 2 & 2 \\ 
-		Gujarat & 19 & 19 & 19 & 25 & 26 \\ 
-		Haryana & 7 & 12 & 16 & 19 & 21 \\ 
-		Himachal Pradesh & 10 & 12 & 12 & 12 & 12 \\ 
-		Jammu \& Kashmir & 10 & 14 & 14 & 14 & 22 \\ 
-		Jharkhand &  &  &  & 18 & 24 \\ 
-		Karnataka & 19 & 19 & 20 & 27 & 30 \\ 
-		Kerala & 10 & 12 & 14 & 14 & 14 \\ 
-		Lakshadweep & 1 & 1 & 1 & 1 & 1 \\ 
-		Madhya Pradesh & 43 & 45 & 45 & 45 & 50 \\ 
-		Maharashtra & 26 & 26 & 30 & 35 & 35 \\ 
-		Manipur & 5 & 6 & 8 & 9 & 9 \\ 
-		Meghalaya & 2 & 5 & 5 & 7 & 7 \\ 
-		Mizoram &  & 3 & 3 & 8 & 8 \\ 
-		Nagaland & 3 & 7 & 7 & 8 & 11 \\ 
-		Orissa & 13 & 13 & 13 & 30 & 30 \\ 
-		Pondicherry & 4 & 4 & 4 & 4 & 4 \\ 
-		Punjab & 11 & 12 & 12 & 17 & 20 \\ 
-		Rajasthan & 26 & 26 & 27 & 32 & 33 \\ 
-		Sikkim & 4 & 4 & 4 & 4 & 4 \\ 
-		Tamil Nadu & 14 & 16 & 21 & 30 & 32 \\ 
-		Tripura & 3 & 3 & 3 & 4 & 4 \\ 
-		Uttar Pradesh & 54 & 56 & 63 & 70 & 71 \\ 
-		Uttaranchal &  &  &  & 13 & 13 \\ 
-		West Bengal & 16 & 16 & 17 & 18 & 19 \\ 
-		\hline
-		States & 19 & 22 & 25 & 29 &  \\ 
-		Union Territories & 10 & 9 & 7 & 6 &  \\ 
-		Districts & 356 & 412 & 466 & 593 & 640 \\ 
-		\hline
-	\end{tabular}
-\end{table}
-
+		\centering
+		\caption{No\# of Districts in India - Statewise}
+		\label{Fig2}
+		\scalebox{0.9}{
+		\begin{tabular}{c|ccccc} 
+			\hline
+			States/UTs & 1971 & 1981 & 1991 & 2001 & 2011 \\
+			\hline 
+			Andaman \& Nicobar Islands & 1 & 2 & 2 & 2 & 3 \\ 
+			Andhra Pradesh & 21 & 23 & 23 & 23 & 23 \\ 
+			Arunachal Pradesh & 5 & 9 & 11 & 13 & 16 \\ 
+			Assam & 10 & 10 & 23 & 23 & 27 \\ 
+			Bihar & 17 & 31 & 42 & 37 & 38 \\ 
+			Chandigarh & 1 & 1 & 1 & 1 & 1 \\ 
+			Chhattisgarh &  &  &  & 16 & 18 \\ 
+			Dadra \& Nagar Haveli & 1 & 1 & 1 & 1 & 1 \\ 
+			Daman \& Diu &  &  & 2 & 2 & 2 \\ 
+			Delhi & 1 & 1 & 1 & 9 & 9 \\ 
+			Goa & 3 & 3 & 2 & 2 & 2 \\ 
+			Gujarat & 19 & 19 & 19 & 25 & 26 \\ 
+			Haryana & 7 & 12 & 16 & 19 & 21 \\ 
+			Himachal Pradesh & 10 & 12 & 12 & 12 & 12 \\ 
+			Jammu \& Kashmir & 10 & 14 & 14 & 14 & 22 \\ 
+			Jharkhand &  &  &  & 18 & 24 \\ 
+			Karnataka & 19 & 19 & 20 & 27 & 30 \\ 
+			Kerala & 10 & 12 & 14 & 14 & 14 \\ 
+			Lakshadweep & 1 & 1 & 1 & 1 & 1 \\ 
+			Madhya Pradesh & 43 & 45 & 45 & 45 & 50 \\ 
+			Maharashtra & 26 & 26 & 30 & 35 & 35 \\ 
+			Manipur & 5 & 6 & 8 & 9 & 9 \\ 
+			Meghalaya & 2 & 5 & 5 & 7 & 7 \\ 
+			Mizoram &  & 3 & 3 & 8 & 8 \\ 
+			Nagaland & 3 & 7 & 7 & 8 & 11 \\ 
+			Orissa & 13 & 13 & 13 & 30 & 30 \\ 
+			Pondicherry & 4 & 4 & 4 & 4 & 4 \\ 
+			Punjab & 11 & 12 & 12 & 17 & 20 \\ 
+			Rajasthan & 26 & 26 & 27 & 32 & 33 \\ 
+			Sikkim & 4 & 4 & 4 & 4 & 4 \\ 
+			Tamil Nadu & 14 & 16 & 21 & 30 & 32 \\ 
+			Tripura & 3 & 3 & 3 & 4 & 4 \\ 
+			Uttar Pradesh & 54 & 56 & 63 & 70 & 71 \\ 
+			Uttaranchal &  &  &  & 13 & 13 \\ 
+			West Bengal & 16 & 16 & 17 & 18 & 19 \\ 
+			\hline
+			States & 19 & 22 & 25 & 29 &  \\ 
+			Union Territories & 10 & 9 & 7 & 6 &  \\ 
+			Districts & 356 & 412 & 466 & 593 & 640 \\ 
+			\hline
+		\end{tabular}}
+	\end{table}
+	
+\begin{landscape}
+	% Table created by stargazer v.5.2 by Marek Hlavac, Harvard University. E-mail: hlavac at fas.harvard.edu
+	% Date and time: Thu, Jul 14, 2016 - 1:28:54 PM
+	\begin{table}[!htbp] \centering 
+		\caption{No of Schools District-wise, across the years} 
+		\label{} 
+		\footnotesize 
+		\scalebox{0.90}{
+		\begin{tabular}{@{\extracolsep{5pt}} ccccccccccc} 
+			\\[-1.8ex]\hline 
+			\hline \\[-1.8ex] 
+			& District & Yr2005 & Yr2006 & Yr2007 & Yr2008 & Yr2009 & Yr2010 & Yr2011 & Yr2012 & Yr2013 \\ 
+			\hline \\[-1.8ex] 
+			1 & BAGALKOT & $229$ & $255$ & $265$ & $269$ & $277$ & $281$ & $340$ & $291$ & $292$ \\ 
+			2 & BANGALORE RURAL & $330$ & $324$ & $330$ & $328$ & $332$ & $330$ & $367$ & $340$ & $343$ \\ 
+			3 & BELGAUM & $260$ & $277$ & $269$ & $283$ & $285$ & $291$ & $366$ & $304$ & $304$ \\ 
+			4 & BELGAUM CHIKKODI & $337$ & $358$ & $291$ & $307$ & $320$ & $324$ & $383$ & $328$ & $332$ \\ 
+			5 & BELLARY & $213$ & $224$ & $228$ & $231$ & $232$ & $240$ & $290$ & $246$ & $244$ \\ 
+			6 & BIDAR & $262$ & $290$ & $322$ & $336$ & $358$ & $377$ & $471$ & $399$ & $414$ \\ 
+			7 & BIJAPUR & $326$ & $336$ & $327$ & $336$ & $345$ & $366$ & $439$ & $392$ & $396$ \\ 
+			8 & CHAMARAJANAGARA & $310$ & $254$ & $180$ & $184$ & $186$ & $188$ & $229$ & $189$ & $188$ \\ 
+			9 & CHIKKABALLAPURA & $307$ & $295$ & $300$ & $309$ & $312$ & $313$ & $357$ & $321$ & $319$ \\ 
+			10 & CHIKKAMANGALORE & $253$ & $261$ & $235$ & $224$ & $218$ & $221$ & $258$ & $223$ & $225$ \\ 
+			11 & CHITRADURGA & $309$ & $310$ & $315$ & $330$ & $332$ & $335$ & $398$ & $340$ & $342$ \\ 
+			12 & DAKSHINA KANNADA & $218$ & $223$ & $226$ & $229$ & $231$ & $232$ & $294$ & $234$ & $235$ \\ 
+			13 & DAVANAGERE & $262$ & $268$ & $274$ & $273$ & $275$ & $278$ & $346$ & $279$ & $282$ \\ 
+			14 & DHARWAD & $197$ & $207$ & $145$ & $148$ & $153$ & $149$ & $185$ & $152$ & $156$ \\ 
+			15 & GADAG & $128$ & $131$ & $135$ & $135$ & $138$ & $141$ & $183$ & $146$ & $145$ \\ 
+			16 & GULBARGA & $244$ & $252$ & $262$ & $283$ & $290$ & $300$ & $365$ & $322$ & $326$ \\ 
+			17 & HASSAN & $364$ & $367$ & $365$ & $367$ & $366$ & $371$ & $428$ & $362$ & $363$ \\ 
+			18 & HAVERI & $171$ & $176$ & $180$ & $187$ & $191$ & $195$ & $242$ & $199$ & $200$ \\ 
+			19 & KODAGU & $168$ & $172$ & $173$ & $178$ & $178$ & $178$ & $226$ & $179$ & $181$ \\ 
+			20 & KOLAR & $421$ & $437$ & $419$ & $402$ & $403$ & $405$ & $449$ & $406$ & $404$ \\ 
+			21 & KOPPAL & $265$ & $271$ & $288$ & $292$ & $297$ & $305$ & $369$ & $325$ & $334$ \\ 
+			22 & MANDYA & $294$ & $295$ & $296$ & $298$ & $296$ & $298$ & $344$ & $302$ & $292$ \\ 
+			23 & MYSORE & $293$ & $301$ & $303$ & $307$ & $310$ & $315$ & $370$ & $316$ & $315$ \\ 
+			24 & RAICHUR & $294$ & $308$ & $324$ & $348$ & $361$ & $381$ & $445$ & $394$ & $402$ \\ 
+			25 & RAMANAGARA & $388$ & $386$ & $395$ & $396$ & $401$ & $406$ & $454$ & $391$ & $392$ \\ 
+			26 & SHIMOGA & $319$ & $317$ & $327$ & $329$ & $331$ & $333$ & $389$ & $335$ & $332$ \\ 
+			27 & TUMKUR & $436$ & $436$ & $445$ & $435$ & $436$ & $429$ & $496$ & $427$ & $423$ \\ 
+			28 & TUMKUR MADHUGIRI & $351$ & $346$ & $352$ & $352$ & $358$ & $362$ & $422$ & $363$ & $364$ \\ 
+			29 & UDUPI & $284$ & $283$ & $200$ & $192$ & $194$ & $194$ & $258$ & $196$ & $196$ \\ 
+			30 & UTTARA KANNADA & $212$ & $216$ & $215$ & $219$ & $219$ & $219$ & $249$ & $221$ & $221$ \\ 
+			31 & UTTARA KANNADA SIRSI & $200$ & $200$ & $203$ & $208$ & $209$ & $207$ & $234$ & $209$ & $209$ \\ 
+			32 & YADAGIRI & $298$ & $311$ & $328$ & $339$ & $358$ & $374$ & $441$ & $398$ & $404$ \\ 
+			\hline \\[-1.8ex] 
+		\end{tabular} }
+	\end{table} \end{landscape}
 <<App0, echo=FALSE, eval=TRUE, results=tex>>=
 #Everything that exists is an object.
 #Everything that happens is a function call.
@@ -154,16 +330,17 @@ library(plyr)
 library(reshape)
 library(MatchIt)
 library(optmatch)
+library(AER)
 
 options(scipen = 999, digits=2)
 Files <- list.files(pattern = "*.csv")
 @
 
 \begin{landscape}
-<<App1, echo=FALSE, eval=TRUE, results=tex>>=
+<<App1, echo=FALSE, eval=FALSE, results=tex>>=
 #Summary Table
 Appendix <- ldply(lapply(Files[1], read.csv))[,-1]
-stargazer(Appendix, title = "No of Schools District-wise, across the years", summary = FALSE, digits = 1, font.size = "footnotesize")
+stargazer(Appendix, title = "No of Schools District-wise, across the years", summary = FALSE, digits = 0, font.size = "footnotesize")
 
 @
 \end{landscape}
@@ -257,21 +434,6 @@ match <- match.data(m.out)
 #write.csv(match, "Z1-Matched.csv")
 #plot(m.out, type = "hist")
 @
-\clearpage
-\pagebreak
-\begin{figure}[h]
-    \centering
-    \includegraphics{Jitter}
-    \caption{Propensity Score Matching: Jitter Plot}
-    \label{Fig1}
-\end{figure}
-
-\begin{figure}[h]
-    \centering
-    \includegraphics{PSMatch}
-    \caption{Propensity Score Matching: Histogram}
-    \label{Fig2}
-\end{figure}
 
 <<App5, echo=FALSE, eval=TRUE, results=tex>>=
 #With matched Data
@@ -365,43 +527,81 @@ Data[Data$Year == 2013, 55] = 1
 Data$SchoolNo <- Data$SchoolperPop2013 - Data$SchoolperPop2005
 Data$Literacy <- (Data$Literates/Data$TotPop)*100
 Data$YoungPop <- (Data$Pop0.6/Data$TotPop)*100
+Data$SchoolGrant <- Data$DevGrantR + Data$TLMGrantR
 
+Distpop <- ldply(lapply(Files[14], read.csv))
+Data <- merge(Data, Distpop, by = "District")
+
+#cor(Data$Split, Data$Population.2001)
+
+probit.split <- glm(Split ~ Population.2001, data = Data, family=binomial(link="probit"), subset = eval(Data$Year == 2005))
+
+#stargazer(probit.split)
+iv.school <- ivreg(SchoolperPop2013 ~ Split + Literacy + YoungPop, instruments = ~ Population.2001 + Literacy + YoungPop, Data, subset = eval(Data$Year == 2013))
 #Funding related variables
-fit.School <- lm(SchoolNo ~ Split*Post + Literacy + Data$YoungPop, Data)
-fit.public <- lm(Public ~ Split*Post + Literacy + Data$YoungPop, Data)
-fit.DevGrant <- lm(DevGrantR ~ Split*Post + Literacy + Data$YoungPop, Data)
-fit.TLM <- lm(TLMGrantR ~ Split*Post + Literacy + Data$YoungPop, Data)
+fit.School <- lm(SchoolNo ~ Split*Post + Literacy + Data$YoungPop + Population.2001, Data)
+fit.public <- lm(Public ~ Split*Post + Literacy + Data$YoungPop + Population.2001, Data)
+fit.DevGrant <- lm(log(DevGrantR) ~ Split*Post + Literacy + Data$YoungPop + Population.2001, Data)
+fit.TLM <- lm(TLMGrantR ~ Split*Post + Literacy + Data$YoungPop + Population.2001, Data)
 stargazer(fit.School, fit.public, fit.DevGrant, fit.TLM, digits = 1, df = FALSE)
 
 #Infrastructure related variables
-fit.Class <- lm(Classrooms ~ Split*Post + SchoolNo + Public + DevGrantR + TLMGrantR + Literacy + Data$YoungPop, Data)
-fit.Toilet <- lm(ToiletG ~ Split*Post + SchoolNo + Public + DevGrantR + TLMGrantR + Literacy + Data$YoungPop, Data)
-fit.Elect <- lm(Electricity ~ Split*Post + SchoolNo + Public + DevGrantR + TLMGrantR + Literacy + Data$YoungPop, Data)
-fit.libr <- lm(Library ~ Split*Post + SchoolNo + Public + DevGrantR + TLMGrantR + Literacy + Data$YoungPop, Data)
+fit.Class <- lm(Classrooms ~ Split*Post + SchoolNo + Public + SchoolGrant + Literacy + Data$YoungPop + Population.2001, Data)
+fit.Toilet <- lm(ToiletG ~ Split*Post + SchoolNo + Public + SchoolGrant + Literacy + Data$YoungPop + Population.2001, Data)
+fit.Elect <- lm(Electricity ~ Split*Post + SchoolNo + Public + SchoolGrant + Literacy + Data$YoungPop + Population.2001, Data)
+fit.libr <- lm(Library ~ Split*Post + SchoolNo + Public + SchoolGrant + Literacy + Data$YoungPop + Population.2001, Data)
 stargazer(fit.Class, fit.Toilet, fit.Elect, fit.libr, digits = 1, df = FALSE)
 
 #Teaching resources related variables
-fit.male <- lm(Male_Tch ~ Split*Post + SchoolNo + Public + DevGrantR + TLMGrantR + Literacy + Data$YoungPop, Data)
-fit.fem <- lm(Female_Tch ~ Split*Post + SchoolNo + Public + DevGrantR + TLMGrantR + Literacy + Data$YoungPop, Data)
-fit.grad <- lm(Grad_Tch ~ Split*Post + SchoolNo + Public + DevGrantR + TLMGrantR + Literacy + Data$YoungPop, Data)
-fit.prof <- lm(ProfQ_Tch ~ Split*Post + SchoolNo + Public + DevGrantR + TLMGrantR + Literacy + Data$YoungPop, Data)
+fit.male <- lm(Male_Tch ~ Split*Post + SchoolNo + Public + SchoolGrant + Literacy + Data$YoungPop + Population.2001, Data)
+fit.fem <- lm(Female_Tch ~ Split*Post + SchoolNo + Public + SchoolGrant + Literacy + Data$YoungPop + Population.2001, Data)
+fit.grad <- lm(Grad_Tch ~ Split*Post + SchoolNo + Public + SchoolGrant + Literacy + Data$YoungPop + Population.2001, Data)
+fit.prof <- lm(ProfQ_Tch ~ Split*Post + SchoolNo + Public + SchoolGrant + Literacy + Data$YoungPop + Population.2001, Data)
 stargazer(fit.male, fit.fem, fit.grad, fit.prof, digits = 1, df = FALSE)
 
 #Organization related variables
-fit.WDays <- lm(WorkDays ~ Split*Post + SchoolNo + Public + DevGrantR + TLMGrantR + Literacy + Data$YoungPop, Data)
-fit.AcdInsp <- lm(AcadInsp ~ Split*Post + SchoolNo + Public + DevGrantR + TLMGrantR + Literacy + Data$YoungPop, Data)
-fit.nonTch <- lm(Days_nonTch ~ Split*Post + SchoolNo + Public + DevGrantR + TLMGrantR + Literacy + Data$YoungPop, Data)
-fit.scores <- lm(TotalMarks ~ Split*Post + SchoolNo + Public + DevGrantR + TLMGrantR + Literacy + Data$YoungPop, Data)
+fit.WDays <- lm(WorkDays ~ Split*Post + SchoolNo + Public + SchoolGrant + Literacy + Data$YoungPop + Population.2001, Data)
+fit.AcdInsp <- lm(AcadInsp ~ Split*Post + SchoolNo + Public + SchoolGrant + Literacy + Data$YoungPop + Population.2001, Data)
+fit.nonTch <- lm(Days_nonTch ~ Split*Post + SchoolNo + Public + SchoolGrant + Literacy + Data$YoungPop + Population.2001, Data)
+fit.scores <- lm(TotalMarks ~ Split*Post + SchoolNo + Public + SchoolGrant + Literacy + Data$YoungPop + Population.2001, Data)
 stargazer(fit.WDays, fit.nonTch, fit.AcdInsp, fit.scores, digits = 1, df = FALSE)
 @
+\clearpage
+\begin{landscape}
+<<App8, echo=FALSE, eval=FALSE, results=tex>>=
 
-<<App8, echo=FALSE, eval=TRUE, results=tex>>=
-
-
+fit.Grant <- lm(log(SchoolGrant) ~ Split*Post + Literacy + Data$YoungPop + Population.2001, Data)
+stargazer(fit.Grant, fit.School, fit.public, fit.Class, fit.Toilet, fit.Elect, fit.libr, fit.scores, digits = 1, df = FALSE, keep = c("Split", "Post", "Split:Post"))
 @
-
+\end{landscape}
 <<App9, echo=FALSE, eval=TRUE, results=tex>>=
+#Plots
+Files <- list.files(pattern = "*.csv")
+Data <- ldply(lapply(Files[c(5)], read.csv))[,-c(1, 29)]
+#all.taluks <- ldply(lapply(Files[7], read.csv))[,2]
+#Data <- droplevels(subset(Data, eval(is.element(Block_Name, all.taluks))))
+colnames(Data) <- c("Block_Name", "Year", "Marks1", "Marks2", "Marks3", "Marks4", "Marks5", "Marks6", "TotalMarks", "Dist_Name", "Rural", "WorkDays",  "AcadInsp", "DevGrantR", "DevGrantE", "TLMGrantR", "TLMGrantE", "Classrooms", "ToiletG", "Electricity", "Library", "PlayGround", "Male_Tch", "Female_Tch", "Grad_Tch", "ProfQ_Tch", "Days_nonTch", "Public", "Split")
+Data$SchoolGrant <- Data$TLMGrantR + Data$DevGrantR
+School <- ldply(lapply(Files[c(9)], read.csv))
+Data <- merge(Data, School, by = c("Block_Name", "Year"))
+Data <- Data[,c(1, 2, 29, 31, 32, 30, 9)]
+Assort.Ctrl1 <- aggregate(Data, by = list(Data$Split, Data$Year), mean)[,-c(3:6)]
+colnames(Assort.Ctrl1)[1:2] <- c("Split", "Year")
+all.taluks <- ldply(lapply(Files[7], read.csv))[,2]
+Data <- droplevels(subset(Data, eval(is.element(Block_Name, all.taluks))))
+Assort.Ctrl2 <- aggregate(Data, by = list(Data$Split, Data$Year), mean)[,-c(3:6)]
+colnames(Assort.Ctrl2)[1:2] <- c("Split", "Year")
+par(mfrow = c(1, 1))
+plot(SchoolGrant ~ Year, data = Assort.Ctrl1, subset = Split == 1, type = "l", ylim = c(4000,14000), col = "blue")
+lines(SchoolGrant ~ Year, data = Assort.Ctrl1, subset = Split == 0, col = "red")
+lines(SchoolGrant ~ Year, data = Assort.Ctrl2, subset = Split == 0, col = "black")
+legend(2011,8000, c("Treatment", "Control-1", "Control-2"), lty =c(1,1), lwd=c(2.5,2.5),col=c("blue", "red", "black"))
 
+par(mfrow = c(1, 1))
+plot(Schools ~ Year, data = Assort.Ctrl1, subset = Split == 1, type = "l", ylim = c(200, 500), col = "blue")
+lines(Schools ~ Year, data = Assort.Ctrl1, subset = Split == 0, col = "red")
+lines(Schools ~ Year, data = Assort.Ctrl2, subset = Split == 0, col = "black")
+legend(2005,500, c("Treatment", "Control-1", "Control-2"), lty =c(1,1), lwd=c(2.5,2.5),col=c("blue", "red", "black"))
 
 @
 

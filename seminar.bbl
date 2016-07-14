@@ -1,0 +1,798 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.7 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist[entry]{nty/global/}
+    \entry{allers2016effects}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=a3b6b87d5f3d08f7a3c65498f602303f}{%
+           family={Allers},
+           family_i={A\bibinitperiod},
+           given={Maarten\bibnamedelima A},
+           given_i={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{uniquename=0,hash=096fe7cfab9af52e553a7afeaadc00be}{%
+           family={Geertsema},
+           family_i={G\bibinitperiod},
+           given={J\bibnamedelima Bieuwe},
+           given_i={J\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{3d1ef8e85762b0d013e7ee26ddc55260}
+      \strng{fullhash}{3d1ef8e85762b0d013e7ee26ddc55260}
+      \field{sortinit}{A}
+      \field{sortinithash}{b685c7856330eaee22789815b49de9bb}
+      \field{labelyear}{2016}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Regional Science}
+      \field{title}{The Effects of Local Government Amalgamation on Public Spending, Taxation, and Service Levels: Evidence from 15 Years of Municipal Consolidation}
+      \field{year}{2016}
+    \endentry
+    \entry{aristotle_politics_1984}{book}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=798a01f212a8e620a6940400717a56d9}{%
+           family={Aristotle},
+           family_i={A\bibinitperiod}}}%
+      }
+      \name{translator}{1}{}{%
+        {{hash=1b7935fa9e331a027bb3be4a4d5de25d}{%
+           family={Jowett},
+           family_i={J\bibinitperiod},
+           given={Benjamin},
+           given_i={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{798a01f212a8e620a6940400717a56d9}
+      \strng{fullhash}{798a01f212a8e620a6940400717a56d9}
+      \field{sortinit}{A}
+      \field{sortinithash}{b685c7856330eaee22789815b49de9bb}
+      \field{labelyear}{1984}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Politics}
+      \field{urlday}{02}
+      \field{urlmonth}{06}
+      \field{urlyear}{2016}
+      \field{year}{1984}
+      \verb{url}
+      \verb https://socserv2.socsci.mcmaster.ca/econ/ugcm/3ll3/aristotle/Politics.pdf
+      \endverb
+    \endentry
+    \entry{avellaneda_is_2015}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=96ce30faad6a419e4cdf7a0ae6fec37a}{%
+           family={Avellaneda},
+           family_i={A\bibinitperiod},
+           given={Claudia\bibnamedelima N.},
+           given_i={C\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{uniquename=0,hash=6bda167abba7aa4e039f034ddc61c3c2}{%
+           family={Gomes},
+           family_i={G\bibinitperiod},
+           given={Ricardo\bibnamedelima Corr\^{e}a},
+           given_i={R\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{961851947db77aa6be02c448598fb838}
+      \strng{fullhash}{961851947db77aa6be02c448598fb838}
+      \field{sortinit}{A}
+      \field{sortinithash}{b685c7856330eaee22789815b49de9bb}
+      \field{labelyear}{2015}
+      \field{labelmonth}{01}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{issn}{1540-6210}
+      \field{journaltitle}{Public Administration Review}
+      \field{month}{01}
+      \field{number}{1}
+      \field{shorttitle}{Is {Small} {Beautiful}?}
+      \field{title}{Is {Small} {Beautiful}? {Testing} the {Direct} and {Nonlinear} {Effects} of {Size} on {Municipal} {Performance}}
+      \field{urlday}{01}
+      \field{urlmonth}{06}
+      \field{urlyear}{2016}
+      \field{volume}{75}
+      \field{year}{2015}
+      \field{pages}{137\bibrangedash 149}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1111/puar.12307
+      \endverb
+      \verb{url}
+      \verb http://onlinelibrary.wiley.com/doi/10.1111/puar.12307/abstract
+      \endverb
+    \endentry
+    \entry{Telengana}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=4c224447cb5985e2b4063e87380a986a}{%
+           family={Balakrishna},
+           family_i={B\bibinitperiod},
+           given={V\bibnamedelima V},
+           given_i={V\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+      }
+      \strng{namehash}{4c224447cb5985e2b4063e87380a986a}
+      \strng{fullhash}{4c224447cb5985e2b4063e87380a986a}
+      \field{sortinit}{B}
+      \field{sortinithash}{4ecbea03efd0532989d3836d1a048c32}
+      \field{labelyear}{2016}
+      \field{labelmonth}{05}
+      \field{labelday}{07}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{07}
+      \field{journaltitle}{The New Indian Express}
+      \field{month}{05}
+      \field{title}{New Districts to Precede New Constituencies}
+      \field{urlday}{31}
+      \field{urlmonth}{05}
+      \field{urlyear}{2016}
+      \field{year}{2016}
+      \verb{url}
+      \verb http://www.newindianexpress.com/states/telangana/New-Districts-to-Precede-New-Constituencies/2016/05/07/article3419967.ece
+      \endverb
+    \endentry
+    \entry{blesse2013municipal}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=140fd74fc3698a1560a5e2097dde8daf}{%
+           family={Blesse},
+           family_i={B\bibinitperiod},
+           given={Sebastian},
+           given_i={S\bibinitperiod}}}%
+        {{uniquename=0,hash=e510048103cca5eff62ecdf90a554a5a}{%
+           family={Baskaran},
+           family_i={B\bibinitperiod},
+           given={Thushyanthan},
+           given_i={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{85a473d55ba97ea15c58a9bd1a2511e7}
+      \strng{fullhash}{0879dd97f77969d0cb4753b04e52deca}
+      \field{sortinit}{B}
+      \field{sortinithash}{4ecbea03efd0532989d3836d1a048c32}
+      \field{labelyear}{2013}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Center for European, Governance and Economic Development Research, Discussion Papers}
+      \field{title}{Do municipal mergers result in scale economies? Evidence from a German federal state}
+      \field{volume}{176}
+      \field{year}{2013}
+    \endentry
+    \entry{hansen_size_2014}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=461fd8523d78210c5e005eb848ee60cd}{%
+           family={Blom-Hansen},
+           family_i={B\bibinithyphendelim H\bibinitperiod},
+           given={Jens},
+           given_i={J\bibinitperiod}}}%
+        {{uniquename=0,hash=a1ddf5f7fd2cf224121fc380c47eaa05}{%
+           family={Houlberg},
+           family_i={H\bibinitperiod},
+           given={Kurt},
+           given_i={K\bibinitperiod}}}%
+        {{uniquename=2,hash=8951ac895be3f4e19c91d91e3e497714}{%
+           family={Serritzlew},
+           family_i={S\bibinitperiod},
+           given={S\o{}ren},
+           given_i={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{a69ef7b40621f6967b281e35bbfc2b9f}
+      \strng{fullhash}{a69ef7b40621f6967b281e35bbfc2b9f}
+      \field{sortinit}{B}
+      \field{sortinithash}{4ecbea03efd0532989d3836d1a048c32}
+      \field{labelyear}{2014}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0092-5853}
+      \field{journaltitle}{American Journal of Political Science}
+      \field{number}{4}
+      \field{title}{Size, {Democracy}, and the {Economic} {Costs} of {Running} the {Political} {System}}
+      \field{urlday}{01}
+      \field{urlmonth}{06}
+      \field{urlyear}{2016}
+      \field{volume}{58}
+      \field{year}{2014}
+      \field{pages}{790\bibrangedash 803}
+      \range{pages}{14}
+      \verb{url}
+      \verb http://www.jstor.org/stable/24363526
+      \endverb
+    \endentry
+    \entry{dahl_size_1973}{book}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=3f999ff182b1e91089f9002597417e95}{%
+           family={Dahl},
+           family_i={D\bibinitperiod},
+           given={Robert\bibnamedelima Alan},
+           given_i={R\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{uniquename=0,hash=07bb67356ea4ccd6bf5f968d4bd5c0b7}{%
+           family={Tufte},
+           family_i={T\bibinitperiod},
+           given={Edward\bibnamedelima R.},
+           given_i={E\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Stanford University Press}%
+      }
+      \strng{namehash}{114d4fd504bb82185afbccd2762ca38a}
+      \strng{fullhash}{114d4fd504bb82185afbccd2762ca38a}
+      \field{sortinit}{D}
+      \field{sortinithash}{78f7c4753a2004675f316a80bdb31742}
+      \field{labelyear}{1973}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Size and democracy}
+      \field{urlday}{01}
+      \field{urlmonth}{06}
+      \field{urlyear}{2016}
+      \field{volume}{2}
+      \field{year}{1973}
+    \endentry
+    \entry{driscoll2003school}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=687c274ae5b76f1027cfdff61254d14c}{%
+           family={Driscoll},
+           family_i={D\bibinitperiod},
+           given={Donna},
+           given_i={D\bibinitperiod}}}%
+        {{uniquename=0,hash=068849eb5d180580994b04b7ac407c99}{%
+           family={Halcoussis},
+           family_i={H\bibinitperiod},
+           given={Dennis},
+           given_i={D\bibinitperiod}}}%
+        {{uniquename=0,hash=dc1fb8fd93c1acc2dbef9d3022d641a8}{%
+           family={Svorny},
+           family_i={S\bibinitperiod},
+           given={Shirley},
+           given_i={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{9965e6f0345f1254609c39a46d95b8b2}
+      \strng{fullhash}{9965e6f0345f1254609c39a46d95b8b2}
+      \field{sortinit}{D}
+      \field{sortinithash}{78f7c4753a2004675f316a80bdb31742}
+      \field{labelyear}{2003}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{economics of education review}
+      \field{number}{2}
+      \field{title}{School district size and student performance}
+      \field{volume}{22}
+      \field{year}{2003}
+      \field{pages}{193\bibrangedash 201}
+      \range{pages}{9}
+    \endentry
+    \entry{faguet2008decentralization}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=4f55540b362b6d37aabb4776d7c9b643}{%
+           family={Faguet},
+           family_i={F\bibinitperiod},
+           given={Jean-Paul},
+           given_i={J\bibinithyphendelim P\bibinitperiod}}}%
+        {{uniquename=0,hash=244df37c0c54ed73b7816df3bbb52ece}{%
+           family={Sanchez},
+           family_i={S\bibinitperiod},
+           given={Fabio},
+           given_i={F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{69cb727abdf8f51a5bed2ea966246bd4}
+      \strng{fullhash}{69cb727abdf8f51a5bed2ea966246bd4}
+      \field{sortinit}{F}
+      \field{sortinithash}{c6a7d9913bbd7b20ea954441c0460b78}
+      \field{labelyear}{2008}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{World Development}
+      \field{number}{7}
+      \field{title}{Decentralization's effects on educational outcomes in Bolivia and Colombia}
+      \field{volume}{36}
+      \field{year}{2008}
+      \field{pages}{1294\bibrangedash 1316}
+      \range{pages}{23}
+    \endentry
+    \entry{hinnerich2009merging}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=81d794e486ae5681efc55fb6fa3ecb37}{%
+           family={Hinnerich},
+           family_i={H\bibinitperiod},
+           given={Bj\"{o}rn\bibnamedelima Tyrefors},
+           given_i={B\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{81d794e486ae5681efc55fb6fa3ecb37}
+      \strng{fullhash}{81d794e486ae5681efc55fb6fa3ecb37}
+      \field{sortinit}{H}
+      \field{sortinithash}{82012198d5dfa657b8c4a168793268a6}
+      \field{labelyear}{2009}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Public Economics}
+      \field{number}{5}
+      \field{title}{Do merging local governments free ride on their counterparts when facing boundary reform?}
+      \field{volume}{93}
+      \field{year}{2009}
+      \field{pages}{721\bibrangedash 728}
+      \range{pages}{8}
+    \endentry
+    \entry{hirsch_expenditure_1959}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=100513932ed62d0caab7e96e921b4e1b}{%
+           family={Hirsch},
+           family_i={H\bibinitperiod},
+           given={Werner\bibnamedelima Z.},
+           given_i={W\bibinitperiod\bibinitdelim Z\bibinitperiod}}}%
+      }
+      \strng{namehash}{100513932ed62d0caab7e96e921b4e1b}
+      \strng{fullhash}{100513932ed62d0caab7e96e921b4e1b}
+      \field{sortinit}{H}
+      \field{sortinithash}{82012198d5dfa657b8c4a168793268a6}
+      \field{labelyear}{1959}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0034-6535}
+      \field{journaltitle}{The Review of Economics and Statistics}
+      \field{number}{3}
+      \field{title}{Expenditure {Implications} of {Metropolitan} {Growth} and {Consolidation}}
+      \field{urlday}{02}
+      \field{urlmonth}{06}
+      \field{urlyear}{2016}
+      \field{volume}{41}
+      \field{year}{1959}
+      \field{pages}{232\bibrangedash 241}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.2307/1927450
+      \endverb
+      \verb{url}
+      \verb http://www.jstor.org/stable/1927450
+      \endverb
+    \endentry
+    \entry{holzer2009literature}{book}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=ebeb1846f5071365af40d7e5b39bc5d6}{%
+           family={Holzer},
+           family_i={H\bibinitperiod},
+           given={Marc},
+           given_i={M\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Rutgers--Newark, School of Public Affairs}%
+        {Administration}%
+      }
+      \strng{namehash}{ebeb1846f5071365af40d7e5b39bc5d6}
+      \strng{fullhash}{ebeb1846f5071365af40d7e5b39bc5d6}
+      \field{sortinit}{H}
+      \field{sortinithash}{82012198d5dfa657b8c4a168793268a6}
+      \field{labelyear}{2009}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Literature review and analysis related to optimal municipal size and efficiency}
+      \field{year}{2009}
+    \endentry
+    \entry{jordahl2010merged}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=40041cb059584f969bde2dd15b8751b4}{%
+           family={Jordahl},
+           family_i={J\bibinitperiod},
+           given={Henrik},
+           given_i={H\bibinitperiod}}}%
+        {{uniquename=0,hash=72bbfd8f766886aabd37e88b903e32d8}{%
+           family={Liang},
+           family_i={L\bibinitperiod},
+           given={Che-Yuan},
+           given_i={C\bibinithyphendelim Y\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{4c1a05318e17f1ab797f67b4545eb6e1}
+      \strng{fullhash}{4c1a05318e17f1ab797f67b4545eb6e1}
+      \field{sortinit}{J}
+      \field{sortinithash}{ec3950a647c092421b9fcca6d819504a}
+      \field{labelyear}{2010}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Public Choice}
+      \field{number}{1-2}
+      \field{title}{Merged municipalities, higher debt: on free-riding and the common pool problem in politics}
+      \field{volume}{143}
+      \field{year}{2010}
+      \field{pages}{157\bibrangedash 172}
+      \range{pages}{16}
+    \endentry
+    \entry{Mamata}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=ecedbea8756d088b7d460123bb73c800}{%
+           family={Konar},
+           family_i={K\bibinitperiod},
+           given={Debashis},
+           given_i={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{ecedbea8756d088b7d460123bb73c800}
+      \strng{fullhash}{ecedbea8756d088b7d460123bb73c800}
+      \field{sortinit}{K}
+      \field{sortinithash}{a7d5b3aec5a0890aae7baf85a209abfc}
+      \field{labelyear}{2015}
+      \field{labelmonth}{12}
+      \field{labelday}{18}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{18}
+      \field{journaltitle}{Times of India}
+      \field{month}{12}
+      \field{title}{West Bengal CM Mamata Banerjee creates five new districts}
+      \field{urlday}{31}
+      \field{urlmonth}{05}
+      \field{urlyear}{2016}
+      \field{year}{2015}
+      \verb{url}
+      \verb http://timesofindia.indiatimes.com/city/kolkata/West-Bengal-CM-Mamata-Banerjee-creates-five-new-districts/articleshow/50234830.cms
+      \endverb
+    \endentry
+    \entry{lassen_jurisdiction_2011}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=fe92164743cbeaa9352fad740e2fa120}{%
+           family={Lassen},
+           family_i={L\bibinitperiod},
+           given={David\bibnamedelima Dreyer},
+           given_i={D\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{uniquename=2,hash=58ff4ad64c500c642e3ac2b390ea664f}{%
+           family={Serritzlew},
+           family_i={S\bibinitperiod},
+           given={Soren},
+           given_i={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{bfd58793da0941398e946486242e612d}
+      \strng{fullhash}{bfd58793da0941398e946486242e612d}
+      \field{sortinit}{L}
+      \field{sortinithash}{872351f18d0f736066eda0bf18bfa4f7}
+      \field{labelyear}{2011}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{issn}{0003-0554}
+      \field{journaltitle}{The American Political Science Review}
+      \field{number}{2}
+      \field{shorttitle}{Jurisdiction {Size} and {Local} {Democracy}}
+      \field{title}{Jurisdiction {Size} and {Local} {Democracy}: {Evidence} on {Internal} {Political} {Efficacy} from {Large}-scale {Municipal} {Reform}}
+      \field{urlday}{01}
+      \field{urlmonth}{06}
+      \field{urlyear}{2016}
+      \field{volume}{105}
+      \field{year}{2011}
+      \field{pages}{238\bibrangedash 258}
+      \range{pages}{21}
+      \verb{url}
+      \verb http://www.jstor.org/stable/41495064
+      \endverb
+    \endentry
+    \entry{oates1999essay}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=2,hash=493996190ec6138ddf61198b1c1ab384}{%
+           family={Oates},
+           family_i={O\bibinitperiod},
+           given={Wallace\bibnamedelima E},
+           given_i={W\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {JSTOR}%
+      }
+      \strng{namehash}{493996190ec6138ddf61198b1c1ab384}
+      \strng{fullhash}{493996190ec6138ddf61198b1c1ab384}
+      \field{sortinit}{O}
+      \field{sortinithash}{7803d2715d5e795e70382b084ab8d00e}
+      \field{labelyear}{1999}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of economic literature}
+      \field{number}{3}
+      \field{title}{An essay on fiscal federalism}
+      \field{volume}{37}
+      \field{year}{1999}
+      \field{pages}{1120\bibrangedash 1149}
+      \range{pages}{30}
+    \endentry
+    \entry{oates_fiscal_1972}{book}{}
+      \name{author}{1}{}{%
+        {{uniquename=2,hash=114365394da6e01c0f48a7dcce6b1f82}{%
+           family={Oates},
+           family_i={O\bibinitperiod},
+           given={Wallace\bibnamedelima E.},
+           given_i={W\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Edward Elgar Publishing}%
+      }
+      \strng{namehash}{114365394da6e01c0f48a7dcce6b1f82}
+      \strng{fullhash}{114365394da6e01c0f48a7dcce6b1f82}
+      \field{sortinit}{O}
+      \field{sortinithash}{7803d2715d5e795e70382b084ab8d00e}
+      \field{labelyear}{1972}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Fiscal federalism}
+      \field{urlday}{02}
+      \field{urlmonth}{06}
+      \field{urlyear}{2016}
+      \field{year}{1972}
+    \endentry
+    \entry{prud1995dangers}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=b5f65c3be792b9b1cad366acac1dd541}{%
+           family={Prud'Homme},
+           family_i={P\bibinitperiod},
+           given={Remy},
+           given_i={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {World Bank}%
+      }
+      \strng{namehash}{b5f65c3be792b9b1cad366acac1dd541}
+      \strng{fullhash}{b5f65c3be792b9b1cad366acac1dd541}
+      \field{sortinit}{P}
+      \field{sortinithash}{c0a4896d0e424f9ca4d7f14f2b3428e7}
+      \field{labelyear}{1995}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The world bank research observer}
+      \field{number}{2}
+      \field{title}{The dangers of decentralization}
+      \field{volume}{10}
+      \field{year}{1995}
+      \field{pages}{201\bibrangedash 220}
+      \range{pages}{20}
+    \endentry
+    \entry{Haryana}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=732fb432ac72880ffca54bb6302c9203}{%
+           family={PTI},
+           family_i={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{732fb432ac72880ffca54bb6302c9203}
+      \strng{fullhash}{732fb432ac72880ffca54bb6302c9203}
+      \field{sortinit}{P}
+      \field{sortinithash}{c0a4896d0e424f9ca4d7f14f2b3428e7}
+      \field{labelyear}{2016}
+      \field{labelmonth}{04}
+      \field{labelday}{20}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{20}
+      \field{journaltitle}{The Times of India}
+      \field{month}{04}
+      \field{title}{Haryana mulls creation of three new districts}
+      \field{urlday}{31}
+      \field{urlmonth}{05}
+      \field{urlyear}{2016}
+      \field{year}{2016}
+      \verb{url}
+      \verb http://timesofindia.indiatimes.com/city/chandigarh/Haryana-mulls-creation-of-three-new-districts/articleshow/51915065.cms
+      \endverb
+    \endentry
+    \entry{reingewertz2012municipal}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=5318926236e59c9fdc446b81afc82055}{%
+           family={Reingewertz},
+           family_i={R\bibinitperiod},
+           given={Yaniv},
+           given_i={Y\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{5318926236e59c9fdc446b81afc82055}
+      \strng{fullhash}{5318926236e59c9fdc446b81afc82055}
+      \field{sortinit}{R}
+      \field{sortinithash}{c7387613477035a752d935acfc3e3ea2}
+      \field{labelyear}{2012}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Urban Economics}
+      \field{number}{2}
+      \field{title}{Do municipal amalgamations work? Evidence from municipalities in Israel}
+      \field{volume}{72}
+      \field{year}{2012}
+      \field{pages}{240\bibrangedash 251}
+      \range{pages}{12}
+    \endentry
+    \entry{scharpf_governing_1999}{book}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=9b954bfd2041fb34f10d6898bf2530fe}{%
+           family={Scharpf},
+           family_i={S\bibinitperiod},
+           given={Fritz\bibnamedelima W.},
+           given_i={F\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{9b954bfd2041fb34f10d6898bf2530fe}
+      \strng{fullhash}{9b954bfd2041fb34f10d6898bf2530fe}
+      \field{sortinit}{S}
+      \field{sortinithash}{fd1e7c5ab79596b13dbbb67f8d70fb5a}
+      \field{labelyear}{1999}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{shorttitle}{Governing in {Europe}}
+      \field{title}{Governing in {Europe}: effective and democratic?}
+      \field{year}{1999}
+    \endentry
+    \entry{smoke2015rethinking}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=f8df6347026e6c4a40e8a37e2aa88c7d}{%
+           family={Smoke},
+           family_i={S\bibinitperiod},
+           given={Paul},
+           given_i={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{f8df6347026e6c4a40e8a37e2aa88c7d}
+      \strng{fullhash}{f8df6347026e6c4a40e8a37e2aa88c7d}
+      \field{sortinit}{S}
+      \field{sortinithash}{fd1e7c5ab79596b13dbbb67f8d70fb5a}
+      \field{labelyear}{2015}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Public Administration and Development}
+      \field{number}{2}
+      \field{title}{Rethinking decentralization: assessing challenges to a popular public sector reform}
+      \field{volume}{35}
+      \field{year}{2015}
+      \field{pages}{97\bibrangedash 112}
+      \range{pages}{16}
+    \endentry
+    \entry{tanzi1996macroeconomic}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=28671b66f608f008531fa9f0256c69af}{%
+           family={Tanzi},
+           family_i={T\bibinitperiod},
+           given={Vito},
+           given_i={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{28671b66f608f008531fa9f0256c69af}
+      \strng{fullhash}{28671b66f608f008531fa9f0256c69af}
+      \field{sortinit}{T}
+      \field{sortinithash}{423d138a005a533b47e6475e39378bf2}
+      \field{labelyear}{1996}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Annual World Bank conference on development economics}
+      \field{title}{Macroeconomic Aspects}
+      \field{year}{1996}
+      \field{pages}{295\bibrangedash 317}
+      \range{pages}{23}
+    \endentry
+    \entry{tiebout_economies_1960}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=0e82b0466433dc3c421937cc98056161}{%
+           family={Tiebout},
+           family_i={T\bibinitperiod},
+           given={Charles\bibnamedelima M.},
+           given_i={C\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{0e82b0466433dc3c421937cc98056161}
+      \strng{fullhash}{0e82b0466433dc3c421937cc98056161}
+      \field{sortinit}{T}
+      \field{sortinithash}{423d138a005a533b47e6475e39378bf2}
+      \field{labelyear}{1960}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0034-6535}
+      \field{journaltitle}{The Review of Economics and Statistics}
+      \field{number}{4}
+      \field{title}{Economies of {Scale} and {Metropolitan} {Governments}}
+      \field{urlday}{01}
+      \field{urlmonth}{06}
+      \field{urlyear}{2016}
+      \field{volume}{42}
+      \field{year}{1960}
+      \field{pages}{442\bibrangedash 444}
+      \range{pages}{3}
+      \verb{doi}
+      \verb 10.2307/1925694
+      \endverb
+      \verb{url}
+      \verb http://www.jstor.org/stable/1925694
+      \endverb
+    \endentry
+    \entry{tomio2005creation}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=a3c45d7d5514c5eec2b4a4c75aa96830}{%
+           family={Tomio},
+           family_i={T\bibinitperiod},
+           given={Fabricio\bibnamedelimb Ricardo\bibnamedelimb de\bibnamedelima Limas},
+           given_i={F\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim d\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {SciELO Social Sciences}%
+      }
+      \strng{namehash}{a3c45d7d5514c5eec2b4a4c75aa96830}
+      \strng{fullhash}{a3c45d7d5514c5eec2b4a4c75aa96830}
+      \field{sortinit}{T}
+      \field{sortinithash}{423d138a005a533b47e6475e39378bf2}
+      \field{labelyear}{2005}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Revista Brasileira de Ci\^{e}ncias Sociais}
+      \field{number}{SE}
+      \field{title}{The creation of municipalities after the 1988 constitution}
+      \field{volume}{1}
+      \field{year}{2005}
+      \field{pages}{\bibrangedash}
+      \range{pages}{-1}
+      \warn{\item Range field 'pages' in entry 'tomio2005creation' is malformed, skipping}
+    \endentry
+    \entry{turgel2008new}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=184de296e7a1ac0d53ce0c9c7f1d4ff4}{%
+           family={Turgel},
+           family_i={T\bibinitperiod},
+           given={Irina},
+           given_i={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{184de296e7a1ac0d53ce0c9c7f1d4ff4}
+      \strng{fullhash}{184de296e7a1ac0d53ce0c9c7f1d4ff4}
+      \field{sortinit}{T}
+      \field{sortinithash}{423d138a005a533b47e6475e39378bf2}
+      \field{labelyear}{2008}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{16th NISPAcee Annual Conference Public Policy and Administration: Challenges and Synergies}
+      \field{title}{New Local Self-Government Reform in Russia: A Step to Decentralization or Consolidation of Vertical Authority?}
+      \field{year}{2008}
+    \endentry
+  \endsortlist
+\endrefsection
+\endinput
+

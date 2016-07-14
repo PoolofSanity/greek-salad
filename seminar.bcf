@@ -2102,9 +2102,9 @@
     <bcf:citekey order="4">hansen_size_2014</bcf:citekey>
     <bcf:citekey order="5">oates_fiscal_1972</bcf:citekey>
     <bcf:citekey order="6">smoke2015rethinking</bcf:citekey>
-    <bcf:citekey order="7">tiebout_economies_1960</bcf:citekey>
-    <bcf:citekey order="8">oates_fiscal_1972</bcf:citekey>
-    <bcf:citekey order="9">hirsch_expenditure_1959</bcf:citekey>
+    <bcf:citekey order="7">hirsch_expenditure_1959</bcf:citekey>
+    <bcf:citekey order="8">tiebout_economies_1960</bcf:citekey>
+    <bcf:citekey order="9">oates_fiscal_1972</bcf:citekey>
     <bcf:citekey order="10">Mamata</bcf:citekey>
     <bcf:citekey order="11">Telengana</bcf:citekey>
     <bcf:citekey order="12">Haryana</bcf:citekey>
@@ -2114,13 +2114,17 @@
     <bcf:citekey order="16">tiebout_economies_1960</bcf:citekey>
     <bcf:citekey order="17">oates_fiscal_1972</bcf:citekey>
     <bcf:citekey order="18">oates1999essay</bcf:citekey>
-    <bcf:citekey order="19">tanzi1996macroeconomic</bcf:citekey>
-    <bcf:citekey order="20">allers2016effects</bcf:citekey>
-    <bcf:citekey order="21">lassen_jurisdiction_2011</bcf:citekey>
-    <bcf:citekey order="22">faguet2008decentralization</bcf:citekey>
-    <bcf:citekey order="23">driscoll2003school</bcf:citekey>
-    <bcf:citekey order="24">holzer2009literature</bcf:citekey>
-    <bcf:citekey order="25">prud1995dangers</bcf:citekey>
+    <bcf:citekey order="19">allers2016effects</bcf:citekey>
+    <bcf:citekey order="20">lassen_jurisdiction_2011</bcf:citekey>
+    <bcf:citekey order="21">faguet2008decentralization</bcf:citekey>
+    <bcf:citekey order="22">driscoll2003school</bcf:citekey>
+    <bcf:citekey order="23">tanzi1996macroeconomic</bcf:citekey>
+    <bcf:citekey order="24">prud1995dangers</bcf:citekey>
+    <bcf:citekey order="25">holzer2009literature</bcf:citekey>
+    <bcf:citekey order="26">hinnerich2009merging</bcf:citekey>
+    <bcf:citekey order="27">jordahl2010merged</bcf:citekey>
+    <bcf:citekey order="28">reingewertz2012municipal</bcf:citekey>
+    <bcf:citekey order="29">blesse2013municipal</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="nty/global/" type="entry" sortscheme="nty" sortnamekeyscheme="global" labelprefix="">
   <bcf:sorting>
