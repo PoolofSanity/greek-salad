@@ -1,0 +1,245 @@
+\documentclass{beamer}
+\mode<presentation>
+{
+	\usetheme{Madrid}      % or try Darmstadt, Madrid, Warsaw, ...
+	\usecolortheme{seagull} % or try albatross, beaver, crane, ...
+	\usefonttheme{structureitalicserif}  % or try serif, structurebold, ...
+	\setbeamertemplate{navigation symbols}{}
+	\setbeamertemplate{caption}[numbered]
+	\setbeamertemplate{enumerate items}[default]
+} 
+
+\usepackage[english]{babel}
+%\usepackage[utf8x]{inputenc}
+\usepackage[backend = biber]{biblatex}
+\addbibresource{sop.bib}
+\usepackage[]{graphicx}
+\usepackage{pdflscape}
+\graphicspath{ {Images/} }
+
+\title[Comprehensive Examination - 2016]{Is Small Beautiful? Do Small Districts Lead to Better Outcomes?}
+\subtitle
+{(with Prof. Gopal Naik)}
+
+\author{Jothsna Rajan} 
+\institute[]{Indian Institute of Management, Bangalore}
+\date{}
+
+\AtBeginSection[]
+{
+	\begin{frame}<beamer>
+		\frametitle{Outline}
+		\tableofcontents[currentsection,currentsubsection]
+	\end{frame}
+}
+
+\begin{document}
+	
+	\begin{frame}
+		\titlepage
+	\end{frame}
+	
+	\begin{frame}{Motivation}
+		\begin{itemize}
+			\item Is there an optimal population level for local governments?
+			\item In democratic systems two sets of normative criteria are considered in answering this question
+			\begin{itemize}
+				\item Citizen effectiveness - the ability and willingness of citizens to control the decisions made on their behalf
+				\item Functional effectiveness - the ability of local governments to provide public goods and services to its citizens and promote public welfare (Dahl and Tufte 1973, Scharpf 1999)
+			\end{itemize}
+			\item Population level is expected to impact both the citizen and functional effectiveness of democratic systems
+			\begin{itemize}
+				\item Considerable political and economic virtues are attributed to smaller administrative units
+			\end{itemize}
+		\end{itemize}
+	\end{frame}
+	
+	\begin{frame}{Motivation}
+		\begin{itemize}
+			\item Local government sizes vary considerably across nations. 
+			\begin{itemize}
+				\item And sub-national boundary reorganizations are frequent - consolidation as well as decentralization
+			\end{itemize}
+		\end{itemize}
+		\begin{table}[h!]
+			\centering
+			\caption{Administrative Units in India}
+			\label{Fig2}
+			\scalebox{0.75}{
+				\begin{tabular}{c|ccccc} 
+					\hline
+					States/UTs & 1971 & 1981 & 1991 & 2001 & 2011 \\
+					\hline 
+					States & 19 & 22 & 25 & 29 & 29\\ 
+					Union Territories & 10 & 9 & 7 & 6 & 6 \\ 
+					Districts & 356 & 412 & 466 & 593 & 640 \\ 
+					New Districts & - & 52 & 54 & 127 & 47 \\
+					\hline
+				\end{tabular}}
+			\end{table}
+			\begin{itemize}
+				\item Recently new districts were created or are under consideration for West Bengal, Telangana and Haryana States.
+				\begin{itemize}
+					\item The stated rationale for district bifurcation is decentralisation of administration and better public service delivery
+				\end{itemize}
+			\end{itemize}
+		\end{frame}
+		
+		\begin{frame}{Research Question}
+			\begin{itemize}
+				\item Does administrative bifurcation at the district level lead to better public service outcomes?
+				\begin{itemize}
+					\item This question is examined here in the context of public education
+				\end{itemize}
+			\end{itemize}
+		\end{frame}
+		
+		\begin{frame}{Theory}
+			\begin{itemize}
+				\item The fundamental argument for decentralised governance comes from the idea that there is heterogeneity in demand for public services.
+				\item Tiebout (1956) conceptualises a fully mobile citizen who can move to a jurisdiction that matches her preferences for tax rates and public service levels, thus revealing her preferences. 
+				\item With small jurisdictions this information can be used by local governments to tailor their activities and raise welfare. 
+				\item But how much decentralisation should we demand?
+				\begin{itemize}
+					\item Public goods that are (1) sensitive to local preferences and (2) do not have large spillover (3) nor scale effects: infrastructure, public education, etc. are better provided under decentralisation (Oates 1972)
+				\end{itemize}
+			\end{itemize}
+		\end{frame}
+		
+		\begin{frame}{Theory}
+			\begin{itemize}
+				\item Smaller populations may reduce agency costs especially if the local administrators are directly elected and 
+				\item Reduce information costs because of the proximity of the decision-making-centre to the citizens. 
+				\item It may also lead to lower costs in planning and monitoring activities than in a larger jurisdiction. 
+				\item At the same time, it can lead to higher costs by administrative duplication and higher fixed costs per capita
+				\begin{itemize}
+					\item The optimal jurisdiction size at which public service delivery begins to improve or decline might also be a function of the specific public good or service. 
+					\item The effects of size on public service delivery depends on the size of production units as well, not just administrative units (Allers and Geertsema 2016)
+				\end{itemize} 
+			\end{itemize}
+		\end{frame}
+		
+		\begin{frame}{Theory}
+			\begin{itemize}
+				\item Public education is not seen as imposing strong externalities on neighbouring regions, nor does it have large scale effects. 
+				\begin{itemize}
+					\item Therefore, under the classic explanation, a smaller district should be able to provide better service.
+				\end{itemize}
+				\item At the same time, practical considerations remain. We might need to build administrative capacity when a larger district is split into two or more before any benefits can be reaped. \item Also, if the districts are too small in the first place, there might be some benefit in consolidating two or more districts and managing them together.  
+				
+			\end{itemize}
+		\end{frame}
+		
+		\begin{frame}{Data}
+			\begin{itemize}
+				\item District reorganization in Karnataka - 3 new districts were created from 3 already existing ones between 2007 and 2010.
+				\item Unit of analysis is the sub-district (taluk)
+				\item Data on school resources and inputs are taken from District Information System for Education (DISE) and aggregated to the sub-district level - publicly available dataset
+				\item Data on student performance is taken from the SSLC exam results conducted by Karnataka Secondary Education Examination Board (KSEEB)
+				\item 9 years - 2005 to 2013
+				\item Demographic Data is taken from the nearest census (2001) at the sub-district level
+				
+				
+			\end{itemize}
+		\end{frame}
+		
+		\begin{frame}{Estimation}
+			\begin{itemize}
+				\item The demand for creation a new district usually arises from within the district - policy endogeneity
+				\item Difference in Difference model to compare the performance of districts that were bifurcated with those that were not
+				\begin{itemize}
+					\item This approach requires the error term to be independent of the selection into treatment
+					\item Variables that may affect selection are included in the specification
+					\item It is likely that many of them are time invariant and are captured by the time and treatment fixed effects
+				\end{itemize}
+				\item Two control groups - all other sub-districts that were not bifurcated, a control group selected based on propensity scores
+			\end{itemize}
+			
+			The default specification is of the form,
+			\[ Y_{it} = \beta_0 + \beta_1 Split_{i} + \beta_2 PostSplit_t + \beta_3 Split_i PostSplit_t + \sum_j \beta_j X_{ijt} + \epsilon_{it} \]
+			
+		\end{frame}
+		
+		
+		
+		\begin{frame}{}
+			\begin{table}[!htbp] \centering 
+				\caption{Basic Regression Results: With PS Matched Control Group} 
+				\label{Table2} 
+				\scalebox{0.55}{
+					\begin{tabular}{@{\extracolsep{5pt}}lcccccccc} 
+						\\[-1.8ex]\hline 
+						\hline \\[-1.8ex] 
+						& \multicolumn{8}{c}{\textit{Dependent variable:}} \\ 
+						\cline{2-9} 
+						\\[-1.8ex] & ln(Grants) & \# of Schools & Public & Classrooms & Toilet-Girls & Electricity & Library & Test Scores \\ 
+						\\[-1.8ex] & (1) & (2) & (3) & (4) & (5) & (6) & (7) & (8)\\ 
+						\hline \\[-1.8ex] 
+						Split & 0.3 & 0.1$^{*}$ & 0.001 & $-$0.5$^{***}$ & $-$0.001 & $-$0.04 & 0.04 & 0.2 \\ 
+						& (0.2) & (0.1) & (0.02) & (0.2) & (0.001) & (0.04) & (0.1) & (7.8) \\ 
+						& & & & & & & & \\ 
+						Post & 0.9$^{***}$ & 0.2$^{***}$ & $-$0.1$^{***}$ & 0.2 & $-$0.01$^{***}$ & 0.3$^{***}$ & 0.1 & 10.0 \\ 
+						& (0.2) & (0.1) & (0.02) & (0.2) & (0.002) & (0.1) & (0.1) & (19.0) \\ 
+						& & & & & & & & \\ 
+						Split:Post & $-$0.5$^{**}$ & $-$0.03 & $-$0.02 & 0.1 & 0.003$^{*}$ & 0.1 & 0.2 & 13.0 \\ 
+						& (0.2) & (0.1) & (0.02) & (0.2) & (0.002) & (0.05) & (0.1) & (10.0) \\ 
+						& & & & & & & & \\ 
+						Demographic Variables & YES & YES & YES & YES & YES & YES & YES & YES \\
+						Investment Variables & NO & NO & NO & YES & YES & YES & YES & YES \\
+						Resource Variables  & NO & NO & NO  & NO & NO & NO & NO & YES \\
+						\hline \\[-1.8ex] 
+						Observations & 95 & 95 & 95 & 95 & 95 & 95 & 95 & 95 \\ 
+						R$^{2}$ & 0.3 & 0.4 & 0.4 & 0.8 & 0.4 & 0.8 & 0.3 & 0.4 \\ 
+						Adjusted R$^{2}$ & 0.2 & 0.4 & 0.3 & 0.8 & 0.3 & 0.8 & 0.2 & 0.4 \\ 
+						Residual Std. Error & 0.6 & 0.2 & 0.1 & 0.5 & 0.005 & 0.1 & 0.3 & 24.0 \\ 
+						F Statistic & 5.3$^{***}$ & 9.7$^{***}$ & 9.4$^{***}$ & 40.0$^{***}$ & 5.6$^{***}$ & 35.0$^{***}$ & 4.1$^{***}$ & 6.6$^{***}$ \\ 
+						\hline 
+						\hline \\[-1.8ex] 
+						\textit{Note:}  & \multicolumn{8}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
+					\end{tabular} }
+				\end{table}
+			\end{frame}
+			
+			\begin{frame}
+				\begin{table}[!htbp] \centering 
+					\caption{Summary Statistics in 2013 - Within Treatment Group} 
+					\label{Table3} 
+					\scalebox{0.85}{
+						\begin{tabular}{@{\extracolsep{5pt}} ccccc} 
+							\\[-1.8ex]\hline 
+							\hline \\[-1.8ex] 
+							& Variables & Old & New & p.value \\ 
+							\hline \\[-1.8ex] 
+							1 & Total Marks & $344.0$ & $333.0$ & 0.33 \\ 
+							2 & Working Days & $0.7$ & $1.1$ & 0.57 \\ 
+							3 & Academic Inspection & $1.3$ & $1.6$ & 0.67 \\ 
+							4 & School Dev Grant - R & $7,260.0$ & $7,574.0$ & 0.6 \\ 
+							5 & TLM Grant - R & $1,098.0$ & $1,456.0$ & 0.19 \\ 
+							6 & Classrooms & $4.9$ & $4.5$ & 0.2 \\ 
+							7 & Electricity (Yes = 1) & $1.0$ & $1.0$ & 0.62 \\ 
+							8 & Library  (Yes = 1) & $1.0$ & $1.2$ & 0.36 \\ 
+							9 & Female teachers & $2.4$ & $1.8$ & 0.00 \\ 
+							10 & Public Schools (\%) & $0.8$ & $0.9$ & 0.18 \\ 
+							11 & Schools per 1000 people & $1.5$ & $1.6$ & 0.77 \\ 
+							12 & New/Old Dist (New = 1) & $0$ & $1$ & - \\ 
+							13 & \# of Observations & $14$ & $9$ & - \\ 
+							\hline \\[-1.8ex] 
+							\multicolumn{5}{l}{\footnotesize{Population figure used to calculate `Schools per 1000 people' is from 2001}} \\ 
+						\end{tabular} }
+					\end{table}
+				\end{frame}
+				
+				\begin{frame}{Conclusion}
+					\begin{itemize}
+						\item  The findings from the study suggest no significant changes in the education outcomes of the sub-districts following a bifurcation.
+						\item Government functions are many and varied and the effect of population size on one of those functions might not be the same as that on others
+						\item It may also be possible that some of the positive effects do exist, but may manifest not in higher service levels but in lower costs to achieve the same service level as before.
+						\item The results do not suggest that district bifurcations are always inadvisable. But a more tempered approach might be warranted than the unbridled enthusiasm in their favour in the absence of clear evidence.
+					\end{itemize}
+				\end{frame}
+				
+				\begin{frame}{Alternate Specification}
+					\[ Y_{it} = \beta_0 + \beta_1 Bifurcated_{it} + \sum_{j} \beta_j District_{ij} + \sum_{k} \beta_k Year_{kt} + \sum_l \beta_l X_{lit} + \epsilon_{it} \]
+				\end{frame}
+				
+			\end{document}

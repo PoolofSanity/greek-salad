@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "#Everything that exists is an object.\n#Everything that happens is a function call.\n\nsetwd(\"D:/Share Point/OneDrive/GitHub/greek-salad\")\n\nlibrary(foreign)\nlibrary(stargazer)\nlibrary(plyr)\nlibrary(reshape)\nlibrary(MatchIt)\nlibrary(dummies)\nlibrary(multiwayvcov)\nlibrary(lmtest)\n\noptions(scipen = 999, digits=2)\nFiles <- list.files(pattern = \"*.csv\")\n\ncluster <- function(model, cluster)\n{\n  require(multiwayvcov)\n  require(lmtest)\n  vcovCL<-cluster.vcov(model, cluster)\n  \n  coef<-coeftest(model, vcovCL)\n  w<-waldtest(model, vcov = vcovCL, test = \"F\")\n  ci<-get_confint(model, vcovCL)\n  \n  return(list(coef, w, ci))\n}\n\nData <- ldply(lapply(Files[15], read.csv))[,-c(1, 29)]\ncolnames(Data) <- c(\"Block\", \"Year\", \"Marks1\", \"Marks2\", \"Marks3\", \"Marks4\", \"Marks5\", \"Marks6\", \"TotalMarks\", \"Dist\", \"Rural\", \"WorkDays\",  \"AcadInsp\", \"DevGrantR\", \"DevGrantE\", \"TLMGrantR\", \"TLMGrantE\", \"Classrooms\", \"ToiletG\", \"Electricity\", \"Library\", \"PlayGround\", \"Male_Tch\", \"Female_Tch\", \"Grad_Tch\", \"ProfQ_Tch\", \"Days_nonTch\", \"Public\", \"Split\", \"Bifurcated\")\n#Yadgir <- as.character(unique(droplevels(subset(Data, eval(Data$Dist == \"YADAGIRI\")))[,1]))\n#Gulbarga <- as.character(unique(droplevels(subset(Data, eval(Data$Dist == \"GULBARGA\")))[,1]))\nnew <- c(\"BAGEPALLY\", \"CHANNAPATNA\", \"CHIKKABALLAPUR\", \"CHINTAMANI\", \"GOWRIBIDANUR\", \"GUDIBANDA\", \"KANAKAPURA\", \"MAGADI\", \"RAMANAGARA\", \"SHAHAPUR\", \"SHORAPUR\", \"SIDLAGHATTA\", \"YADGIR\")\nold <- c(\"AFZALPUR\", \"ALAND\", \"BANGARAPETE\", \"CHINCHOLI\", \"CHITTAPUR\", \"DEVANAHALLI\", \"DODDABALLAPURA\", \"HOSAKOTE\", \"JEWARGI\", \"KOLAR\", \"MALUR\", \"MULBAGAL\", \"NELAMANGALA\", \"SEDAM\", \"SRINIVASAPUR\")\n\nSchool <- ldply(lapply(Files[9], read.csv))[,-2]\ncolnames(School) <- c(\"Block\", \"Year\", \"Schools\")\nData <- merge(Data, School, by = c(\"Block\", \"Year\"))\n\nCensus <- ldply(lapply(Files[6], read.csv))[,c(2, 33:38)]\nCensus$Literacy <- Census$Literates/Census$TotPop\nCensus$Caste <- Census$SCST/Census$TotPop\ncolnames(Census)[1] <- \"Block\"\nData <- merge(Data, Census, by = \"Block\")\n#Data$SchoolGrant <- Data$TLMGrantR + Data$DevGrantR\n#Data$SchoolNo <- Data$Schools*1000/Data$TotPop\n\n#write.dta(Data, \"Data.dta\")\nDataset <- Data\n\nData <- dummy.data.frame(Data, names = c(\"Year\", \"Dist\"), sep = \".\", all = TRUE)\nData$SchoolGrant <- Data$TLMGrantR + Data$DevGrantR\nData$SchoolNo <- Data$Schools*1000/Data$TotPop\n\n#colnames(Data)[159] <- \"Dist.BRural\"\n#write.dta(Data, \"Data.dta\")\n\n#Regressions\n#Full Model - Performance\ndf <- Data[, c(17, 3:10, 19:47, 49:50, 55:65, 67, 77:78, 75, 71, 76)]\nfit.scores <- lm(df)\n\ndf <- Data[, c(78, 3:10, 19:47, 75, 71, 76, 67)]\nfit.school <- lm(df)\n\ndf <- Data[, c(77, 3:10, 19:47, 75, 71, 76, 78, 67)]\nfit.grants <- lm(df)\n\ndf <- Data[, c(65, 3:10, 19:47, 75, 71, 76, 78, 67)]\nfit.public <- lm(df)\n\nstargazer(fit.scores, fit.school, fit.grants, fit.public, df = FALSE, digits = 1, type = \"text\", out = \"file.txt\")#, keep = \"Bifurcated\"\n",
+    "created" : 1468859426627.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1445334291",
+    "id" : "FD7E191F",
+    "lastKnownWriteTime" : 1468872300,
+    "last_content_update" : 1468872300785,
+    "path" : "D:/Share Point/OneDrive/GitHub/greek-salad/MoreRegressions.R",
+    "project_path" : "MoreRegressions.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

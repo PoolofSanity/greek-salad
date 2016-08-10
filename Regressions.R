@@ -1,6 +1,8 @@
 #Everything that exists is an object.
 #Everything that happens is a function call.
 
+#Happiness is when it runs.
+
 setwd("D:/Share Point/OneDrive/GitHub/greek-salad")
 
 library(foreign)

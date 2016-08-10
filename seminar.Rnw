@@ -541,9 +541,11 @@ iv.school <- ivreg(SchoolperPop2013 ~ Split + Literacy + YoungPop, instruments =
 #Funding related variables
 fit.School <- lm(SchoolNo ~ Split*Post + Literacy + Data$YoungPop + Population.2001, Data)
 fit.public <- lm(Public ~ Split*Post + Literacy + Data$YoungPop + Population.2001, Data)
+fit.Grant <- lm(SchoolGrant ~ Split*Post + Literacy + Data$YoungPop + Population.2001, Data)
+fit.lnGrant <- lm(log(SchoolGrant) ~ Split*Post + Literacy + Data$YoungPop + Population.2001, Data)
 fit.DevGrant <- lm(log(DevGrantR) ~ Split*Post + Literacy + Data$YoungPop + Population.2001, Data)
 fit.TLM <- lm(TLMGrantR ~ Split*Post + Literacy + Data$YoungPop + Population.2001, Data)
-stargazer(fit.School, fit.public, fit.DevGrant, fit.TLM, digits = 1, df = FALSE)
+stargazer(fit.School, fit.public, fit.lnGrant, digits = 1, df = FALSE)
 
 #Infrastructure related variables
 fit.Class <- lm(Classrooms ~ Split*Post + SchoolNo + Public + SchoolGrant + Literacy + Data$YoungPop + Population.2001, Data)
